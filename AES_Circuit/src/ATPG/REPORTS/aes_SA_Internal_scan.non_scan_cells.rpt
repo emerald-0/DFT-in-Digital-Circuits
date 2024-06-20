@@ -1,0 +1,12 @@
+ type      behavior_data  gate_id  instance_name (type)
+ --------  -------------  -------  -------------------------------
+ LE        load_unstable   103767  occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i/\count_int_reg[0] (DFFARX1)
+ LE        load_unstable   103768  occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i/\count_int_reg[1] (DFFARX1)
+ LE        load_unstable   103769  occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i/\count_int_reg[2] (DFFARX1)
+ LE        load_unstable   103770  occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i/tercnt_n_reg_reg (DFFARX1)
+ LE        load_unstable   103771  occ_snps_pll_controller/U_clk_control_i_0/pipeline_or_tree_l_reg (DFFARX1)
+ L0        load_unstable   103772  occ_snps_pll_controller/U_clk_control_i_0/fast_clk_enable_l_reg (DFFNARX1)
+ TE        load_unstable   103773  occ_snps_pll_controller/U_clk_control_i_0/slow_clk_enable_l_reg (DFFNARX1)
+ LE        load_unstable   103774  occ_snps_pll_controller/U_clk_control_i_0/load_n_meta_0_l_reg (DFFARX1)
+ LE        load_unstable   103775  occ_snps_pll_controller/U_clk_control_i_0/load_n_meta_1_l_reg (DFFARX1)
+ LE        load_unstable   103776  occ_snps_pll_controller/U_clk_control_i_0/load_n_meta_2_l_reg (DFFARX1)

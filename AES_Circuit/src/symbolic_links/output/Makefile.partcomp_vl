@@ -1,0 +1,46 @@
+# Var-value pairs needed in partcomp 2-step flow.
+VCS_PC2_VARS = SYNOPSYS_SIM_SETUP=simv.daidir/synopsys_sim.setup VCS_LCAMSG_PRINT_OFF=1
+
+VCS_PC_JSUB =
+
+ifndef MAKEPROF
+VLOGAN = ${VCS_PC2_VARS} ${VCS_HOME}/bin/vlogan
+VCS = $(VCS_PC_JSUB) ${VCS_PC2_VARS} ${VCS_HOME}/bin/vcs
+VCS_S = $(VCS_PC_JSUB) ${VCS_PC2_VARS} ${VCS_HOME}/bin/vcs
+PRINT_MKPROF = 
+else
+VLOGAN = ${VCS_PC2_VARS} /usr/bin/time -f "MAKEPROF@$@, Real: %e, User: %U, Sys: %S " ${VCS_HOME}/bin/vlogan
+VCS = $(VCS_PC_JSUB) ${VCS_PC2_VARS} /usr/bin/time -o $@.mkprof.log -f "MAKEPROF@$@, Real: %e, User: %U, Sys: %S " ${VCS_HOME}/bin/vcs
+VCS_S = $(VCS_PC_JSUB) ${VCS_PC2_VARS} /usr/bin/time -f "MAKEPROF@$@, Real: %e, User: %U, Sys: %S " ${VCS_HOME}/bin/vcs
+PRINT_MKPROF = @cat $@.mkprof.log && /bin/rm -rf $@.mkprof.log
+endif
+
+VCS_OPTIONS =  -mx_invoke_vcs_from_tool -mxunielab     -file simv.daidir/.partcomp_options -partcomp_master_daidir=simv.daidir   -q    -assert enable_hier   -full64   -file simv.daidir/.partcomp_added_options  -q  
+
+VCS_STITCH_OPTIONS =    -file simv.daidir/.partcomp_stitch_options -Xpiyushb1=0x80 -sverilog  -full64    -Xvcsdb=0x400    -file simv.daidir/.partcomp_added_options  
+
+vl_pcs : PARTCOMP_SIMV
+
+partitionlib/uvm_custom_install_verdi_recording_t8TSlc/libvcspc_uvm_custom_install_verdi_recording_t8TSlc.so : partitionlib/uvm_custom_install_verdi_recording_t8TSlc/.touched
+	/bin/rm -rf partitionlib/uvm_custom_install_verdi_recording_t8TSlc/libvcspc_uvm_custom_install_verdi_recording_t8TSlc.so.daidir/ar.lst
+	${VCS} ${PARTCOMP_ADD_VCS_OPT} ${VCS_OPTIONS}   -partcomp=so -partcomp_so_dir=partitionlib/uvm_custom_install_verdi_recording_t8TSlc VCS_PARTCOMP_LIB.pc_uvm_custom_install_verdi_recording_config -o $@ -Mdir=partitionlib/uvm_custom_install_verdi_recording_t8TSlc/csrc  -Xarijit=0x2 -sverilog -l partitionlib/uvm_custom_install_verdi_recording_t8TSlc/uvm_custom_install_verdi_recording_t8TSlc.log 
+	${PRINT_MKPROF}
+
+partitionlib/_vcs_msglog_o6N9xb/libvcspc__vcs_msglog_o6N9xb.so : partitionlib/_vcs_msglog_o6N9xb/.touched
+	/bin/rm -rf partitionlib/_vcs_msglog_o6N9xb/libvcspc__vcs_msglog_o6N9xb.so.daidir/ar.lst
+	${VCS} ${PARTCOMP_ADD_VCS_OPT} ${VCS_OPTIONS}   -partcomp=so -partcomp_so_dir=partitionlib/_vcs_msglog_o6N9xb VCS_PARTCOMP_LIB.pc__vcs_msglog_config -o $@ -Mdir=partitionlib/_vcs_msglog_o6N9xb/csrc  -Xarijit=0x2 -sverilog -l partitionlib/_vcs_msglog_o6N9xb/_vcs_msglog_o6N9xb.log 
+	${PRINT_MKPROF}
+
+partitionlib/_vcs_pc_package__5DYEp/libvcspc__vcs_pc_package__5DYEp.so : partitionlib/_vcs_pc_package__5DYEp/.touched
+	/bin/rm -rf partitionlib/_vcs_pc_package__5DYEp/libvcspc__vcs_pc_package__5DYEp.so.daidir/ar.lst
+	${VCS} ${PARTCOMP_ADD_VCS_OPT} ${VCS_OPTIONS}   -partcomp=so -partcomp_so_dir=partitionlib/_vcs_pc_package__5DYEp VCS_PARTCOMP_LIB.pc__vcs_pc_package__config -o $@ -Mdir=partitionlib/_vcs_pc_package__5DYEp/csrc  -Xarijit=0x2 -sverilog -l partitionlib/_vcs_pc_package__5DYEp/_vcs_pc_package__5DYEp.log 
+	${PRINT_MKPROF}
+
+SIMCOPY_EXECUTED_CLEANUP :
+	@rm -f output/.simcopy_executed || true
+PARTCOMP_SIMV : SIMCOPY_EXECUTED_CLEANUP partitionlib/uvm_custom_install_verdi_recording_t8TSlc/libvcspc_uvm_custom_install_verdi_recording_t8TSlc.so partitionlib/_vcs_msglog_o6N9xb/libvcspc__vcs_msglog_o6N9xb.so partitionlib/_vcs_pc_package__5DYEp/libvcspc__vcs_pc_package__5DYEp.so 
+	${VCS_S} -partcomp_dir=partitionlib  -partcomp=stitch ${VCS_STITCH_OPTIONS} -file simv.daidir/.stitch_so_list -o simv output/topshell_partcomp.v -file simv.daidir/.topshell_list 
+
+
+	@echo Done Verilog partition compilations
+

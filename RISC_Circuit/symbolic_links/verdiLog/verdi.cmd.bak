@@ -1,0 +1,17 @@
+debImport "-fsdb" "wavefrom.fsdb"
+verdiSetActWin -dock widgetDock_MTB_SOURCE_TAB_1
+simSetSimulator "-vcssv" -exec \
+           "/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/simv" -args \
+           "-ucli +tmax_parallel=7 +define_tmax_usf_debug_strobe_mode=1"
+nsMsgSwitchTab -tab general
+debImport "-dbdir" \
+          "/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/simv.daidir"
+debLoadSimResult \
+           /home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/wavefrom.fsdb
+wvCreateWindow
+verdiSetActWin -win $_nWave2
+srcHBSelect "Risc_16_bit.DU" -win $_nTrace1
+srcSetScope "Risc_16_bit.DU" -delim "." -win $_nTrace1
+srcHBSelect "Risc_16_bit.DU" -win $_nTrace1
+verdiSetActWin -dock widgetDock_<Inst._Tree>
+debExit

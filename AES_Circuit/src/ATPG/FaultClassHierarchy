@@ -1,0 +1,36 @@
+This two character code is used to specify a fault class.
+
+DT - Detected
+
+   DR - Detected Robustly
+   DS - Detected by Simulation
+   DI - Detected by Implication
+   D2 - Detected clock fault with loadable nonscan cell faulty value of 0 and 1 
+   TP - Transition partially detected 
+
+PT - Possibly Detected
+
+   AP - ATPG Untestable possibly Detected
+   NP - Not Analyzed, Possibly Detected
+   P0 - Detected clock fault and loadable nonscan faulty value is 0
+   P1 - Detected clock fault and loadable nonscan faulty value is 1
+
+UD - Undetectable 
+ 
+   UU - Undetectable Unused
+   UO - Undetectable Unobservable
+   UT - Undetectable Tied
+   UB - Undetectable Blocked
+   UR - Undetectable Redundant
+
+AU - ATPG Untestable
+
+   AN - ATPG Untestable Not-Detected
+   AX - ATPG Untestable Timing Exceptions
+
+ND - Not Detected
+
+   NC - Not Controlled
+   NO - Not Observed
+
+ 

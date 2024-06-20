@@ -1,0 +1,8 @@
+Host name: localhost.localdomain
+Command line:
+/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/linux64/bin/vcselab -o simv -nobanner -stitch=nowrapper -diag timescale +vcs+lic+wait -partcomp_dir=partitionlib partitionlib/_vcs_pc_package__xmMLv/libvcspc__vcs_pc_package__xmMLv.so.daidir partitionlib/_vcs_msglog_YUfb4c/libvcspc__vcs_msglog_YUfb4c.so.daidir partitionlib/Risc_16_bit_g2J7Bb/libvcspc_Risc_16_bit_g2J7Bb.so.daidir partitionlib/uvm_custom_install_verdi_recording_zILyrc/libvcspc_uvm_custom_install_verdi_recording_zILyrc.so.daidir 
+PSR=1
+========== Data begin ==========
+1713941035.38 177676 41560 6772 34788
+1713941035.79 230380 85104 6772 78332 0 0.3
+peakvm 230412

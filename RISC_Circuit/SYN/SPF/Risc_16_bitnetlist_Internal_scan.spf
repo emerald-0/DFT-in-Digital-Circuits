@@ -1,0 +1,666 @@
+STIL 1.0 {
+    Design 2005;
+}
+Header {
+    Title "Minimal STIL for design `Risc_16_bit'";
+    Date "Mon May 20 15:23:33 2024";
+    Source "DFT Compiler S-2021.06-SP5-3";
+}
+Signals {
+    "SCAN_MODE" In;
+    "TEST_SE" In;
+    "TEST_SI1" In;
+    "TEST_SI2" In;
+    "TEST_SI3" In;
+    "TEST_SI4" In;
+    "clk" In;
+    "pll_bypass_2" In;
+    "scan_clk" In;
+    "TEST_SO1" Out;
+    "TEST_SO2" Out;
+    "TEST_SO3" Out;
+    "TEST_SO4" Out;
+    "pll_bypass" In;
+    "pll_reset" In;
+}
+SignalGroups {
+    "_si" = '"TEST_SI1" + "TEST_SI2" + "TEST_SI3" + "TEST_SI4"' {
+        ScanIn;
+    }
+    "_so" = '"TEST_SO1" + "TEST_SO2" + "TEST_SO3" + "TEST_SO4"' {
+        ScanOut;
+    }
+    "_clk" = '"clk" + "scan_clk"';
+    "all_inputs" = '"SCAN_MODE" + "TEST_SE" + "TEST_SI1" + "TEST_SI2" + 
+    "TEST_SI3" + "TEST_SI4" + "clk" + "pll_bypass_2" + "scan_clk" + "pll_bypass" 
+    + "pll_reset"';
+    "all_outputs" = '"TEST_SO1" + "TEST_SO2" + "TEST_SO3" + "TEST_SO4"';
+    "all_ports" = '"all_inputs" + "all_outputs"';
+    "_pi" = '"SCAN_MODE" + "TEST_SE" + "TEST_SI1" + "TEST_SI2" + "TEST_SI3" + 
+    "TEST_SI4" + "clk" + "pll_bypass_2" + "scan_clk" + "pll_bypass" + 
+    "pll_reset"';
+    "_po" = '"TEST_SO1" + "TEST_SO2" + "TEST_SO3" + "TEST_SO4"';
+}
+ScanStructures {
+    ScanChain "1" {
+        ScanLength 91;
+        ScanIn "TEST_SI1";
+        ScanOut "TEST_SO1";
+        ScanEnable "TEST_SE";
+        ScanMasterClock "scan_clk";
+    }
+    ScanChain "2" {
+        ScanLength 4;
+        ScanIn "TEST_SI2";
+        ScanOut "TEST_SO2";
+        ScanEnable "TEST_SE";
+        ScanMasterClock "scan_clk";
+    }
+    ScanChain "3" {
+        ScanLength 91;
+        ScanIn "TEST_SI3";
+        ScanOut "TEST_SO3";
+        ScanEnable "TEST_SE";
+        ScanMasterClock "scan_clk";
+    }
+    ScanChain "4" {
+        ScanLength 90;
+        ScanIn "TEST_SI4";
+        ScanOut "TEST_SO4";
+        ScanEnable "TEST_SE";
+        ScanMasterClock "scan_clk";
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "scan_clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+        }
+    }
+    WaveformTable "_multiclock_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "scan_clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "scan_clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_launch_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "scan_clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_launch_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "scan_clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+        }
+    }
+}
+UserKeywords ClockStructures;
+PatternBurst Internal_scan {
+    Procedures Internal_scan;
+    MacroDefs Internal_scan;
+    ClockStructures Internal_scan;
+}
+PatternBurst Internal_scan_occ_bypass {
+    Procedures Internal_scan_occ_bypass;
+    MacroDefs Internal_scan_occ_bypass;
+}
+PatternExec Internal_scan {
+    PatternBurst Internal_scan;
+}
+PatternExec Internal_scan_occ_bypass {
+    PatternBurst Internal_scan_occ_bypass;
+}
+UserKeywords DontSimulate;
+ClockStructures Internal_scan {
+    PLLStructures "occ_snps_pll_controller" {
+        PLLCycles 4;
+        Clocks {
+            "occ_snps_pll_controller/fast_clk" PLL {
+                OffState 0;
+            }
+            "occ_snps_pll_controller/U2/U2/Q" Internal {
+                OffState 0;
+                PLLSource "occ_snps_pll_controller/fast_clk";
+                Cycle 0 "snps_clk_chain_0/clk_ctrl_data[0]" 1;
+                Cycle 1 "snps_clk_chain_0/clk_ctrl_data[1]" 1;
+                Cycle 2 "snps_clk_chain_0/clk_ctrl_data[2]" 1;
+                Cycle 3 "snps_clk_chain_0/clk_ctrl_data[3]" 1;
+            }
+        }
+    }
+}
+Procedures Internal_scan {
+    "multiclock_capture" {
+        W "_multiclock_capture_WFT_";
+        C {
+            "all_inputs" = 00NNNN0N010;
+            "all_outputs" = XXXX;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "scan_clk" = P;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r11 #;
+            "_po" = ####;
+        }
+    }
+    "allclock_capture" {
+        W "_allclock_capture_WFT_";
+        C {
+            "all_inputs" = 00NNNN0N010;
+            "all_outputs" = XXXX;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "scan_clk" = P;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r11 #;
+            "_po" = ####;
+        }
+    }
+    "allclock_launch" {
+        W "_allclock_launch_WFT_";
+        C {
+            "all_inputs" = 00NNNN0N010;
+            "all_outputs" = XXXX;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "scan_clk" = P;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r11 #;
+            "_po" = ####;
+        }
+    }
+    "allclock_launch_capture" {
+        W "_allclock_launch_capture_WFT_";
+        C {
+            "all_inputs" = 00NNNN0N010;
+            "all_outputs" = XXXX;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "scan_clk" = P;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r11 #;
+            "_po" = ####;
+        }
+    }
+    "load_unload" {
+        W "_default_WFT_";
+        C {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "TEST_SI1" = N;
+            "TEST_SI2" = N;
+            "TEST_SI3" = N;
+            "TEST_SI4" = N;
+            "clk" = 0;
+            "pll_bypass_2" = N;
+            "scan_clk" = 0;
+            "TEST_SO1" = X;
+            "TEST_SO2" = X;
+            "TEST_SO3" = X;
+            "TEST_SO4" = X;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+        "Internal_scan_pre_shift" : V {
+            "_clk" = 0P;
+            "TEST_SE" = 1;
+        }
+        Shift {
+            V {
+                "_clk" = PP;
+                "_si" = ####;
+                "_so" = ####;
+            }
+        }
+    }
+}
+Procedures Internal_scan_occ_bypass {
+    "multiclock_capture" {
+        W "_multiclock_capture_WFT_";
+        C {
+            "all_inputs" = 00NNNN0N010;
+            "all_outputs" = XXXX;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r11 #;
+            "_po" = ####;
+        }
+    }
+    "allclock_capture" {
+        W "_allclock_capture_WFT_";
+        C {
+            "all_inputs" = 00NNNN0N010;
+            "all_outputs" = XXXX;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r11 #;
+            "_po" = ####;
+        }
+    }
+    "allclock_launch" {
+        W "_allclock_launch_WFT_";
+        C {
+            "all_inputs" = 00NNNN0N010;
+            "all_outputs" = XXXX;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r11 #;
+            "_po" = ####;
+        }
+    }
+    "allclock_launch_capture" {
+        W "_allclock_launch_capture_WFT_";
+        C {
+            "all_inputs" = 00NNNN0N010;
+            "all_outputs" = XXXX;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r11 #;
+            "_po" = ####;
+        }
+    }
+    "load_unload" {
+        W "_default_WFT_";
+        C {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "TEST_SI1" = N;
+            "TEST_SI2" = N;
+            "TEST_SI3" = N;
+            "TEST_SI4" = N;
+            "clk" = 0;
+            "pll_bypass_2" = N;
+            "scan_clk" = 0;
+            "TEST_SO1" = X;
+            "TEST_SO2" = X;
+            "TEST_SO3" = X;
+            "TEST_SO4" = X;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+        "Internal_scan_occ_bypass_pre_shift" : V {
+            "TEST_SE" = 1;
+        }
+        Shift {
+            V {
+                "_clk" = PP;
+                "_si" = ####;
+                "_so" = ####;
+            }
+        }
+    }
+}
+MacroDefs Internal_scan {
+    "test_setup" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r11 N;
+            "all_outputs" = XXXX;
+        }
+        V {
+            "SCAN_MODE" = 0;
+            "clk" = 0;
+            "scan_clk" = 0;
+            "pll_reset" = 1;
+        }
+        V {
+            "TEST_SE" = 0;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+    }
+}
+MacroDefs Internal_scan_occ_bypass {
+    "test_setup" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r11 N;
+            "all_outputs" = XXXX;
+        }
+        V {
+            "SCAN_MODE" = 0;
+            "clk" = 0;
+            "scan_clk" = 0;
+        }
+        V {
+            "TEST_SE" = 0;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+    }
+}
+

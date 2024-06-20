@@ -1,0 +1,42 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= -kdb +define+UVM_VERDI_VIF_RECORD +define+UVM_VCS_RECORD +incdir+/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/vcs +incdir+/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/verdi -full64 -ntb_opts uvm +incdir+/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/ +libext+.v+.sv -timescale=1ns/1fs +incdir+/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/verdi    +define+SVT_JTAG_MAX_INSTRUCTION_WIDTH=70 +define+SVT_JTAG_MAX_DATA_WIDTH=16 +define+GATE_SIM +define+VIRAGE_FAST_VERILOG +define+_fv+VIRL_functiononly +define+tmax_msg=4 -sverilog +define+UVM_DIRECTC_OPTS +define+__VERDI_TRANS_HEADER=/home/vlsilab/Documents/InstalledTools/Verdi/verdi/T-2022.06-SP2-8/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh -full64
+
+all :		_VCSgd_sTVzFd_1.db \
+	_VCSgd_THFQ9d_1.db \
+	_VCSgd_X8elXc_1.db \
+	_VCSgd_bE2ihb_1.db \
+	_VCSgd_ZjhH4_1.db \
+	_VCSgd_NAEWie_1.db \
+	_VCSgd_HKelEc_1.db \
+
+
+
+_VCSgd_sTVzFd_1.db :	saed90nm.v 
+		${VLOGAN}  ${VLOGAN_OPT} saed90nm.v
+
+
+_VCSgd_THFQ9d_1.db :	/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/uvm_pkg.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/uvm_pkg.sv
+
+
+_VCSgd_X8elXc_1.db :	/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/vcs/msglog.svh 
+		${VLOGAN}  ${VLOGAN_OPT} /home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/vcs/msglog.svh
+
+
+_VCSgd_bE2ihb_1.db :	/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv
+
+
+_VCSgd_ZjhH4_1.db :	/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv 
+		${VLOGAN}  ${VLOGAN_OPT} /home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv
+
+
+_VCSgd_NAEWie_1.db :	aes_netlist_scan.v 
+		${VLOGAN}  ${VLOGAN_OPT} aes_netlist_scan.v
+
+
+_VCSgd_HKelEc_1.db :	aes_SA_Internal_scan_parallel_max_tb.v 
+		${VLOGAN}  ${VLOGAN_OPT} aes_SA_Internal_scan_parallel_max_tb.v
+
+

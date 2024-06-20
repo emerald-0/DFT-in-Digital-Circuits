@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : Risc_16_bit
+Version: S-2021.06-SP5-3
+Date   : Mon May 20 15:23:35 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Information: There are 276 clock pins driven by multiple clocks, and some of them are driven by up-to 2 clocks. (TIM-099)
+Library(s) Used:
+
+    saed90nm_typ (File: /home/vlsilab/Downloads/SAED90nm_EDK_10072017/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+Number of ports:                          447
+Number of nets:                          2163
+Number of cells:                         1518
+Number of combinational cells:           1196
+Number of sequential cells:               286
+Number of macros/black boxes:               0
+Number of buf/inv:                        148
+Number of references:                       6
+
+Combinational area:              12356.812699
+Buf/Inv area:                      842.342419
+Noncombinational area:            8709.119957
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1873.338090
+
+Total cell area:                 21065.932656
+Total area:                      22939.270745
+1

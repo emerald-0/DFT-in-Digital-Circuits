@@ -1,0 +1,80 @@
+Command Line: /home/vlsilab/Documents/InstalledTools/Verdi/verdi/T-2022.06-SP2-8/platform/LINUXAMD64/bin/Novas -fsdb wavefrom.fsdb
+uname(Linux localhost.localdomain 4.18.0-408.el8.x86_64 #1 SMP Mon Jul 18 17:42:52 UTC 2022 x86_64)
+type= DS_SIGNAL element= 1 field= 2
+VERILOG Risc_16_bit_test
+VERILOG cur_pat
+-----
+second field= signal
+type= DS_STRING
+cur_pat
+type= DS_SIGNAL element= 1 field= 2
+VERILOG Risc_16_bit_test
+VERILOG cur_stmt
+-----
+second field= signal
+type= DS_STRING
+cur_stmt
+type= DS_SIGNAL element= 12 field= 2
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG TEST_SI1
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG clk
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG TEST_SI2
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG TEST_SI3
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG TEST_SI4
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG TEST_SE
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG TEST_SO1
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG TEST_SO2
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG TEST_SO3
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG TEST_SO4
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG scan_clk
+-----
+second field= signal
+VERILOG Risc_16_bit_test
+VERILOG dut
+VERILOG SCAN_MODE
+-----
+second field= signal
+type= DS_STRING
+TEST_SI1 clk TEST_SI2 TEST_SI3 TEST_SI4 TEST_SE TEST_SO1 TEST_SO2 TEST_SO3 TEST_SO4 scan_clk SCAN_MODE
+au time 83.478523 5.009487 1.357585 delta 386617344 386617344 total 940642304 940642304

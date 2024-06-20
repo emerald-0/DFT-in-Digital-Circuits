@@ -1,0 +1,5 @@
+ id#  clock_name        type    0    1    2
+ ---  ----------------  ----  ---  ---  ---
+   0  scan_clk          C     ---  ---  ---
+   1  clk               C     ---  ---  BPA
+   2  reset_n           SR    ---  BPA  ---

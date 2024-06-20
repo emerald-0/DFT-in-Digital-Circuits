@@ -1,0 +1,20 @@
+
+Warning-[DBGACC_USAGE] Option is not compatible with -debug_access
+  The compile option '+nocelldefinepli+0' is not compatible with 
+  '-debug_access'.  Option '+nocelldefinepli+0' is ignored.
+
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+3 modules and 0 UDP read.
+recompiling module Risc_16_bit_test
+recompiling module uvm_custom_install_verdi_recording
+recompiling package vcs_paramclassrepository
+All of 3 modules done
+make[1]: Entering directory '/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/partitionlib/uvm_custom_install_verdi_recording_zILyrc/csrc' \
+
+/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/partitionlib/uvm_custom_install_verdi_recording_zILyrc/libvcspc_uvm_custom_install_verdi_recording_zILyrc.so \
+up to date
+make[1]: Leaving directory '/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/partitionlib/uvm_custom_install_verdi_recording_zILyrc/csrc' \
+

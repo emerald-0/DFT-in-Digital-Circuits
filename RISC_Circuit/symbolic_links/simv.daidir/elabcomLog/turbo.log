@@ -1,0 +1,3 @@
+Command Line: /home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/linux64/bin/elabcom -logdir simv.daidir/elabcomLog -simvdaidir simv.daidir -lib simv.daidir/work -saveLevel -elab simv.daidir/kdb -simflow -simdir simv.daidir/kdb_libs -topfile simv.daidir/.elabcomTopFile -ssz -ssv -ssy -Lf DEFAULT +disable_message+C00380+C00381 +disable_message+C00388+C00389
+uname(Linux localhost.localdomain 4.18.0-408.el8.x86_64 #1 SMP Mon Jul 18 17:42:52 UTC 2022 x86_64)
+au time 0.457231 0.192118 0.019988 delta 109547520 109547520 total 288444416 288444416

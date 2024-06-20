@@ -1,0 +1,51 @@
+# Var-value pairs needed in partcomp 2-step flow.
+VCS_PC2_VARS = SYNOPSYS_SIM_SETUP=simv.daidir/synopsys_sim.setup VCS_LCAMSG_PRINT_OFF=1
+
+VCS_PC_JSUB =
+
+ifndef MAKEPROF
+VLOGAN = ${VCS_PC2_VARS} ${VCS_HOME}/bin/vlogan
+VCS = $(VCS_PC_JSUB) ${VCS_PC2_VARS} ${VCS_HOME}/bin/vcs
+VCS_S = $(VCS_PC_JSUB) ${VCS_PC2_VARS} ${VCS_HOME}/bin/vcs
+PRINT_MKPROF = 
+else
+VLOGAN = ${VCS_PC2_VARS} /usr/bin/time -f "MAKEPROF@$@, Real: %e, User: %U, Sys: %S " ${VCS_HOME}/bin/vlogan
+VCS = $(VCS_PC_JSUB) ${VCS_PC2_VARS} /usr/bin/time -o $@.mkprof.log -f "MAKEPROF@$@, Real: %e, User: %U, Sys: %S " ${VCS_HOME}/bin/vcs
+VCS_S = $(VCS_PC_JSUB) ${VCS_PC2_VARS} /usr/bin/time -f "MAKEPROF@$@, Real: %e, User: %U, Sys: %S " ${VCS_HOME}/bin/vcs
+PRINT_MKPROF = @cat $@.mkprof.log && /bin/rm -rf $@.mkprof.log
+endif
+
+VCS_OPTIONS =  -mx_invoke_vcs_from_tool -mxunielab     -file simv.daidir/.partcomp_options -partcomp_master_daidir=simv.daidir   -q    -assert enable_hier   -full64   -file simv.daidir/.partcomp_added_options  -q  
+
+VCS_STITCH_OPTIONS =    -file simv.daidir/.partcomp_stitch_options -Xpiyushb1=0x80 -sverilog  -full64    -Xvcsdb=0x400    -file simv.daidir/.partcomp_added_options  
+
+vl_pcs : PARTCOMP_SIMV
+
+partitionlib/_vcs_msglog_YUfb4c/libvcspc__vcs_msglog_YUfb4c.so : partitionlib/_vcs_msglog_YUfb4c/.touched
+	/bin/rm -rf partitionlib/_vcs_msglog_YUfb4c/libvcspc__vcs_msglog_YUfb4c.so.daidir/ar.lst
+	${VCS} ${PARTCOMP_ADD_VCS_OPT} ${VCS_OPTIONS}   -partcomp=so -partcomp_so_dir=partitionlib/_vcs_msglog_YUfb4c VCS_PARTCOMP_LIB.pc__vcs_msglog_config -o $@ -Mdir=partitionlib/_vcs_msglog_YUfb4c/csrc  -Xarijit=0x2 -sverilog -l partitionlib/_vcs_msglog_YUfb4c/_vcs_msglog_YUfb4c.log 
+	${PRINT_MKPROF}
+
+partitionlib/uvm_custom_install_verdi_recording_zILyrc/libvcspc_uvm_custom_install_verdi_recording_zILyrc.so : partitionlib/uvm_custom_install_verdi_recording_zILyrc/.touched
+	/bin/rm -rf partitionlib/uvm_custom_install_verdi_recording_zILyrc/libvcspc_uvm_custom_install_verdi_recording_zILyrc.so.daidir/ar.lst
+	${VCS} ${PARTCOMP_ADD_VCS_OPT} ${VCS_OPTIONS}   -partcomp=so -partcomp_so_dir=partitionlib/uvm_custom_install_verdi_recording_zILyrc VCS_PARTCOMP_LIB.pc_uvm_custom_install_verdi_recording_config -o $@ -Mdir=partitionlib/uvm_custom_install_verdi_recording_zILyrc/csrc  -Xarijit=0x2 -sverilog -l partitionlib/uvm_custom_install_verdi_recording_zILyrc/uvm_custom_install_verdi_recording_zILyrc.log 
+	${PRINT_MKPROF}
+
+partitionlib/Risc_16_bit_g2J7Bb/libvcspc_Risc_16_bit_g2J7Bb.so : partitionlib/Risc_16_bit_g2J7Bb/.touched
+	/bin/rm -rf partitionlib/Risc_16_bit_g2J7Bb/libvcspc_Risc_16_bit_g2J7Bb.so.daidir/ar.lst
+	${VCS} ${PARTCOMP_ADD_VCS_OPT} ${VCS_OPTIONS}   -partcomp=so -partcomp_so_dir=partitionlib/Risc_16_bit_g2J7Bb VCS_PARTCOMP_LIB.pc_Risc_16_bit_config -o $@ -Mdir=partitionlib/Risc_16_bit_g2J7Bb/csrc  -Xarijit=0x2 -sverilog -l partitionlib/Risc_16_bit_g2J7Bb/Risc_16_bit_g2J7Bb.log 
+	${PRINT_MKPROF}
+
+partitionlib/_vcs_pc_package__xmMLv/libvcspc__vcs_pc_package__xmMLv.so : partitionlib/_vcs_pc_package__xmMLv/.touched
+	/bin/rm -rf partitionlib/_vcs_pc_package__xmMLv/libvcspc__vcs_pc_package__xmMLv.so.daidir/ar.lst
+	${VCS} ${PARTCOMP_ADD_VCS_OPT} ${VCS_OPTIONS}   -partcomp=so -partcomp_so_dir=partitionlib/_vcs_pc_package__xmMLv VCS_PARTCOMP_LIB.pc__vcs_pc_package__config -o $@ -Mdir=partitionlib/_vcs_pc_package__xmMLv/csrc  -Xarijit=0x2 -sverilog -l partitionlib/_vcs_pc_package__xmMLv/_vcs_pc_package__xmMLv.log 
+	${PRINT_MKPROF}
+
+SIMCOPY_EXECUTED_CLEANUP :
+	@rm -f output/.simcopy_executed || true
+PARTCOMP_SIMV : SIMCOPY_EXECUTED_CLEANUP partitionlib/_vcs_msglog_YUfb4c/libvcspc__vcs_msglog_YUfb4c.so partitionlib/uvm_custom_install_verdi_recording_zILyrc/libvcspc_uvm_custom_install_verdi_recording_zILyrc.so partitionlib/Risc_16_bit_g2J7Bb/libvcspc_Risc_16_bit_g2J7Bb.so partitionlib/_vcs_pc_package__xmMLv/libvcspc__vcs_pc_package__xmMLv.so 
+	${VCS_S} -partcomp_dir=partitionlib  -partcomp=stitch ${VCS_STITCH_OPTIONS} -file simv.daidir/.stitch_so_list -o simv output/topshell_partcomp.v -file simv.daidir/.topshell_list 
+
+
+	@echo Done Verilog partition compilations
+

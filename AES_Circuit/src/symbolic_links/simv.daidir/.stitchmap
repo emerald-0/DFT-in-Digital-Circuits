@@ -1,0 +1,11 @@
+# partcomp stitch map
+# format:
+#   <line> ::= <module name> : <instance name>[ # <comment>] | # <comment>
+# partition _vcs_pc_package__5DYEp
+std # std
+# partition _vcs_msglog_o6N9xb
+uvm_pkg # uvm_pkg
+_vcs_msglog # _vcs_msglog
+# partition uvm_custom_install_verdi_recording_t8TSlc
+uvm_custom_install_verdi_recording # uvm_custom_install_verdi_recording
+aes_test # aes_test

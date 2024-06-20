@@ -1,0 +1,9 @@
+---------------
+branchName=Verdi_T-2022.06-SP2-8 cnlDate=-- Thu Nov 23 02:54:12 PDT 2023 cnlEnv=Linux.0/64bit
+uname(Linux localhost.localdomain 4.18.0-408.el8.x86_64 #1 SMP Mon Jul 18 17:42:52 UTC 2022 x86_64)
+---------------
+Process Size: 959774720 bytes
+verdi detected abnormal termination.
+Log information written to
+/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/verdiLog/sysinfo_Apr12_1356.tar.
+Please send this file to customer support.

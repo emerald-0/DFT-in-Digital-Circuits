@@ -1,0 +1,439 @@
+Initializing gui preferences from file  /home/vlsilab/.synopsys_dc_gui/preferences.tcl
+Warning: Cannot use command line editor for terminal type 'xterm-256color'.  (UI-74)
+dc_shell> source test.tcl
+Loading db file '/home/vlsilab/Downloads/SAED90nm_EDK_10072017/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db'
+Loading db file '/home/vlsilab/Documents/InstalledTools/DC/S-2021.06-SP5-3/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/vlsilab/Documents/InstalledTools/DC/S-2021.06-SP5-3/libraries/syn/gtech.db'
+Loading db file '/home/vlsilab/Documents/InstalledTools/DC/S-2021.06-SP5-3/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_core.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_core.v
+
+Statistics for case statements in always block at line 267 in file
+        '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_core.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           277            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine aes_core line 189 in file
+                '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_core.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| aes_core_ctrl_reg_reg | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     ready_reg_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+| result_valid_reg_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_core.db:aes_core'
+Loaded 1 design.
+Current design is 'aes_core'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_encipher_block.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_encipher_block.v
+Warning:  /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_encipher_block.v:423: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 263 in file
+        '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_encipher_block.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           282            |    auto/auto     |
+|           296            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 399 in file
+        '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_encipher_block.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           423            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine aes_encipher_block line 216 in file
+                '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_encipher_block.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  enc_ctrl_reg_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  block_w3_reg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    ready_reg_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|  round_ctr_reg_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  sword_ctr_reg_reg  | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  block_w2_reg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  block_w1_reg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  block_w0_reg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_encipher_block.db:aes_encipher_block'
+Loaded 1 design.
+Current design is 'aes_encipher_block'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_key_mem.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_key_mem.v
+Warning:  /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_key_mem.v:236: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 191 in file
+        '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_key_mem.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           236            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 368 in file
+        '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_key_mem.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           386            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine aes_key_mem line 133 in file
+                '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_key_mem.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+|  round_ctr_reg_reg   | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  prev_key0_reg_reg   | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+|     rcon_reg_reg     | Flip-flop |   8   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    ready_reg_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     key_mem_reg      | Flip-flop | 1920  |  Y  | N  | Y  | N  | N  | N  | N  |
+| key_mem_ctrl_reg_reg | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  prev_key1_reg_reg   | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+| aes_key_mem/182  |   16   |   128   |      4       |
+======================================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_key_mem.db:aes_key_mem'
+Loaded 1 design.
+Current design is 'aes_key_mem'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes.v
+
+Statistics for case statements in always block at line 222 in file
+        '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           253            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine aes line 173 in file
+                '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     key_reg_reg     | Flip-flop |  256  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    next_reg_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    init_reg_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   result_reg_reg    | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+|   keylen_reg_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   encdec_reg_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    valid_reg_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    block_reg_reg    | Flip-flop |  128  |  Y  | N  | Y  | N  | N  | N  | N  |
+|    ready_reg_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes.db:aes'
+Loaded 1 design.
+Current design is 'aes'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_decipher_block.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_decipher_block.v
+Warning:  /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_decipher_block.v:463: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 302 in file
+        '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_decipher_block.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           320            |    auto/auto     |
+|           338            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 451 in file
+        '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_decipher_block.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           463            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine aes_decipher_block line 255 in file
+                '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_decipher_block.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  dec_ctrl_reg_reg   | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  block_w3_reg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    ready_reg_reg    | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+|  round_ctr_reg_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  sword_ctr_reg_reg  | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  block_w2_reg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  block_w1_reg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  block_w0_reg_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_decipher_block.db:aes_decipher_block'
+Loaded 1 design.
+Current design is 'aes_decipher_block'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_inv_sbox.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_inv_sbox.v
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_inv_sbox.db:aes_inv_sbox'
+Loaded 1 design.
+Current design is 'aes_inv_sbox'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_sbox.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_sbox.v
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_sbox.db:aes_sbox'
+Loaded 1 design.
+Current design is 'aes_sbox'.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_core.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_encipher_block.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_key_mem.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_decipher_block.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_inv_sbox.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/aes-master/src/rtl/aes_sbox.v
+Presto compilation completed successfully.
+Current design is 'aes'.
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.5 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.5 |     *     |
+============================================================================
+
+============================================================================
+| Flow Information                                                         |
+----------------------------------------------------------------------------
+| Flow         | Design Compiler                                           |
+============================================================================
+| Design Information                                      | Value          |
+============================================================================
+| Number of Scenarios                                     | 0              |
+| Leaf Cell Count                                         | 22992          |
+| Number of User Hierarchies                              | 6              |
+| Sequential Cell Count                                   | 2988           |
+| Macro Count                                             | 0              |
+| Number of Power Domains                                 | 0              |
+| Design with UPF Data                                    | false          |
+============================================================================
+
+Information: There are 13 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: The nextstate or clock_on object of the test_cell definition of the library cell 'SDFFSSRX2' has scan pins. (OPT-1209)
+Warning: The nextstate or clock_on object of the test_cell definition of the library cell 'SDFFSSRX1' has scan pins. (OPT-1209)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'aes_sbox'
+  Processing 'aes_key_mem'
+Information: Added key list 'DesignWare' to design 'aes_key_mem'. (DDB-72)
+Information: The register 'key_mem_ctrl_reg_reg[2]' is a constant and will be removed. (OPT-1206)
+  Processing 'aes_inv_sbox'
+  Processing 'aes_decipher_block'
+Information: Added key list 'DesignWare' to design 'aes_decipher_block'. (DDB-72)
+  Processing 'aes_encipher_block'
+Information: Added key list 'DesignWare' to design 'aes_encipher_block'. (DDB-72)
+  Processing 'aes_core'
+  Processing 'aes'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Mapping 'aes_DW_cmp_0'
+  Mapping 'aes_DW_cmp_1'
+  Mapping 'aes_DW_cmp_2'
+  Mapping 'aes_DW_cmp_3'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'aes'. (DDB-72)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:21  297910.0      7.05     715.0       5.3                          
+    0:00:22  297939.5      7.03     714.8       5.3                          
+    0:00:22  297939.5      7.03     714.8       5.3                          
+    0:00:22  297941.3      7.03     714.7       5.3                          
+    0:00:22  297941.3      7.03     714.7       5.3                          
+    0:00:23  256717.2      0.00       0.0       0.0                          
+    0:00:24  256283.1      0.00       0.0       0.0                          
+    0:00:25  256283.1      0.00       0.0       0.0                          
+    0:00:25  256283.1      0.00       0.0       0.0                          
+    0:00:25  256283.1      0.00       0.0       0.0                          
+    0:00:25  256283.1      0.00       0.0       0.0                          
+    0:00:25  256283.1      0.00       0.0       0.0                          
+    0:00:25  256283.1      0.00       0.0       0.0                          
+    0:00:25  256283.1      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:25  256283.1      0.00       0.0       0.0                          
+    0:00:25  256283.1      0.00       0.0       0.0                          
+    0:00:25  256261.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:25  256261.0      0.00       0.0       0.0                          
+    0:00:25  256261.0      0.00       0.0       0.0                          
+    0:00:26  255661.1      0.00       0.0       0.0                          
+    0:00:26  255308.1      0.00       0.0       0.0                          
+    0:00:27  255026.1      0.00       0.0       0.0                          
+    0:00:27  254882.3      0.00       0.0       0.0                          
+    0:00:27  254782.8      0.00       0.0       0.0                          
+    0:00:29  254705.4      0.00       0.0       0.0                          
+    0:00:29  254633.5      0.00       0.0       0.0                          
+    0:00:29  254578.2      0.00       0.0       0.0                          
+    0:00:29  254517.3      0.00       0.0       0.0                          
+    0:00:29  254451.0      0.00       0.0       0.0                          
+    0:00:29  254406.8      0.00       0.0       0.0                          
+    0:00:29  254368.0      0.00       0.0       0.0                          
+    0:00:29  254329.3      0.00       0.0       0.0                          
+    0:00:29  254290.6      0.00       0.0       0.0                          
+    0:00:29  254263.0      0.00       0.0       0.0                          
+    0:00:29  254224.3      0.00       0.0       0.0                          
+    0:00:29  254191.1      0.00       0.0       0.0                          
+    0:00:29  254157.9      0.00       0.0       0.0                          
+    0:00:29  254130.3      0.00       0.0       0.0                          
+    0:00:30  254097.1      0.00       0.0       0.0                          
+    0:00:30  254069.4      0.00       0.0       0.0                          
+    0:00:30  254036.3      0.00       0.0       0.0                          
+    0:00:30  254003.1      0.00       0.0       0.0                          
+    0:00:30  253969.9      0.00       0.0       0.0                          
+    0:00:30  253936.7      0.00       0.0       0.0                          
+    0:00:30  253903.6      0.00       0.0       0.0                          
+    0:00:30  253881.4      0.00       0.0       0.0                          
+    0:00:30  253870.4      0.00       0.0       0.0                          
+    0:00:30  253870.4      0.00       0.0       0.0                          
+    0:00:30  253870.4      0.00       0.0       0.0                          
+    0:00:30  253859.3      0.00       0.0       0.0                          
+    0:00:30  253859.3      0.00       0.0       0.0                          
+    0:00:30  253859.3      0.00       0.0       0.0                          
+    0:00:30  253859.3      0.00       0.0       0.0                          
+    0:00:30  253859.3      0.00       0.0       0.0                          
+    0:00:30  253859.3      0.00       0.0       0.0                          
+    0:00:30  253859.3      0.00       0.0       0.0                          
+Loading db file '/home/vlsilab/Downloads/SAED90nm_EDK_10072017/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'aes' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'core/keymem/clk': 2987 load(s), 1 driver(s)
+Writing ddc file 'OUTPUT_DATA/aes_netlist_pre_scan.ddc'.
+Writing verilog file '/home/vlsilab/sagar_harsh_soham/aes-master/src/SYN/OUTPUT_DATA/aes_netlist_pre_scan.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/vlsilab/sagar_harsh_soham/aes-master/src/SYN/OUTPUT_DATA/aes_netlist_pre_scan.sdf'. (WT-3)
+Accepted scan configuration for modes: all_dft
+Warning: duplicate option '-type' overrides previous value. (CMD-018)
+Warning: duplicate option '-view' overrides previous value. (CMD-018)
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted scan configuration for modes: all_dft
+Accepted scan configuration for modes: all_dft
+Accepted scan configuration for modes: all_dft
+In mode: all_dft...
+
+Information: Starting test protocol creation. (TEST-219)
+  ...reading user specified clock signals...
+Information: Identified system/test clock port clk (45.0,95.0). (TEST-265)
+  ...reading user specified asynchronous signals...
+Information: Identified active low asynchronous control port reset_n. (TEST-266)
+dft_drc start. Date and time: Sat Mar  2 17:27:22 2024
+dft_drc end. Date and time: Sat Mar  2 17:27:24 2024
+insert_dft start. Date and time: Sat Mar  2 17:27:24 2024
+Warning: Design 'aes' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+  Information: Using test design rule information from previous dft_drc run.
+  Architecting Scan Chains
+  Routing Scan Chains
+  Routing Global Signals
+  Mapping New Logic
+Resetting current test mode
+Warning: Design 'aes' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+  Beginning Mapping Optimizations
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+
+insert_dft end. Date and time: Sat Mar  2 17:27:27 2024
+Writing verilog file '/home/vlsilab/sagar_harsh_soham/aes-master/src/SYN/OUTPUT_DATA/aes_netlist_scan.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Writing test model file '/home/vlsilab/sagar_harsh_soham/aes-master/src/SYN/CTL/aes_netlist_scan_post_dft_test_model.ctl'...
+Writing test model file '/home/vlsilab/sagar_harsh_soham/aes-master/src/SYN/OUTPUT_DATA/aes_scan_post_dft_test_model.ctlddc'...
+Writing ddc file '/home/vlsilab/sagar_harsh_soham/aes-master/src/SYN/OUTPUT_DATA/aes_scan_post_dft_test_model.ctlddc'.
+Accepted dft drc configuration specification.
+Writing test protocol file '/home/vlsilab/sagar_harsh_soham/aes-master/src/SYN/SPF/aesnetlist_Internal_scan.spf' for mode 'Internal_scan'...
+dc_shell> exit
+
+Memory usage for this session 229 Mbytes.
+Memory usage for this session including child processes 229 Mbytes.
+CPU usage for this session 39 seconds ( 0.01 hours ).
+Elapsed time for this session 281 seconds ( 0.08 hours ).
+
+Thank you...
+

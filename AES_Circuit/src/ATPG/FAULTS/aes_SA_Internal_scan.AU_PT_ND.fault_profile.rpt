@@ -1,0 +1,8 @@
+ #faults          #DT(#DS/#DI)          #PT(#AP/#NP)  #UD(#UU/#UO/#UT/#UB/#UR)     #AU          #ND(#NC/#NO)  testcov  instance name (type)
+ ------- --------------------- --------------------- ------------------------- ------- ---------------------  -------  -----------------------
+     286  148267(123577/24690)                0(0/0)        357(324/0/4/3/26)      19           267(247/20)   99.81%  /  (top_module)
+     278              18(4/14)                0(0/0)           58(50/0/4/3/1)      18           260(240/20)    6.08%     /occ_snps_pll_controller  (aes_DFT_clk_mux_0)
+     250                0(0/0)                0(0/0)           50(50/0/0/0/0)       3           247(227/20)    0.00%        /occ_snps_pll_controller/U_clk_control_i_0  (aes_DFT_clk_control_0_0)
+      94                0(0/0)                0(0/0)             8(8/0/0/0/0)       0              94(87/7)    0.00%           /occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i  (aes_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0)
+      32                0(0/0)                0(0/0)             0(0/0/0/0/0)       0              32(30/2)    0.00%              /occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i/add_124  (aes_DW01_add_width3)
+      44                0(0/0)                0(0/0)           32(32/0/0/0/0)       0              44(44/0)    0.00%           /occ_snps_pll_controller/U_clk_control_i_0/U_decode_i  (aes_DFT_decode_width4_0_0)

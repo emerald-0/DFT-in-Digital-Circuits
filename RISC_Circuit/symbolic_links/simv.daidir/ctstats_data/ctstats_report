@@ -1,0 +1,31 @@
+
+Peak memory for PartComp ChildDR
+===============================
+Peak memory at        :  Thu Jan  1 05:30:03 1970
+Virtual memory size   :  618.4 MB
+Resident set size     :  190.7 MB
+Shared memory size    :  117.6 MB
+Private memory size   :  73.0 MB
+
+Participating process(es) : 
+/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/partitionlib/Risc_16_bit_g2J7Bb
+/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/partitionlib/uvm_custom_install_verdi_recording_zILyrc
+
+Machine name          :  localhost.localdomain
+===============================
+
+Compilation Performance Summary
+===============================
+VCS started at        :  Wed Apr 24 12:13:50 2024
+Elapsed time          :  6 sec
+CPU Time              :  7.3 sec
+Virtual memory size   :  618.4 MB (*)
+Resident set size     :  190.7 MB
+Shared memory size    :  117.6 MB
+Private memory size   :  73.0 MB
+Major page faults     :  0
+Machine name          :  localhost.localdomain
+(*) When 3.84 sec elapsed, peak memory reached
+    with 2 major processes executing in parallel.
+===============================
+

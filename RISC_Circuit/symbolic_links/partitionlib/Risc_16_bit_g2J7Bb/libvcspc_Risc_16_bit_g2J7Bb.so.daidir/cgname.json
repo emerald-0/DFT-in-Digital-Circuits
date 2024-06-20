@@ -1,0 +1,297 @@
+{
+    "vcs_paramclassrepository_g2J7Bb": [
+        "vcs_paramclassrepository_g2J7Bb",
+        "KyCxE",
+        "module",
+        1
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        2
+    ],
+    "_vcs_unit__17393910": [
+        "_vcs_unit__17393910",
+        "pUQ3C",
+        "module",
+        3
+    ],
+    "pc_Risc_16_bit": [
+        "pc_Risc_16_bit",
+        "ARWPb",
+        "module",
+        4
+    ],
+    "Risc_16_bit_g2J7Bb": [
+        "Risc_16_bit_g2J7Bb",
+        "pdHCI",
+        "module",
+        5
+    ],
+    "SDFFX1_g2J7Bb": [
+        "SDFFX1_g2J7Bb",
+        "nWzBE",
+        "module",
+        6
+    ],
+    "AO22X1_g2J7Bb": [
+        "AO22X1_g2J7Bb",
+        "vJaLB",
+        "module",
+        7
+    ],
+    "AO222X1_g2J7Bb": [
+        "AO222X1_g2J7Bb",
+        "F2IcB",
+        "module",
+        8
+    ],
+    "AND2X1_g2J7Bb": [
+        "AND2X1_g2J7Bb",
+        "EFTmA",
+        "module",
+        9
+    ],
+    "INVX0_g2J7Bb": [
+        "INVX0_g2J7Bb",
+        "JyqcM",
+        "module",
+        10
+    ],
+    "NAND3X0_g2J7Bb": [
+        "NAND3X0_g2J7Bb",
+        "d5QF5",
+        "module",
+        11
+    ],
+    "NOR2X0_g2J7Bb": [
+        "NOR2X0_g2J7Bb",
+        "CCT50",
+        "module",
+        12
+    ],
+    "AO221X1_g2J7Bb": [
+        "AO221X1_g2J7Bb",
+        "A19TD",
+        "module",
+        13
+    ],
+    "OR2X1_g2J7Bb": [
+        "OR2X1_g2J7Bb",
+        "UGSN1",
+        "module",
+        14
+    ],
+    "alu_control_g2J7Bb": [
+        "alu_control_g2J7Bb",
+        "cBnLg",
+        "module",
+        15
+    ],
+    "NOR3X0_g2J7Bb": [
+        "NOR3X0_g2J7Bb",
+        "dE74d",
+        "module",
+        16
+    ],
+    "XOR2X1_g2J7Bb": [
+        "XOR2X1_g2J7Bb",
+        "bmUER",
+        "module",
+        17
+    ],
+    "NAND2X1_g2J7Bb": [
+        "NAND2X1_g2J7Bb",
+        "tdG40",
+        "module",
+        18
+    ],
+    "OA21X1_g2J7Bb": [
+        "OA21X1_g2J7Bb",
+        "pIBcB",
+        "module",
+        19
+    ],
+    "ALU_g2J7Bb": [
+        "ALU_g2J7Bb",
+        "Nk3ep",
+        "module",
+        20
+    ],
+    "NOR4X0_g2J7Bb": [
+        "NOR4X0_g2J7Bb",
+        "juViz",
+        "module",
+        21
+    ],
+    "OR4X1_g2J7Bb": [
+        "OR4X1_g2J7Bb",
+        "RnBdH",
+        "module",
+        22
+    ],
+    "AO21X1_g2J7Bb": [
+        "AO21X1_g2J7Bb",
+        "LzahM",
+        "module",
+        23
+    ],
+    "NAND4X0_g2J7Bb": [
+        "NAND4X0_g2J7Bb",
+        "IGqy2",
+        "module",
+        24
+    ],
+    "AOI22X1_g2J7Bb": [
+        "AOI22X1_g2J7Bb",
+        "a1yfE",
+        "module",
+        25
+    ],
+    "FADDX1_g2J7Bb": [
+        "FADDX1_g2J7Bb",
+        "RJeiV",
+        "module",
+        26
+    ],
+    "XOR3X1_g2J7Bb": [
+        "XOR3X1_g2J7Bb",
+        "g54yP",
+        "module",
+        27
+    ],
+    "OR3X1_g2J7Bb": [
+        "OR3X1_g2J7Bb",
+        "rgrcd",
+        "module",
+        28
+    ],
+    "NBUFFX4_g2J7Bb": [
+        "NBUFFX4_g2J7Bb",
+        "T74HJ",
+        "module",
+        29
+    ],
+    "NBUFFX2_g2J7Bb": [
+        "NBUFFX2_g2J7Bb",
+        "Mgqaw",
+        "module",
+        30
+    ],
+    "AOI21X1_g2J7Bb": [
+        "AOI21X1_g2J7Bb",
+        "ewntY",
+        "module",
+        31
+    ],
+    "NAND2X0_g2J7Bb": [
+        "NAND2X0_g2J7Bb",
+        "pIT19",
+        "module",
+        32
+    ],
+    "OA221X1_g2J7Bb": [
+        "OA221X1_g2J7Bb",
+        "Daeph",
+        "module",
+        33
+    ],
+    "MUX21X1_g2J7Bb": [
+        "MUX21X1_g2J7Bb",
+        "aSa11",
+        "module",
+        34
+    ],
+    "AND3X1_g2J7Bb": [
+        "AND3X1_g2J7Bb",
+        "grNYB",
+        "module",
+        35
+    ],
+    "Data_Memory_test_1_g2J7Bb": [
+        "Data_Memory_test_1_g2J7Bb",
+        "ITUsf",
+        "module",
+        36
+    ],
+    "Control_Unit_g2J7Bb": [
+        "Control_Unit_g2J7Bb",
+        "R6y0C",
+        "module",
+        37
+    ],
+    "DFFARX1_g2J7Bb": [
+        "DFFARX1_g2J7Bb",
+        "DYLir",
+        "module",
+        38
+    ],
+    "INVX1_g2J7Bb": [
+        "INVX1_g2J7Bb",
+        "rfcUa",
+        "module",
+        39
+    ],
+    "NOR2X2_g2J7Bb": [
+        "NOR2X2_g2J7Bb",
+        "vyWFH",
+        "module",
+        40
+    ],
+    "DFFNX1_g2J7Bb": [
+        "DFFNX1_g2J7Bb",
+        "BRYwp",
+        "module",
+        41
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        42
+    ],
+    "saed90_mux": [
+        "saed90_mux",
+        "JC4Kr",
+        "udp",
+        43
+    ],
+    "saed90_dff_pos": [
+        "saed90_dff_pos",
+        "CacUe",
+        "udp",
+        44
+    ],
+    "saed90_xbuf": [
+        "saed90_xbuf",
+        "ha6a0",
+        "udp",
+        45
+    ],
+    "s_faddx1_S_": [
+        "s_faddx1_S_",
+        "qJW2v",
+        "udp",
+        46
+    ],
+    "s_faddx1_CO_": [
+        "s_faddx1_CO_",
+        "G2Kqc",
+        "udp",
+        47
+    ],
+    "s_mux21x1_": [
+        "s_mux21x1_",
+        "ecJ0S",
+        "udp",
+        48
+    ],
+    "saed90_dff_neg": [
+        "saed90_dff_neg",
+        "h2WbZ",
+        "udp",
+        49
+    ],
+    "_vcs_internal_pc_partition_name_": "Risc_16_bit_g2J7Bb"
+}

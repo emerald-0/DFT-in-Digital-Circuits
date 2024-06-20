@@ -1,0 +1,9 @@
+ rule  severity  #fails  description
+ ----  --------  ------  ---------------------------------
+ B7    warning        1  undriven module output pin
+ B8    warning        4  unconnected module input pin
+ B9    warning        1  undriven module internal net
+ B10   warning       53  unconnected module internal net
+ S19   warning       10  nonscan cell disturb
+ C6    warning        1  TE port captured data affected by new capture  (nomask)
+ V11   warning        1  repeated entry

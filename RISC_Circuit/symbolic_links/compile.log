@@ -1,0 +1,713 @@
+
+Warning-[LNX_OS_VERUN] Unsupported Linux version
+  Linux version 'CentOS Stream release 8' is not supported on 'x86_64' 
+  officially, assuming linux compatibility by default. Set VCS_ARCH_OVERRIDE 
+  to linux or suse32 to override.
+  Please refer to release notes for information on supported platforms.
+
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_pp' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+dmptf -debug_region+cell+encrypt' instead.
+
+
+Warning-[DBGACC_DBG] Multiple debug options being used
+  The debug switches '-debug_access' and '-debug_pp' are being used together. 
+  For better performance, consider using only '-debug_access'.
+
+Command: vcs -f risc.f -debug_pp -debug_access+r -full64 -picarchive +v2k +notimingchecks \
+-timescale=1ns/1fs -l compile.log
+                         Chronologic VCS (TM)
+      Version T-2022.06-SP2-6_Full64 -- Fri Apr 12 13:21:30 2024
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'saed90nm.v'
+Parsing design file 'Risc_16_bit_netlist_scan.v'
+Parsing design file 'Risc_16_bit_SA_Internal_scan_parallel_max_tb.v'
+Top Level Modules:
+       AND2X2
+       AND2X4
+       AND3X2
+       AND3X4
+       AND4X2
+       AND4X4
+       ANTENNA
+       AO21X2
+       AO221X2
+       AO222X2
+       AO22X2
+       AOBUFX1
+       AOBUFX2
+       AOBUFX4
+       AODFFARX1
+       AODFFARX2
+       AODFFNARX1
+       AODFFNARX2
+       AOI21X2
+       AOI221X2
+       AOI222X1
+       AOI222X2
+       AOI22X2
+       AOINVX1
+       AOINVX2
+       AOINVX4
+       BSLEX1
+       BSLEX2
+       BSLEX4
+       BUSKP
+       CGLNPRX2
+       CGLNPRX8
+       CGLNPSX16
+       CGLNPSX2
+       CGLNPSX4
+       CGLNPSX8
+       CGLPPRX2
+       CGLPPRX8
+       CGLPPSX16
+       CGLPPSX2
+       CGLPPSX4
+       CGLPPSX8
+       CLOAD1
+       DCAP
+       DEC24X1
+       DEC24X2
+       DELLN1X2
+       DELLN2X2
+       DELLN3X2
+       DFFARX2
+       DFFASRX1
+       DFFASRX2
+       DFFASX1
+       DFFASX2
+       DFFNARX2
+       DFFNASRNX1
+       DFFNASRNX2
+       DFFNASRQX1
+       DFFNASRQX2
+       DFFNASRX1
+       DFFNASRX2
+       DFFNASX1
+       DFFNASX2
+       DFFNX2
+       DFFSSRX1
+       DFFSSRX2
+       DFFX1
+       DFFX2
+       DHFILLHLH2
+       DHFILLHLHLS11
+       DHFILLLHL2
+       FADDX2
+       HADDX1
+       HADDX2
+       HEAD2X16
+       HEAD2X2
+       HEAD2X32
+       HEAD2X4
+       HEAD2X8
+       HEADX16
+       HEADX2
+       HEADX32
+       HEADX4
+       HEADX8
+       IBUFFX16
+       IBUFFX2
+       IBUFFX32
+       IBUFFX4
+       IBUFFX8
+       INVX16
+       INVX32
+       INVX4
+       INVX8
+       ISOLANDX1
+       ISOLANDX2
+       ISOLANDX4
+       ISOLANDX8
+       ISOLORX1
+       ISOLORX2
+       ISOLORX4
+       ISOLORX8
+       ISOLANDAOX1
+       ISOLANDAOX2
+       ISOLANDAOX4
+       ISOLANDAOX8
+       ISOLORAOX1
+       ISOLORAOX2
+       ISOLORAOX4
+       ISOLORAOX8
+       LARX1
+       LARX2
+       LASRNX1
+       LASRNX2
+       LASRQX1
+       LASRQX2
+       LASRX1
+       LASRX2
+       LASX1
+       LASX2
+       LATCHX1
+       LATCHX2
+       LNANDX1
+       LNANDX2
+       LSDNENX1
+       LSDNENX2
+       LSDNENX4
+       LSDNENX8
+       LSDNENCLX1
+       LSDNENCLX2
+       LSDNENCLX4
+       LSDNENCLX8
+       LSDNENCLSSX1
+       LSDNENCLSSX2
+       LSDNENCLSSX4
+       LSDNENCLSSX8
+       LSDNENSSX1
+       LSDNENSSX2
+       LSDNENSSX4
+       LSDNENSSX8
+       LSDNSSX1
+       LSDNSSX2
+       LSDNSSX4
+       LSDNSSX8
+       LSDNX1
+       LSDNX2
+       LSDNX4
+       LSDNX8
+       LSUPENX1
+       LSUPENX2
+       LSUPENX4
+       LSUPENX8
+       LSUPENCLX1
+       LSUPENCLX2
+       LSUPENCLX4
+       LSUPENCLX8
+       LSUPX1
+       LSUPX2
+       LSUPX4
+       LSUPX8
+       MUX21X2
+       MUX41X1
+       MUX41X2
+       NAND2X4
+       NAND3X1
+       NAND3X2
+       NAND3X4
+       NAND4X1
+       NBUFFX16
+       NBUFFX32
+       NBUFFX8
+       NMT1
+       NMT2
+       NMT3
+       NOR2X1
+       NOR2X4
+       NOR3X1
+       NOR3X2
+       NOR3X4
+       NOR4X1
+       OA221X2
+       OA222X1
+       OA222X2
+       OA22X2
+       OAI21X2
+       OAI221X1
+       OAI221X2
+       OAI222X1
+       OAI222X2
+       OAI22X1
+       OAI22X2
+       OR2X2
+       OR2X4
+       OR3X2
+       OR3X4
+       OR4X2
+       OR4X4
+       PGX1
+       PGX2
+       PGX4
+       PMT1
+       PMT2
+       PMT3
+       RDFFARX1
+       RDFFARX2
+       RDFFNARX1
+       RDFFNARX2
+       RSDFFARX1
+       RSDFFARX2
+       RSDFFNARX1
+       RSDFFNARX2
+       RDFFNX1
+       RDFFNX2
+       RDFFX1
+       RDFFX2
+       RSDFFNX1
+       RSDFFNX2
+       RSDFFX1
+       RSDFFX2
+       SDFFARX1
+       SDFFARX2
+       SDFFASRSX1
+       SDFFASRSX2
+       SDFFASRX1
+       SDFFASRX2
+       SDFFASX1
+       SDFFASX2
+       SDFFNARX1
+       SDFFNARX2
+       SDFFNASRX1
+       SDFFNASRX2
+       SDFFNASX1
+       SDFFNASX2
+       SDFFNX1
+       SDFFNX2
+       SDFFSSRX1
+       SDFFSSRX2
+       SDFFX2
+       SHFILL2
+       SHFILL3
+       SHFILL1
+       SHFILL64
+       SHFILL128
+       TIEH
+       TIEL
+       TNBUFFX16
+       TNBUFFX1
+       TNBUFFX2
+       TNBUFFX32
+       TNBUFFX4
+       TNBUFFX8
+       XNOR2X2
+       XNOR3X1
+       XNOR3X2
+       XOR2X2
+       XOR3X2
+       RDFFNSRASX1
+       RDFFNSRASX2
+       RDFFSRARX1
+       RDFFSRARX2
+       RDFFSRASRX1
+       RDFFSRASRX2
+       RDFFSRASX1
+       RDFFSRASX2
+       RSDFFNSRARX1
+       RSDFFNSRARX2
+       RSDFFNSRASRX1
+       RSDFFNSRASRX2
+       RSDFFNSRASRNX1
+       RSDFFNSRASRNX2
+       RSDFFNSRASRQX1
+       RSDFFNSRASRQX2
+       RSDFFSRARX1
+       RSDFFSRARX2
+       RSDFFSRASRX1
+       RSDFFSRASRX2
+       RDFFNSRARX1
+       RDFFNSRARX2
+       RDFFNSRASRQX1
+       RDFFNSRASRQX2
+       RDFFNSRASRNX1
+       RDFFNSRASRNX2
+       RDFFNSRASRX1
+       RDFFNSRASRX2
+       RDFFNSRX1
+       RDFFNSRX2
+       RDFFSRSSRX1
+       RDFFSRSSRX2
+       RDFFSRX1
+       RDFFSRX2
+       RSDFFNSRASX1
+       RSDFFNSRASX2
+       RSDFFNSRX1
+       RSDFFNSRX2
+       RSDFFSRASX1
+       RSDFFSRASX2
+       RSDFFSRSSRX1
+       RSDFFSRSSRX2
+       RSDFFSRX1
+       RSDFFSRX2
+       Risc_16_bit_test
+TimeScale is 1 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 369
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][15] ( .D (n165),  .SI (\reg_array[0][14] ),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][15] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 371
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][14] ( .D (n164),  .SI (\reg_array[0][13] ),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][14] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 373
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][13] ( .D (n163),  .SI (\reg_array[0][12] ),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][13] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 375
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][12] ( .D (n162),  .SI (test_si3),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][12] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 377
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][11] ( .D (n161),  .SI (\reg_array[0][10] ),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][11] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 379
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][10] ( .D (n160),  .SI (\reg_array[0][9] ),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][10] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 381
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][9] ( .D (n159),  .SI (\reg_array[0][8] ),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][9] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 382
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][8] ( .D (n158),  .SI (\reg_array[0][7] ),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][8] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 383
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][7] ( .D (n157),  .SI (\reg_array[0][6] ),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][7] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 384
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][6] ( .D (n156),  .SI (test_si2),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][6] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 386
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][5] ( .D (n155),  .SI (\reg_array[0][4] ),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][5] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 387
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][4] ( .D (n154),  .SI (\reg_array[0][3] ),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][4] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 388
+GPRs_test_1, "SDFFX1 \reg_array_reg[0][3] ( .D (n153),  .SI (n547),  .SE (test_se),  .CLK (clk),  .Q (\reg_array[0][3] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 1250
+ALU, "ALU_DW01_sub_0 sub_17( .A (a),  .B ({b[15:3], n8, n6, n4}),  .CI (1'b0),  .DIFF ({N62, N61, N60, N59, N58, N57, N56, N55, N54, N53, N52, N51, N50, N49, N48, N47}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 1253
+ALU, "ALU_DW01_add_0_DW01_add_2 add_16( .A (a),  .B ({b[15:4], n2, n7, n5, n3}),  .CI (1'b0),  .SUM ({N46, N45, N44, N43, N42, N41, N40, N39, N38, N37, N36, N35, N34, N33, N32, N31}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 1851
+Data_Memory_test_1, "SDFFX1 \memory_reg[1][1] ( .D (n167),  .SI (n467),  .SE (test_se),  .CLK (clk),  .Q (\memory[1][1] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 1862
+Data_Memory_test_1, "SDFFX1 \memory_reg[0][11] ( .D (n161),  .SI (n472),  .SE (test_se),  .CLK (clk),  .Q (\memory[0][11] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 1874
+Data_Memory_test_1, "SDFFX1 \memory_reg[0][5] ( .D (n155),  .SI (n477),  .SE (test_se),  .CLK (clk),  .Q (\memory[0][5] ));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2471
+Datapath_Unit_test_1, "Instruction_Memory im( .pc ({pc_current[15:1], PC_2beq[0]}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2678
+Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0, "Risc_16_bit_DW01_add_width3 add_124( .A (count),  .B ({1'b0, 1'b0, enable}),  .CI (1'b0),  .SUM ({n10, n9, n8}));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2680
+Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0, "DFFARX1 \count_int_reg[0] ( .D (n11),  .CLK (clk),  .RSTB (rst_n),  .Q (count[0]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2682
+Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0, "DFFARX1 \count_int_reg[1] ( .D (n14),  .CLK (clk),  .RSTB (rst_n),  .Q (count[1]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2684
+Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0, "DFFARX1 \count_int_reg[2] ( .D (n13),  .CLK (clk),  .RSTB (rst_n),  .Q (count[2]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2686
+Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0, "DFFARX1 tercnt_n_reg_reg( .D (n6),  .CLK (clk),  .RSTB (rst_n),  .QN (tercnt_n));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2742
+Risc_16_bit_DFT_clk_control_0_0, "DFFARX1 pipeline_or_tree_l_reg( .D (n6),  .CLK (fast_clk),  .RSTB (n2),  .Q (n5));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2744
+Risc_16_bit_DFT_clk_control_0_0, "DFFNARX1 fast_clk_enable_l_reg( .D (n31),  .CLK (fast_clk),  .RSTB (n2),  .Q (fast_clk_enable));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2748
+Risc_16_bit_DFT_clk_control_0_0, "DFFARX1 load_n_meta_0_l_reg( .D (n1),  .CLK (fast_clk),  .RSTB (n2),  .Q (n28));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2749
+Risc_16_bit_DFT_clk_control_0_0, "DFFARX1 load_n_meta_1_l_reg( .D (n28),  .CLK (fast_clk),  .RSTB (n2),  .Q (n26));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2750
+Risc_16_bit_DFT_clk_control_0_0, "DFFARX1 load_n_meta_2_l_reg( .D (n26),  .CLK (fast_clk),  .RSTB (n2),  .Q (n25));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2827
+Risc_16_bit_DFT_clk_chain_0, "DFFNX1 \U_shftreg_0/ff_3/q_reg ( .D (n28),  .CLK (clk),  .Q (clk_ctrl_data[0]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2829
+Risc_16_bit_DFT_clk_chain_0, "DFFNX1 \U_shftreg_0/ff_2/q_reg ( .D (n21),  .CLK (clk),  .Q (clk_ctrl_data[1]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2831
+Risc_16_bit_DFT_clk_chain_0, "DFFNX1 \U_shftreg_0/ff_1/q_reg ( .D (n14),  .CLK (clk),  .Q (clk_ctrl_data[2]));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2833
+Risc_16_bit_DFT_clk_chain_0, "DFFNX1 \U_shftreg_0/ff_0/q_reg ( .D (n7),  .CLK (clk),  .Q (so));"
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Warning-[TFIPC] Too few instance port connections
+Risc_16_bit_netlist_scan.v, 2883
+Risc_16_bit, "Datapath_Unit_test_1 DU( .clk (n99),  .jump (jump),  .beq (beq),  .mem_read (mem_read),  .mem_write (mem_write),  .alu_src (alu_src),  .reg_dst (reg_dst),  .mem_to_reg (n2),  .reg_write (reg_write),  .bne (bne),  .alu_op (alu_op),  .test_si46 (test_si47),  .test_si45 (test_si46),  .test_si44 (test_si45),  .test_si43 (test_si44),  .test_si42 (test_si43),  .test_si41 (test_si42),  .test_si40 (test_si41),  .test_si39 (test_si40),  .test_si38 (test_si39),  .test_si37 (test_si38),  .test_si36 (test_si37),  .test_si35 (test_si36),  .test_si34 (test_si35),  .test_si33 (test_si34),  .test_si32 (test_si33),  .test_si31 (test_si32),  .test_si30 (test_si31),  .test_si29 (test_si30),  .test_si28 (test_si29),  .test_si27 (test_si28),  .test_si26 (test_si27),  .test_ ... "
+  The above instance has fewer port connections than the module definition.
+  Please use '+lint=TFIPC-L' to print out detailed information of unconnected 
+  ports.
+
+
+Error-[UPIMI-E] Undefined port in module instantiation
+Risc_16_bit_SA_Internal_scan_parallel_max_tb.v, 387
+  Port "TEST_EN" is not defined in module 'Risc_16_bit' defined in 
+  "Risc_16_bit_netlist_scan.v", 2844
+  Module instance: Risc_16_bit dut( .clk (clk_con),  .TEST_SI1 (TEST_SI1_con),
+  .TEST_SI2 (TEST_SI2_con),  .TEST_SI3 (TEST_SI3_con),  .TEST_SI4 
+  (TEST_SI4_con),  .TEST_SE (TEST_S ...
+
+
+Error-[UPIMI-E] Undefined port in module instantiation
+Risc_16_bit_SA_Internal_scan_parallel_max_tb.v, 387
+  Port "test_si48" is not defined in module 'Risc_16_bit' defined in 
+  "Risc_16_bit_netlist_scan.v", 2844
+  Module instance: Risc_16_bit dut( .clk (clk_con),  .TEST_SI1 (TEST_SI1_con),
+  .TEST_SI2 (TEST_SI2_con),  .TEST_SI3 (TEST_SI3_con),  .TEST_SI4 
+  (TEST_SI4_con),  .TEST_SE (TEST_S ...
+
+
+Error-[UPIMI-E] Undefined port in module instantiation
+Risc_16_bit_SA_Internal_scan_parallel_max_tb.v, 387
+  Port "test_si49" is not defined in module 'Risc_16_bit' defined in 
+  "Risc_16_bit_netlist_scan.v", 2844
+  Module instance: Risc_16_bit dut( .clk (clk_con),  .TEST_SI1 (TEST_SI1_con),
+  .TEST_SI2 (TEST_SI2_con),  .TEST_SI3 (TEST_SI3_con),  .TEST_SI4 
+  (TEST_SI4_con),  .TEST_SE (TEST_S ...
+
+
+Error-[UPIMI-E] Undefined port in module instantiation
+Risc_16_bit_SA_Internal_scan_parallel_max_tb.v, 387
+  Port "test_si50" is not defined in module 'Risc_16_bit' defined in 
+  "Risc_16_bit_netlist_scan.v", 2844
+  Module instance: Risc_16_bit dut( .clk (clk_con),  .TEST_SI1 (TEST_SI1_con),
+  .TEST_SI2 (TEST_SI2_con),  .TEST_SI3 (TEST_SI3_con),  .TEST_SI4 
+  (TEST_SI4_con),  .TEST_SE (TEST_S ...
+
+
+Error-[UPIMI-E] Undefined port in module instantiation
+Risc_16_bit_SA_Internal_scan_parallel_max_tb.v, 387
+  Port "test_si51" is not defined in module 'Risc_16_bit' defined in 
+  "Risc_16_bit_netlist_scan.v", 2844
+  Module instance: Risc_16_bit dut( .clk (clk_con),  .TEST_SI1 (TEST_SI1_con),
+  .TEST_SI2 (TEST_SI2_con),  .TEST_SI3 (TEST_SI3_con),  .TEST_SI4 
+  (TEST_SI4_con),  .TEST_SE (TEST_S ...
+
+
+Error-[UPIMI-E] Undefined port in module instantiation
+Risc_16_bit_SA_Internal_scan_parallel_max_tb.v, 387
+  Port "test_si52" is not defined in module 'Risc_16_bit' defined in 
+  "Risc_16_bit_netlist_scan.v", 2844
+  Module instance: Risc_16_bit dut( .clk (clk_con),  .TEST_SI1 (TEST_SI1_con),
+  .TEST_SI2 (TEST_SI2_con),  .TEST_SI3 (TEST_SI3_con),  .TEST_SI4 
+  (TEST_SI4_con),  .TEST_SE (TEST_S ...
+
+
+Error-[UPIMI-E] Undefined port in module instantiation
+Risc_16_bit_SA_Internal_scan_parallel_max_tb.v, 387
+  Port "test_si53" is not defined in module 'Risc_16_bit' defined in 
+  "Risc_16_bit_netlist_scan.v", 2844
+  Module instance: Risc_16_bit dut( .clk (clk_con),  .TEST_SI1 (TEST_SI1_con),
+  .TEST_SI2 (TEST_SI2_con),  .TEST_SI3 (TEST_SI3_con),  .TEST_SI4 
+  (TEST_SI4_con),  .TEST_SE (TEST_S ...
+
+
+Error-[UPIMI-E] Undefined port in module instantiation
+Risc_16_bit_SA_Internal_scan_parallel_max_tb.v, 387
+  Port "test_si54" is not defined in module 'Risc_16_bit' defined in 
+  "Risc_16_bit_netlist_scan.v", 2844
+  Module instance: Risc_16_bit dut( .clk (clk_con),  .TEST_SI1 (TEST_SI1_con),
+  .TEST_SI2 (TEST_SI2_con),  .TEST_SI3 (TEST_SI3_con),  .TEST_SI4 
+  (TEST_SI4_con),  .TEST_SE (TEST_S ...
+
+
+Error-[UPIMI-E] Undefined port in module instantiation
+Risc_16_bit_SA_Internal_scan_parallel_max_tb.v, 387
+  Port "test_si55" is not defined in module 'Risc_16_bit' defined in 
+  "Risc_16_bit_netlist_scan.v", 2844
+  Module instance: Risc_16_bit dut( .clk (clk_con),  .TEST_SI1 (TEST_SI1_con),
+  .TEST_SI2 (TEST_SI2_con),  .TEST_SI3 (TEST_SI3_con),  .TEST_SI4 
+  (TEST_SI4_con),  .TEST_SE (TEST_S ...
+
+
+Error-[UPIMI-E] Undefined port in module instantiation
+Risc_16_bit_SA_Internal_scan_parallel_max_tb.v, 387
+  Port "test_si56" is not defined in module 'Risc_16_bit' defined in 
+  "Risc_16_bit_netlist_scan.v", 2844
+  Module instance: Risc_16_bit dut( .clk (clk_con),  .TEST_SI1 (TEST_SI1_con),
+  .TEST_SI2 (TEST_SI2_con),  .TEST_SI3 (TEST_SI3_con),  .TEST_SI4 
+  (TEST_SI4_con),  .TEST_SE (TEST_S ...
+
+
+Note-[MAX_ERROR_COUNT] Maximum error count reached
+  Current number of errors has reached the default maximum error count (10).
+  Please use +error+<count> to increase the limit.
+
+34 warnings
+10 errors
+CPU time: .261 seconds to compile

@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1708752942.228962827, "rt":0.27, "ut":0.08, "st":0.03}}
+{"vcselab":{"timestamp_begin":1708752942.534965984, "rt":0.20, "ut":0.13, "st":0.02}}
+{"link":{"timestamp_begin":1708752942.761040680, "rt":0.07, "ut":0.05, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1708752942.038835006}
+{"VCS_COMP_START_TIME": 1708752942.038835006}
+{"VCS_COMP_END_TIME": 1708752943.104458522}
+{"VCS_USER_OPTIONS": "-Mupdate -R risc.v -o i2c -full64 -debug_all"}
+{"vcs1": {"peak_mem": 362632}}
+{"stitch_vcselab": {"peak_mem": 235076}}

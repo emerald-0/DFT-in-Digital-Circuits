@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : area
+Design : aes
+Version: S-2021.06-SP5-3
+Date   : Fri May 17 13:08:00 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'aes' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Information: There are 2991 clock pins driven by multiple clocks, and some of them are driven by up-to 2 clocks. (TIM-099)
+Library(s) Used:
+
+    saed90nm_typ (File: /home/vlsilab/Downloads/SAED90nm_EDK_10072017/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db)
+
+Number of ports:                         2146
+Number of nets:                         20561
+Number of cells:                        15620
+Number of combinational cells:          12601
+Number of sequential cells:              3001
+Number of macros/black boxes:               0
+Number of buf/inv:                       2116
+Number of references:                      23
+
+Combinational area:             141387.264312
+Buf/Inv area:                    11848.089896
+Noncombinational area:          113299.657082
+Macro/Black Box area:                0.000000
+Net Interconnect area:           36576.548616
+
+Total cell area:                254686.921393
+Total area:                     291263.470009
+1

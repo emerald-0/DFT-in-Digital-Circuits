@@ -1,0 +1,63 @@
+{
+    "vcs_paramclassrepository_pc_skel": [
+        "vcs_paramclassrepository_pc_skel",
+        "dUQ0G",
+        "module",
+        1
+    ],
+    "vcs_paramclassrepository_zILyrc": [
+        "vcs_paramclassrepository_zILyrc",
+        "JKfWB",
+        "module",
+        2
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        3
+    ],
+    "_vcs_unit__17393910": [
+        "_vcs_unit__17393910",
+        "pUQ3C",
+        "module",
+        4
+    ],
+    "pc_uvm_custom_install_verdi_recording": [
+        "pc_uvm_custom_install_verdi_recording",
+        "IeJjz",
+        "module",
+        5
+    ],
+    "uvm_pkg": [
+        "uvm_pkg",
+        "zr7M1",
+        "module",
+        6
+    ],
+    "uvm_custom_install_verdi_recording": [
+        "uvm_custom_install_verdi_recording",
+        "EbjT3",
+        "module",
+        7
+    ],
+    "Risc_16_bit_test": [
+        "Risc_16_bit_test",
+        "ByHNx",
+        "module",
+        8
+    ],
+    "Risc_16_bit_g2J7Bb": [
+        "Risc_16_bit_g2J7Bb",
+        "pdHCI",
+        "module",
+        9
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        10
+    ],
+    "_vcs_internal_pc_partition_name_": "uvm_custom_install_verdi_recording_zILyrc"
+}

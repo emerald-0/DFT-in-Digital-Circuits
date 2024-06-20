@@ -1,0 +1,22 @@
+-mx_invoke_vcs_from_tool -mxunielab
+-uum
+-full64
+-diag timescale
+-ntb_opts uvm
+-kdb
++vcs+lic+wait
+-lca
+-sverilog
+-error=noMPD
+-debug_access+f
+-timescale=1ns/1fs
++plusarg_save
+-j2
+-debug_access+all
+-debug_access+dmptf
+-debug_region=cell+lib
++nocelldefinepli+0
++tmax_parallel=7
++define_tmax_usf_debug_strobe_mode=1
++tetramax
+

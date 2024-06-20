@@ -1,0 +1,302 @@
+$date
+	Sat Feb 24 11:04:10 2024
+$end
+
+$version
+	Synopsys VCS version T-2022.06-SP2-6_Full64
+$end
+
+$timescale
+	1ps
+$end
+
+$comment Csum: 1 3326994d4125bfee $end
+
+
+$scope module test_Risc_16_bit $end
+$var reg 1 ! clk $end
+
+$scope module uut $end
+$var wire 1 " clk $end
+$var wire 1 # TEST_SI $end
+$var wire 1 $ TEST_SO $end
+$var wire 1 % jump $end
+$var wire 1 & bne $end
+$var wire 1 ' beq $end
+$var wire 1 ( mem_read $end
+$var wire 1 ) mem_write $end
+$var wire 1 * alu_src $end
+$var wire 1 + reg_dst $end
+$var wire 1 , mem_to_reg $end
+$var wire 1 - reg_write $end
+$var wire 2 . alu_op [1:0] $end
+$var wire 4 / opcode [3:0] $end
+
+$scope module DU $end
+$var wire 1 " clk $end
+$var wire 1 % jump $end
+$var wire 1 ' beq $end
+$var wire 1 ( mem_read $end
+$var wire 1 ) mem_write $end
+$var wire 1 * alu_src $end
+$var wire 1 + reg_dst $end
+$var wire 1 , mem_to_reg $end
+$var wire 1 - reg_write $end
+$var wire 1 & bne $end
+$var wire 2 . alu_op [1:0] $end
+$var wire 4 / opcode [3:0] $end
+$var reg 16 0 pc_current [15:0] $end
+$var wire 16 1 pc_next [15:0] $end
+$var wire 16 2 pc2 [15:0] $end
+$var wire 16 3 instr [15:0] $end
+$var wire 3 4 reg_write_dest [2:0] $end
+$var wire 16 5 reg_write_data [15:0] $end
+$var wire 3 6 reg_read_addr_1 [2:0] $end
+$var wire 16 7 reg_read_data_1 [15:0] $end
+$var wire 3 8 reg_read_addr_2 [2:0] $end
+$var wire 16 9 reg_read_data_2 [15:0] $end
+$var wire 16 : ext_im [15:0] $end
+$var wire 16 ; read_data2 [15:0] $end
+$var wire 3 < ALU_Control [2:0] $end
+$var wire 16 = ALU_out [15:0] $end
+$var wire 1 > zero_flag $end
+$var wire 16 ? PC_j [15:0] $end
+$var wire 16 @ PC_beq [15:0] $end
+$var wire 16 A PC_2beq [15:0] $end
+$var wire 16 B PC_2bne [15:0] $end
+$var wire 16 C PC_bne [15:0] $end
+$var wire 1 D beq_control $end
+$var wire 13 E jump_shift [12:0] $end
+$var wire 16 F mem_read_data [15:0] $end
+$var wire 1 G bne_control $end
+
+$scope module im $end
+$var wire 16 H pc [15:0] $end
+$var wire 16 3 instruction [15:0] $end
+$var wire 4 I rom_addr [3:0] $end
+$upscope $end
+
+
+$scope module reg_file $end
+$var wire 1 " clk $end
+$var wire 1 - reg_write_en $end
+$var wire 3 4 reg_write_dest [2:0] $end
+$var wire 16 5 reg_write_data [15:0] $end
+$var wire 3 6 reg_read_addr_1 [2:0] $end
+$var wire 16 7 reg_read_data_1 [15:0] $end
+$var wire 3 8 reg_read_addr_2 [2:0] $end
+$var wire 16 9 reg_read_data_2 [15:0] $end
+$var integer 32 J i $end
+$upscope $end
+
+
+$scope module ALU_Control_unit $end
+$var reg 3 K ALU_Control [2:0] $end
+$var wire 2 . ALUOp [1:0] $end
+$var wire 4 L Function [3:0] $end
+$var wire 6 M ALUControlIn [5:0] $end
+$upscope $end
+
+
+$scope module alu_unit $end
+$var wire 16 7 a [15:0] $end
+$var wire 16 ; b [15:0] $end
+$var wire 3 < alu_control [2:0] $end
+$var reg 16 N result [15:0] $end
+$var wire 1 > zero $end
+$upscope $end
+
+
+$scope module dm $end
+$var wire 1 " clk $end
+$var wire 16 = mem_access_addr [15:0] $end
+$var wire 16 9 mem_write_data [15:0] $end
+$var wire 1 ) mem_write_en $end
+$var wire 1 ( mem_read $end
+$var wire 16 F mem_read_data [15:0] $end
+$var integer 32 O f $end
+$var wire 3 P ram_addr [2:0] $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module control $end
+$var wire 4 / opcode [3:0] $end
+$var reg 2 Q alu_op [1:0] $end
+$var reg 1 R jump $end
+$var reg 1 S beq $end
+$var reg 1 T bne $end
+$var reg 1 U mem_read $end
+$var reg 1 V mem_write $end
+$var reg 1 W alu_src $end
+$var reg 1 X reg_dst $end
+$var reg 1 Y mem_to_reg $end
+$var reg 1 Z reg_write $end
+$upscope $end
+
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+
+#0
+$dumpvars
+z#
+z$
+x*
+x'
+xD
+x&
+xG
+0!
+xW
+xS
+xT
+xR
+xU
+xY
+xV
+xX
+xZ
+x%
+x(
+x,
+x)
+x+
+x-
+x>
+bxxxxxx M
+bxxx <
+bxxx K
+bxxxxxxxxxxxxxxxx =
+bxxxxxxxxxxxxxxxx A
+bxxxxxxxxxxxxxxxx B
+bxxxxxxxxxxxxxxxx @
+bxxxxxxxxxxxxxxxx C
+b000xxxxxxxxxxxx0 ?
+bxx .
+bxx Q
+bxxxxxxxxxxxxxxxx :
+bxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx O
+b00000000000000000000000000001000 J
+bxxxxxxxxxxxxxxxx 3
+bxxxxxxxxxxxx0 E
+bxxxxxxxxxxxxxxxx F
+bxxxx /
+b0000000000000000 H
+b0000000000000010 2
+b0000000000000000 0
+bxxxxxxxxxxxxxxxx 1
+bxxx P
+bxxxxxxxxxxxxxxxx ;
+bxxxxxxxxxxxxxxxx 7
+bxxxxxxxxxxxxxxxx 9
+bxxxxxxxxxxxxxxxx 5
+bxxx 4
+bxxxxxxxxxxxxxxxx N
+b0000 I
+bxxxx L
+bxxx 6
+bxxx 8
+0"
+$end
+#5000
+1!
+1"
+bxxxxxxxxxxxxxxxx 0
+bxxxxxxxxxxxxxxxx H
+bxxxx I
+bxxxxxxxxxxxxxxxx 2
+bxxxxxxxxxxxxxxx0 ?
+#10000
+0!
+0"
+#15000
+1!
+1"
+#20000
+0!
+0"
+#25000
+1!
+1"
+#30000
+0!
+0"
+#35000
+1!
+1"
+#40000
+0!
+0"
+#45000
+1!
+1"
+#50000
+0!
+0"
+#55000
+1!
+1"
+#60000
+0!
+0"
+#65000
+1!
+1"
+#70000
+0!
+0"
+#75000
+1!
+1"
+#80000
+0!
+0"
+#85000
+1!
+1"
+#90000
+0!
+0"
+#95000
+1!
+1"
+#100000
+0!
+0"
+#105000
+1!
+1"
+#110000
+0!
+0"
+#115000
+1!
+1"
+#120000
+0!
+0"
+#125000
+1!
+1"
+#130000
+0!
+0"
+#135000
+1!
+1"
+#140000
+0!
+0"
+#145000
+1!
+1"
+#150000
+0!
+0"
+#155000
+1!
+1"

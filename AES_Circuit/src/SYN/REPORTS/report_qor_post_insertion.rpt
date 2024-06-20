@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : qor
+Design : aes
+Version: S-2021.06-SP5-3
+Date   : Fri May 17 13:08:00 2024
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              20.00
+  Critical Path Length:         18.69
+  Critical Path Slack:          -8.83
+  Critical Path Clk Period:     20.00
+  Total Negative Slack:     -13747.95
+  No. of Violating Paths:     2444.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+  Timing Path Group 'scan_clk'
+  -----------------------------------
+  Levels of Logic:              20.00
+  Critical Path Length:         18.69
+  Critical Path Slack:          -8.83
+  Critical Path Clk Period:     50.00
+  Total Negative Slack:     -13772.98
+  No. of Violating Paths:     2444.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         16
+  Hierarchical Port Count:       2056
+  Leaf Cell Count:              15602
+  Buf/Inv Cell Count:            2116
+  Buf Cell Count:                 805
+  Inv Cell Count:                1311
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:     12601
+  Sequential Cell Count:         3001
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:   141387.264312
+  Noncombinational Area:
+                        113299.657082
+  Buf/Inv Area:          11848.089896
+  Total Buffer Area:          4589.57
+  Total Inverter Area:        7258.52
+  Macro/Black Box Area:      0.000000
+  Net Area:              36576.548616
+  -----------------------------------
+  Cell Area:            254686.921393
+  Design Area:          291263.470009
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:         18513
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: localhost.localdomain
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    1.59
+  Logic Optimization:                 12.79
+  Mapping Optimization:                9.89
+  -----------------------------------------
+  Overall Compile Time:               27.54
+  Overall Compile Wall Clock Time:    27.83
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 8.83  TNS: 13774.16  Number of Violating Paths: 2445
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

@@ -1,0 +1,12 @@
+ #faults  testcov  instance name (type)
+ -------  -------  -----------------------
+  148910   99.81%  /  (top_module)
+  135474  100.00%     /core  (aes_core_test_1)
+   11472  100.00%        /core/enc_block  (aes_encipher_block_test_1)
+   28802  100.00%        /core/dec_block  (aes_decipher_block_test_1)
+   12082  100.00%           /core/dec_block/inv_sbox_inst  (aes_inv_sbox)
+   80004  100.00%        /core/keymem  (aes_key_mem_test_1)
+   13264  100.00%        /core/sbox_inst  (aes_sbox)
+     354    6.08%     /occ_snps_pll_controller  (aes_DFT_clk_mux_0)
+     300    0.00%        /occ_snps_pll_controller/U_clk_control_i_0  (aes_DFT_clk_control_0_0)
+     102    0.00%           /occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i  (aes_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0)

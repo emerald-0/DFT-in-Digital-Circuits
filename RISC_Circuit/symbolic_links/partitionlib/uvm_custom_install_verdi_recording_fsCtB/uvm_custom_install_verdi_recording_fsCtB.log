@@ -1,0 +1,70 @@
+
+Warning-[DBGACC_USAGE] Option is not compatible with -debug_access
+  The compile option '+nocelldefinepli+0' is not compatible with 
+  '-debug_access'.  Option '+nocelldefinepli+0' is ignored.
+
+
+Warning-[DDTC] Duplicate Timing Check is disabled
+saed90nm.v, 4491
+  The below duplicate timing check will be disabled:
+  $width(negedge RSTB, 0, 0, notifier);
+
+
+Warning-[DDTC] Duplicate Timing Check is disabled
+saed90nm.v, 5407
+  The below duplicate timing check will be disabled:
+  $width(negedge RSTB, 0, 0, notifier);
+
+Notice: Ports coerced to inout, use -notice for details
+
+Note-[VCS_PARAL] Parallel code-gen enabled
+  VCS is running with parallel code generation(-j)...
+
+40 modules and 7 UDPs read.
+recompiling module Risc_16_bit
+recompiling module uvm_custom_install_verdi_recording
+recompiling module Data_Memory_test_1
+recompiling module DFFARX1
+recompiling module SDFFX1
+recompiling module DFFNX1
+recompiling module OA221X1
+recompiling module AO22X1
+recompiling module XOR3X1
+recompiling module OA21X1
+recompiling module AOI21X1
+recompiling module NOR4X0
+recompiling module NAND4X0
+recompiling module NOR3X0
+recompiling module AND3X1
+recompiling module AND2X1
+recompiling module OR2X1
+recompiling module NAND2X0
+recompiling module INVX0
+recompiling module NBUFFX2
+recompiling module Risc_16_bit_test
+recompiling module ALU
+recompiling module alu_control
+recompiling module AO222X1
+recompiling module Control_Unit
+recompiling module AO221X1
+recompiling module FADDX1
+recompiling module AOI22X1
+recompiling module XOR2X1
+recompiling module AO21X1
+recompiling module MUX21X1
+recompiling module OR4X1
+recompiling module NAND3X0
+recompiling module OR3X1
+recompiling module NOR2X0
+recompiling module NAND2X1
+recompiling module NOR2X2
+recompiling package vcs_paramclassrepository
+recompiling module NBUFFX4
+recompiling module INVX1
+All of 40 modules done
+make[1]: Entering directory '/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/partitionlib/uvm_custom_install_verdi_recording_fsCtB/csrc' \
+
+/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/partitionlib/uvm_custom_install_verdi_recording_fsCtB/libvcspc_uvm_custom_install_verdi_recording_fsCtB.so \
+up to date
+make[1]: Leaving directory '/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/partitionlib/uvm_custom_install_verdi_recording_fsCtB/csrc' \
+

@@ -1,0 +1,6 @@
+ chain             group  #LE/#TE/#LS  input_pin           output_pin          clocks
+ ----------------  -----  -----------  ------------------  ------------------  ------------------
+ 1                 sg0    91/0/0       TEST_SI1            TEST_SO1            clk  scan_clk
+ 2                 sg0    0/4/0        TEST_SI2            TEST_SO2            clk  scan_clk
+ 3                 sg0    91/0/0       TEST_SI3            TEST_SO3            clk  scan_clk
+ 4                 sg0    90/0/0       TEST_SI4            TEST_SO4            clk  scan_clk

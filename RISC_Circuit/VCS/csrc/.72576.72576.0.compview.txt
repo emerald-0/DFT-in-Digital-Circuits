@@ -1,0 +1,7 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1708753260.287866902, "rt":0.10, "ut":0.03, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1708753260.056981420}
+{"VCS_COMP_START_TIME": 1708753260.056981420}
+{"VCS_COMP_END_TIME": 1708753260.412726549}
+{"VCS_USER_OPTIONS": "-Mupdate -R alu.v risc.v risc_tb.v data.v Control_Unit.v AluControl.v Parameter.v -o RSIC_2 -full64 -debug_all"}
+{"vcs1": {"peak_mem": 347040}}

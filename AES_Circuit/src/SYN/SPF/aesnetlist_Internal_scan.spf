@@ -1,0 +1,964 @@
+STIL 1.0 {
+    Design 2005;
+}
+Header {
+    Title "Minimal STIL for design `aes'";
+    Date "Fri May 17 13:07:54 2024";
+    Source "DFT Compiler S-2021.06-SP5-3";
+}
+Signals {
+    "SCAN_MODE" In;
+    "TEST_SE" In;
+    "TEST_SI1" In;
+    "TEST_SI2" In;
+    "TEST_SI3" In;
+    "address[0]" In;
+    "address[1]" In;
+    "address[2]" In;
+    "address[3]" In;
+    "address[4]" In;
+    "address[5]" In;
+    "address[6]" In;
+    "address[7]" In;
+    "clk" In;
+    "cs" In;
+    "internal_pll_bypass" In;
+    "reset_n" In;
+    "scan_clk" In;
+    "we" In;
+    "write_data[0]" In;
+    "write_data[10]" In;
+    "write_data[11]" In;
+    "write_data[12]" In;
+    "write_data[13]" In;
+    "write_data[14]" In;
+    "write_data[15]" In;
+    "write_data[16]" In;
+    "write_data[17]" In;
+    "write_data[18]" In;
+    "write_data[19]" In;
+    "write_data[1]" In;
+    "write_data[20]" In;
+    "write_data[21]" In;
+    "write_data[22]" In;
+    "write_data[23]" In;
+    "write_data[24]" In;
+    "write_data[25]" In;
+    "write_data[26]" In;
+    "write_data[27]" In;
+    "write_data[28]" In;
+    "write_data[29]" In;
+    "write_data[2]" In;
+    "write_data[30]" In;
+    "write_data[31]" In;
+    "write_data[3]" In;
+    "write_data[4]" In;
+    "write_data[5]" In;
+    "write_data[6]" In;
+    "write_data[7]" In;
+    "write_data[8]" In;
+    "write_data[9]" In;
+    "TEST_SO1" Out;
+    "TEST_SO2" Out;
+    "TEST_SO3" Out;
+    "read_data[0]" Out;
+    "read_data[10]" Out;
+    "read_data[11]" Out;
+    "read_data[12]" Out;
+    "read_data[13]" Out;
+    "read_data[14]" Out;
+    "read_data[15]" Out;
+    "read_data[16]" Out;
+    "read_data[17]" Out;
+    "read_data[18]" Out;
+    "read_data[19]" Out;
+    "read_data[1]" Out;
+    "read_data[20]" Out;
+    "read_data[21]" Out;
+    "read_data[22]" Out;
+    "read_data[23]" Out;
+    "read_data[24]" Out;
+    "read_data[25]" Out;
+    "read_data[26]" Out;
+    "read_data[27]" Out;
+    "read_data[28]" Out;
+    "read_data[29]" Out;
+    "read_data[2]" Out;
+    "read_data[30]" Out;
+    "read_data[31]" Out;
+    "read_data[3]" Out;
+    "read_data[4]" Out;
+    "read_data[5]" Out;
+    "read_data[6]" Out;
+    "read_data[7]" Out;
+    "read_data[8]" Out;
+    "read_data[9]" Out;
+    "pll_bypass" In;
+    "pll_reset" In;
+    "test_si4" In;
+    "test_so4" Out;
+}
+SignalGroups {
+    "_si" = '"TEST_SI1" + "TEST_SI2" + "TEST_SI3" + "test_si4"' {
+        ScanIn;
+    }
+    "_so" = '"TEST_SO1" + "TEST_SO2" + "TEST_SO3" + "test_so4"' {
+        ScanOut;
+    }
+    "_clk" = '"clk" + "reset_n" + "scan_clk"';
+    "all_inputs" = '"SCAN_MODE" + "TEST_SE" + "TEST_SI1" + "TEST_SI2" + 
+    "TEST_SI3" + "address[0]" + "address[1]" + "address[2]" + "address[3]" + 
+    "address[4]" + "address[5]" + "address[6]" + "address[7]" + "clk" + "cs" + 
+    "internal_pll_bypass" + "reset_n" + "scan_clk" + "we" + "write_data[0]" + 
+    "write_data[10]" + "write_data[11]" + "write_data[12]" + "write_data[13]" + 
+    "write_data[14]" + "write_data[15]" + "write_data[16]" + "write_data[17]" + 
+    "write_data[18]" + "write_data[19]" + "write_data[1]" + "write_data[20]" + 
+    "write_data[21]" + "write_data[22]" + "write_data[23]" + "write_data[24]" + 
+    "write_data[25]" + "write_data[26]" + "write_data[27]" + "write_data[28]" + 
+    "write_data[29]" + "write_data[2]" + "write_data[30]" + "write_data[31]" + 
+    "write_data[3]" + "write_data[4]" + "write_data[5]" + "write_data[6]" + 
+    "write_data[7]" + "write_data[8]" + "write_data[9]" + "pll_bypass" + 
+    "pll_reset" + "test_si4"';
+    "all_outputs" = '"TEST_SO1" + "TEST_SO2" + "TEST_SO3" + "read_data[0]" + 
+    "read_data[10]" + "read_data[11]" + "read_data[12]" + "read_data[13]" + 
+    "read_data[14]" + "read_data[15]" + "read_data[16]" + "read_data[17]" + 
+    "read_data[18]" + "read_data[19]" + "read_data[1]" + "read_data[20]" + 
+    "read_data[21]" + "read_data[22]" + "read_data[23]" + "read_data[24]" + 
+    "read_data[25]" + "read_data[26]" + "read_data[27]" + "read_data[28]" + 
+    "read_data[29]" + "read_data[2]" + "read_data[30]" + "read_data[31]" + 
+    "read_data[3]" + "read_data[4]" + "read_data[5]" + "read_data[6]" + 
+    "read_data[7]" + "read_data[8]" + "read_data[9]" + "test_so4"';
+    "all_ports" = '"all_inputs" + "all_outputs"';
+    "_pi" = '"SCAN_MODE" + "TEST_SE" + "TEST_SI1" + "TEST_SI2" + "TEST_SI3" + 
+    "address[0]" + "address[1]" + "address[2]" + "address[3]" + "address[4]" + 
+    "address[5]" + "address[6]" + "address[7]" + "clk" + "cs" + 
+    "internal_pll_bypass" + "reset_n" + "scan_clk" + "we" + "write_data[0]" + 
+    "write_data[10]" + "write_data[11]" + "write_data[12]" + "write_data[13]" + 
+    "write_data[14]" + "write_data[15]" + "write_data[16]" + "write_data[17]" + 
+    "write_data[18]" + "write_data[19]" + "write_data[1]" + "write_data[20]" + 
+    "write_data[21]" + "write_data[22]" + "write_data[23]" + "write_data[24]" + 
+    "write_data[25]" + "write_data[26]" + "write_data[27]" + "write_data[28]" + 
+    "write_data[29]" + "write_data[2]" + "write_data[30]" + "write_data[31]" + 
+    "write_data[3]" + "write_data[4]" + "write_data[5]" + "write_data[6]" + 
+    "write_data[7]" + "write_data[8]" + "write_data[9]" + "pll_bypass" + 
+    "pll_reset" + "test_si4"';
+    "_po" = '"TEST_SO1" + "TEST_SO2" + "TEST_SO3" + "read_data[0]" + 
+    "read_data[10]" + "read_data[11]" + "read_data[12]" + "read_data[13]" + 
+    "read_data[14]" + "read_data[15]" + "read_data[16]" + "read_data[17]" + 
+    "read_data[18]" + "read_data[19]" + "read_data[1]" + "read_data[20]" + 
+    "read_data[21]" + "read_data[22]" + "read_data[23]" + "read_data[24]" + 
+    "read_data[25]" + "read_data[26]" + "read_data[27]" + "read_data[28]" + 
+    "read_data[29]" + "read_data[2]" + "read_data[30]" + "read_data[31]" + 
+    "read_data[3]" + "read_data[4]" + "read_data[5]" + "read_data[6]" + 
+    "read_data[7]" + "read_data[8]" + "read_data[9]" + "test_so4"';
+}
+ScanStructures {
+    ScanChain "1" {
+        ScanLength 996;
+        ScanIn "TEST_SI1";
+        ScanOut "TEST_SO1";
+        ScanEnable "TEST_SE";
+        ScanMasterClock "scan_clk";
+    }
+    ScanChain "2" {
+        ScanLength 4;
+        ScanIn "TEST_SI2";
+        ScanOut "TEST_SO2";
+        ScanEnable "TEST_SE";
+        ScanMasterClock "scan_clk";
+    }
+    ScanChain "3" {
+        ScanLength 996;
+        ScanIn "TEST_SI3";
+        ScanOut "TEST_SO3";
+        ScanEnable "TEST_SE";
+        ScanMasterClock "scan_clk";
+    }
+    ScanChain "4" {
+        ScanLength 995;
+        ScanIn "test_si4";
+        ScanOut "test_so4";
+        ScanEnable "TEST_SE";
+        ScanMasterClock "scan_clk";
+    }
+}
+Timing {
+    WaveformTable "_default_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "scan_clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "reset_n" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '95ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_multiclock_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "scan_clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "reset_n" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '95ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "scan_clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "reset_n" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '95ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_launch_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "scan_clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "reset_n" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '95ns' U;
+                }
+            }
+        }
+    }
+    WaveformTable "_allclock_launch_capture_WFT_" {
+        Period '100ns';
+        Waveforms {
+            "all_inputs" {
+                0 {
+                    '0ns' D;
+                }
+            }
+            "all_inputs" {
+                1 {
+                    '0ns' U;
+                }
+            }
+            "all_inputs" {
+                Z {
+                    '0ns' Z;
+                }
+            }
+            "all_inputs" {
+                N {
+                    '0ns' N;
+                }
+            }
+            "all_outputs" {
+                X {
+                    '0ns' X;
+                    '40ns' X;
+                }
+            }
+            "all_outputs" {
+                H {
+                    '0ns' X;
+                    '40ns' H;
+                }
+            }
+            "all_outputs" {
+                T {
+                    '0ns' X;
+                    '40ns' T;
+                }
+            }
+            "all_outputs" {
+                L {
+                    '0ns' X;
+                    '40ns' L;
+                }
+            }
+            "clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "scan_clk" {
+                P {
+                    '0ns' D;
+                    '45ns' U;
+                    '95ns' D;
+                }
+            }
+            "reset_n" {
+                P {
+                    '0ns' U;
+                    '45ns' D;
+                    '95ns' U;
+                }
+            }
+        }
+    }
+}
+UserKeywords ClockStructures;
+PatternBurst Internal_scan {
+    Procedures Internal_scan;
+    MacroDefs Internal_scan;
+    ClockStructures Internal_scan;
+}
+PatternBurst Internal_scan_occ_bypass {
+    Procedures Internal_scan_occ_bypass;
+    MacroDefs Internal_scan_occ_bypass;
+}
+PatternExec Internal_scan {
+    PatternBurst Internal_scan;
+}
+PatternExec Internal_scan_occ_bypass {
+    PatternBurst Internal_scan_occ_bypass;
+}
+UserKeywords DontSimulate;
+ClockStructures Internal_scan {
+    PLLStructures "occ_snps_pll_controller" {
+        PLLCycles 4;
+        Clocks {
+            "occ_snps_pll_controller/fast_clk" PLL {
+                OffState 0;
+            }
+            "occ_snps_pll_controller/U2/U2/Q" Internal {
+                OffState 0;
+                PLLSource "occ_snps_pll_controller/fast_clk";
+                Cycle 0 "snps_clk_chain_0/clk_ctrl_data[0]" 1;
+                Cycle 1 "snps_clk_chain_0/clk_ctrl_data[1]" 1;
+                Cycle 2 "snps_clk_chain_0/clk_ctrl_data[2]" 1;
+                Cycle 3 "snps_clk_chain_0/clk_ctrl_data[3]" 1;
+            }
+        }
+    }
+}
+Procedures Internal_scan {
+    "multiclock_capture" {
+        W "_multiclock_capture_WFT_";
+        C {
+            "all_inputs" = 00 \r11 N 0NN10 \r33 N 10N;
+            "all_outputs" = \r36 X;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "scan_clk" = P;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r54 #;
+            "_po" = \r36 #;
+        }
+    }
+    "allclock_capture" {
+        W "_allclock_capture_WFT_";
+        C {
+            "all_inputs" = 00 \r11 N 0NN10 \r33 N 10N;
+            "all_outputs" = \r36 X;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "scan_clk" = P;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r54 #;
+            "_po" = \r36 #;
+        }
+    }
+    "allclock_launch" {
+        W "_allclock_launch_WFT_";
+        C {
+            "all_inputs" = 00 \r11 N 0NN10 \r33 N 10N;
+            "all_outputs" = \r36 X;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "scan_clk" = P;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r54 #;
+            "_po" = \r36 #;
+        }
+    }
+    "allclock_launch_capture" {
+        W "_allclock_launch_capture_WFT_";
+        C {
+            "all_inputs" = 00 \r11 N 0NN10 \r33 N 10N;
+            "all_outputs" = \r36 X;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "scan_clk" = P;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r54 #;
+            "_po" = \r36 #;
+        }
+    }
+    "load_unload" {
+        W "_default_WFT_";
+        C {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "TEST_SI1" = N;
+            "TEST_SI2" = N;
+            "TEST_SI3" = N;
+            "address[0]" = N;
+            "address[1]" = N;
+            "address[2]" = N;
+            "address[3]" = N;
+            "address[4]" = N;
+            "address[5]" = N;
+            "address[6]" = N;
+            "address[7]" = N;
+            "clk" = 0;
+            "cs" = N;
+            "internal_pll_bypass" = N;
+            "reset_n" = 1;
+            "scan_clk" = 0;
+            "we" = N;
+            "write_data[0]" = N;
+            "write_data[10]" = N;
+            "write_data[11]" = N;
+            "write_data[12]" = N;
+            "write_data[13]" = N;
+            "write_data[14]" = N;
+            "write_data[15]" = N;
+            "write_data[16]" = N;
+            "write_data[17]" = N;
+            "write_data[18]" = N;
+            "write_data[19]" = N;
+            "write_data[1]" = N;
+            "write_data[20]" = N;
+            "write_data[21]" = N;
+            "write_data[22]" = N;
+            "write_data[23]" = N;
+            "write_data[24]" = N;
+            "write_data[25]" = N;
+            "write_data[26]" = N;
+            "write_data[27]" = N;
+            "write_data[28]" = N;
+            "write_data[29]" = N;
+            "write_data[2]" = N;
+            "write_data[30]" = N;
+            "write_data[31]" = N;
+            "write_data[3]" = N;
+            "write_data[4]" = N;
+            "write_data[5]" = N;
+            "write_data[6]" = N;
+            "write_data[7]" = N;
+            "write_data[8]" = N;
+            "write_data[9]" = N;
+            "TEST_SO1" = X;
+            "TEST_SO2" = X;
+            "TEST_SO3" = X;
+            "read_data[0]" = X;
+            "read_data[10]" = X;
+            "read_data[11]" = X;
+            "read_data[12]" = X;
+            "read_data[13]" = X;
+            "read_data[14]" = X;
+            "read_data[15]" = X;
+            "read_data[16]" = X;
+            "read_data[17]" = X;
+            "read_data[18]" = X;
+            "read_data[19]" = X;
+            "read_data[1]" = X;
+            "read_data[20]" = X;
+            "read_data[21]" = X;
+            "read_data[22]" = X;
+            "read_data[23]" = X;
+            "read_data[24]" = X;
+            "read_data[25]" = X;
+            "read_data[26]" = X;
+            "read_data[27]" = X;
+            "read_data[28]" = X;
+            "read_data[29]" = X;
+            "read_data[2]" = X;
+            "read_data[30]" = X;
+            "read_data[31]" = X;
+            "read_data[3]" = X;
+            "read_data[4]" = X;
+            "read_data[5]" = X;
+            "read_data[6]" = X;
+            "read_data[7]" = X;
+            "read_data[8]" = X;
+            "read_data[9]" = X;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+            "test_si4" = N;
+            "test_so4" = X;
+        }
+        "Internal_scan_pre_shift" : V {
+            "_clk" = 01P;
+            "TEST_SE" = 1;
+        }
+        Shift {
+            V {
+                "_clk" = P1P;
+                "_si" = ####;
+                "_so" = ####;
+            }
+        }
+    }
+}
+Procedures Internal_scan_occ_bypass {
+    "multiclock_capture" {
+        W "_multiclock_capture_WFT_";
+        C {
+            "all_inputs" = 00 \r11 N 0NN10 \r33 N 10N;
+            "all_outputs" = \r36 X;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r54 #;
+            "_po" = \r36 #;
+        }
+    }
+    "allclock_capture" {
+        W "_allclock_capture_WFT_";
+        C {
+            "all_inputs" = 00 \r11 N 0NN10 \r33 N 10N;
+            "all_outputs" = \r36 X;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r54 #;
+            "_po" = \r36 #;
+        }
+    }
+    "allclock_launch" {
+        W "_allclock_launch_WFT_";
+        C {
+            "all_inputs" = 00 \r11 N 0NN10 \r33 N 10N;
+            "all_outputs" = \r36 X;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r54 #;
+            "_po" = \r36 #;
+        }
+    }
+    "allclock_launch_capture" {
+        W "_allclock_launch_capture_WFT_";
+        C {
+            "all_inputs" = 00 \r11 N 0NN10 \r33 N 10N;
+            "all_outputs" = \r36 X;
+        }
+        F {
+            "SCAN_MODE" = 0;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+        V {
+            "_pi" = \r54 #;
+            "_po" = \r36 #;
+        }
+    }
+    "load_unload" {
+        W "_default_WFT_";
+        C {
+            "SCAN_MODE" = 0;
+            "TEST_SE" = 0;
+            "TEST_SI1" = N;
+            "TEST_SI2" = N;
+            "TEST_SI3" = N;
+            "address[0]" = N;
+            "address[1]" = N;
+            "address[2]" = N;
+            "address[3]" = N;
+            "address[4]" = N;
+            "address[5]" = N;
+            "address[6]" = N;
+            "address[7]" = N;
+            "clk" = 0;
+            "cs" = N;
+            "internal_pll_bypass" = N;
+            "reset_n" = 1;
+            "scan_clk" = 0;
+            "we" = N;
+            "write_data[0]" = N;
+            "write_data[10]" = N;
+            "write_data[11]" = N;
+            "write_data[12]" = N;
+            "write_data[13]" = N;
+            "write_data[14]" = N;
+            "write_data[15]" = N;
+            "write_data[16]" = N;
+            "write_data[17]" = N;
+            "write_data[18]" = N;
+            "write_data[19]" = N;
+            "write_data[1]" = N;
+            "write_data[20]" = N;
+            "write_data[21]" = N;
+            "write_data[22]" = N;
+            "write_data[23]" = N;
+            "write_data[24]" = N;
+            "write_data[25]" = N;
+            "write_data[26]" = N;
+            "write_data[27]" = N;
+            "write_data[28]" = N;
+            "write_data[29]" = N;
+            "write_data[2]" = N;
+            "write_data[30]" = N;
+            "write_data[31]" = N;
+            "write_data[3]" = N;
+            "write_data[4]" = N;
+            "write_data[5]" = N;
+            "write_data[6]" = N;
+            "write_data[7]" = N;
+            "write_data[8]" = N;
+            "write_data[9]" = N;
+            "TEST_SO1" = X;
+            "TEST_SO2" = X;
+            "TEST_SO3" = X;
+            "read_data[0]" = X;
+            "read_data[10]" = X;
+            "read_data[11]" = X;
+            "read_data[12]" = X;
+            "read_data[13]" = X;
+            "read_data[14]" = X;
+            "read_data[15]" = X;
+            "read_data[16]" = X;
+            "read_data[17]" = X;
+            "read_data[18]" = X;
+            "read_data[19]" = X;
+            "read_data[1]" = X;
+            "read_data[20]" = X;
+            "read_data[21]" = X;
+            "read_data[22]" = X;
+            "read_data[23]" = X;
+            "read_data[24]" = X;
+            "read_data[25]" = X;
+            "read_data[26]" = X;
+            "read_data[27]" = X;
+            "read_data[28]" = X;
+            "read_data[29]" = X;
+            "read_data[2]" = X;
+            "read_data[30]" = X;
+            "read_data[31]" = X;
+            "read_data[3]" = X;
+            "read_data[4]" = X;
+            "read_data[5]" = X;
+            "read_data[6]" = X;
+            "read_data[7]" = X;
+            "read_data[8]" = X;
+            "read_data[9]" = X;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+            "test_si4" = N;
+            "test_so4" = X;
+        }
+        "Internal_scan_occ_bypass_pre_shift" : V {
+            "TEST_SE" = 1;
+        }
+        Shift {
+            V {
+                "_clk" = P1P;
+                "_si" = ####;
+                "_so" = ####;
+            }
+        }
+    }
+}
+MacroDefs Internal_scan {
+    "test_setup" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r54 N;
+            "all_outputs" = \r36 X;
+        }
+        V {
+            "SCAN_MODE" = 0;
+            "clk" = 0;
+            "reset_n" = 1;
+            "scan_clk" = 0;
+            "pll_reset" = 1;
+        }
+        V {
+            "TEST_SE" = 0;
+            "pll_bypass" = 0;
+            "pll_reset" = 0;
+        }
+    }
+}
+MacroDefs Internal_scan_occ_bypass {
+    "test_setup" {
+        W "_default_WFT_";
+        C {
+            "all_inputs" = \r54 N;
+            "all_outputs" = \r36 X;
+        }
+        V {
+            "SCAN_MODE" = 0;
+            "clk" = 0;
+            "reset_n" = 1;
+            "scan_clk" = 0;
+        }
+        V {
+            "TEST_SE" = 0;
+            "pll_bypass" = 1;
+            "pll_reset" = 0;
+        }
+    }
+}
+

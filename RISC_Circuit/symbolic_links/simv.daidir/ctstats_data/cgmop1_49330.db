@@ -1,0 +1,8 @@
+Host name: localhost.localdomain
+Command line:
+/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/linux64/bin/cgmop1 -tls_initexe -pic -pc_stitch -gen_obj pcomp_elab_code.m pcomp_elab_code.o 
+PSR=4
+========== Data begin ==========
+1713941035.83 16648 3912 2000 1912
+1713941035.87 19416 6928 2064 4864 0 0.0
+peakvm 21464

@@ -1,0 +1,16 @@
+#dump -file filter_generic.vpd -type VPD
+
+#dump -add . -depth 0
+
+#-depth 0
+#dump 0 SR_ff_test 
+#add . -depth 0
+#dump -filter=Parameter
+#dump -showfilter
+
+
+fsdbDumpfile wavefrom.fsdb
+fsdbDumpvars 0 Risc_16_bit_test
+fsdbDumpon
+
+run

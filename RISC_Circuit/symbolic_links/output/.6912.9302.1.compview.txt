@@ -1,0 +1,7 @@
+{"vcs1":{"timestamp_begin":1712909685.443695273, "rt":0.26, "ut":0.05, "st":0.03}}
+{"vcselab-stitch":{"timestamp_begin":1712909685.735460735, "rt":1.37, "ut":0.32, "st":0.04}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1712909678.160741784}
+{"VCS_COMP_START_TIME": 1712909684.988993027}
+{"VCS_COMP_END_TIME": 1712909687.124214268}
+{"stitch_vcs1": {"peak_mem": 279540}}
+{"stitch_vcselab": {"peak_mem": 229412}}

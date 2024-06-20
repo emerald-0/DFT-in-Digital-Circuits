@@ -1,0 +1,32 @@
+ Checking SCANDEF...
+
+ Checking for duplication in SCANDEF...
+   Checking scan cell correspondence between SCANDEF and netlist...
+   Start scan chain checking...
+  All checks completed.
+
+****************************************
+
+Report : Scan DEF check
+Design : Risc_16_bit
+Version: S-2021.06-SP5-3
+Date   : Mon May 20 15:23:35 2024
+
+****************************************
+
+
+ Information from SCANDEF file:
+  Number of SCANCHAINS: 3
+
+ Checking between SCANDEF file and design:
+  Total SCANCHAINS checked: 3
+  VALIDATED :  3
+  FAILED    :  0
+
+Chain name Status  #cells  #bits  PARTITION      Scan IN        Scan OUT
+---------- ------  ------  -----  ---------      -------        --------
+1          V       91      91     clk_45_45      TEST_SI1       TEST_SO1
+3          V       91      91     clk_45_45      TEST_SI3       TEST_SO3
+4          V       90      90     clk_45_45      TEST_SI4       TEST_SO4
+
+1

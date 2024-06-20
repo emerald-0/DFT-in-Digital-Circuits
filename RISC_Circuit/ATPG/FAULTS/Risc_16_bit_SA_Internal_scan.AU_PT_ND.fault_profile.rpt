@@ -1,0 +1,10 @@
+ #faults          #DT(#DS/#DI)          #PT(#AP/#NP)  #UD(#UU/#UO/#UT/#UB/#UR)     #AU          #ND(#NC/#NO)  testcov  instance name (type)
+ ------- --------------------- --------------------- ------------------------- ------- ---------------------  -------  -----------------------
+     269       4756(3448/1308)                0(0/0) 7295(162/4/3646/3250/233)     202              67(0/67)   94.65%  /  (top_module)
+      71       4518(3430/1088)                0(0/0) 7139(104/0/3560/3242/233)       4              67(0/67)   98.45%     /DU  (Datapath_Unit_test_1)
+      47              45(45/0)                0(0/0)  3076(0/0/1194/1730/152)       3              44(0/44)   48.91%        /DU/alu_unit  (ALU)
+     198                0(0/0)                0(0/0)           52(50/0/2/0/0)     198                0(0/0)    0.00%     /occ_snps_pll_controller  (Risc_16_bit_DFT_clk_mux_0)
+     198                0(0/0)                0(0/0)           50(50/0/0/0/0)     198                0(0/0)    0.00%        /occ_snps_pll_controller/U_clk_control_i_0  (Risc_16_bit_DFT_clk_control_0_0)
+      78                0(0/0)                0(0/0)             8(8/0/0/0/0)      78                0(0/0)    0.00%           /occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i  (Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0)
+      32                0(0/0)                0(0/0)             0(0/0/0/0/0)      32                0(0/0)    0.00%              /occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i/add_124  (Risc_16_bit_DW01_add_width3)
+      44                0(0/0)                0(0/0)           32(32/0/0/0/0)      44                0(0/0)    0.00%           /occ_snps_pll_controller/U_clk_control_i_0/U_decode_i  (Risc_16_bit_DFT_decode_width4_0_0)

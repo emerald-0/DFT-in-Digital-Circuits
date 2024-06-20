@@ -1,0 +1,3 @@
+HSOPT_OBJS_STITCH +=rmapats_mop.o  \
+    rmapats.o  \
+    rmar.o 

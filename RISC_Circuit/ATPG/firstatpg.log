@@ -1,0 +1,243 @@
+
+                             Synopsys TestMAX (TM) 
+                                  TetraMAX (R)
+
+               Version U-2022.12-SP7 for linux64 - Oct 10, 2023  
+
+                    Copyright (c) 1996 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+ Tcl mode is on by default. Use -notcl to run in native mode.
+ Executing startup file "/home/vlsilab/Documents/InstalledTools/TetraMax/txs/U-2022.12-SP7/admin/setup/tmaxtcl.rc".
+BUILD-T> source atpg.tcl
+Risc_16_bit_SA_Internal_scan
+ U-2022.12-SP7_191200
+ Warning: All netlist and library module data are now deleted. (M41)
+ Begin reading netlist ( /home/vlsilab/Downloads/SAED90nm_EDK_10072017/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/verilog/saed90nm.v )...
+ End parsing Verilog file /home/vlsilab/Downloads/SAED90nm_EDK_10072017/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/verilog/saed90nm.v with 0 errors.
+ End reading netlist: #modules=366, top=saed90_xbuf, #lines=34080, CPU_time=0.05 sec, Memory=2MB
+ Begin reading netlist ( /home/vlsilab/sagar_harsh_soham/RISC/SYN/OUTPUT_DATA/Risc_16_bit_netlist_scan.v )...
+ End parsing Verilog file /home/vlsilab/sagar_harsh_soham/RISC/SYN/OUTPUT_DATA/Risc_16_bit_netlist_scan.v with 0 errors.
+ End reading netlist: #modules=20, top=Risc_16_bit, #lines=2962, CPU_time=0.01 sec, Memory=1MB
+ ------------------------------------------------------------------------------
+ Begin build model for topcut = Risc_16_bit ...
+ ------------------------------------------------------------------------------
+ Warning: There were 23 faultable pins lost due to tied gate optimizations. (M126)
+ There were 2149 primitives and 23 faultable pins removed during model optimizations
+ Warning: Rule B7 (undriven module output pin) was violated 3 times.
+ Warning: Rule B8 (unconnected module input pin) was violated 37 times.
+ Warning: Rule B9 (undriven module internal net) was violated 17 times.
+ Warning: Rule B10 (unconnected module internal net) was violated 53 times.
+ Warning: Rule N20 (underspecified UDP) was violated 1 times.
+ End build model: #primitives=9165, CPU_time=0.01 sec, Memory=3MB
+ ------------------------------------------------------------------------------
+ Begin learning analyses...
+ End learning analyses, total learning CPU time=0.02 sec.
+ ------------------------------------------------------------------------------
+ End write image: #bytes=409344, CPU time=0.07 sec.
+ Warning: Image created with design viewing enabled. (M367)
+ ------------------------------------------------------------------------------
+ Begin scan design rules checking...
+ ------------------------------------------------------------------------------
+ Begin reading test protocol file /home/vlsilab/sagar_harsh_soham/RISC/SYN/SPF/Risc_16_bitnetlist_Internal_scan.spf...
+ Warning: Rule V11 (repeated entry) was violated 1 times.
+ End parsing STIL file /home/vlsilab/sagar_harsh_soham/RISC/SYN/SPF/Risc_16_bitnetlist_Internal_scan.spf with 0 errors.
+ Test protocol file reading completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin simulating test protocol procedures...
+ Nonscan cell load value results    : #load0 = 1, #load1 = 0
+ Test protocol simulation completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin scan chain operation checking...
+ Chain 1 successfully traced with 5 scan_cells.
+ Chain 2 successfully traced with 4 scan_cells.
+ Chain 3 successfully traced with 5 scan_cells.
+ Chain 4 successfully traced with 5 scan_cells.
+ Chain 5 successfully traced with 5 scan_cells.
+ Chain 6 successfully traced with 5 scan_cells.
+ Chain 7 successfully traced with 5 scan_cells.
+ Chain 8 successfully traced with 5 scan_cells.
+ Chain 9 successfully traced with 5 scan_cells.
+ Chain 10 successfully traced with 5 scan_cells.
+ Chain 11 successfully traced with 5 scan_cells.
+ Chain 12 successfully traced with 5 scan_cells.
+ Chain 13 successfully traced with 5 scan_cells.
+ Chain 14 successfully traced with 5 scan_cells.
+ Chain 15 successfully traced with 5 scan_cells.
+ Chain 16 successfully traced with 5 scan_cells.
+ Chain 17 successfully traced with 5 scan_cells.
+ Chain 18 successfully traced with 5 scan_cells.
+ Chain 19 successfully traced with 5 scan_cells.
+ Chain 20 successfully traced with 5 scan_cells.
+ Chain 21 successfully traced with 5 scan_cells.
+ Chain 22 successfully traced with 5 scan_cells.
+ Chain 23 successfully traced with 5 scan_cells.
+ Chain 24 successfully traced with 5 scan_cells.
+ Chain 25 successfully traced with 5 scan_cells.
+ Chain 26 successfully traced with 5 scan_cells.
+ Chain 27 successfully traced with 5 scan_cells.
+ Chain 28 successfully traced with 5 scan_cells.
+ Chain 29 successfully traced with 5 scan_cells.
+ Chain 30 successfully traced with 5 scan_cells.
+ Chain 31 successfully traced with 5 scan_cells.
+ Chain 32 successfully traced with 5 scan_cells.
+ Chain 33 successfully traced with 5 scan_cells.
+ Chain 34 successfully traced with 5 scan_cells.
+ Chain 35 successfully traced with 5 scan_cells.
+ Chain 36 successfully traced with 5 scan_cells.
+ Chain 37 successfully traced with 5 scan_cells.
+ Chain 38 successfully traced with 5 scan_cells.
+ Chain 39 successfully traced with 5 scan_cells.
+ Chain 40 successfully traced with 5 scan_cells.
+ Chain 41 successfully traced with 5 scan_cells.
+ Chain 42 successfully traced with 5 scan_cells.
+ Chain 43 successfully traced with 5 scan_cells.
+ Chain 44 successfully traced with 5 scan_cells.
+ Chain 45 successfully traced with 5 scan_cells.
+ Chain 46 successfully traced with 5 scan_cells.
+ Chain 47 successfully traced with 5 scan_cells.
+ Chain 48 successfully traced with 5 scan_cells.
+ Chain 49 successfully traced with 5 scan_cells.
+ Chain 50 successfully traced with 5 scan_cells.
+ Chain 51 successfully traced with 5 scan_cells.
+ Chain 52 successfully traced with 5 scan_cells.
+ Chain 53 successfully traced with 5 scan_cells.
+ Chain 54 successfully traced with 4 scan_cells.
+ Chain 55 successfully traced with 4 scan_cells.
+ Chain 56 successfully traced with 4 scan_cells.
+ Warning: Rule S19 (nonscan cell disturb) was violated 10 times.
+ Scan chain operation checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin clock rules checking...
+ Warning: Rule C6 (TE port captured data affected by new capture) was violated 1 times.
+ Clock rules checking completed, CPU time=0.00 sec.
+ Performing clock grouping analysis for 2 clocks.
+ Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin tracing connection cones...
+ Tracing connection cones completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin nonscan rules checking...
+ Nonscan cell summary: #DFF=10  #DLAT=0  #RAM_outs=0  tla_usage_type=none
+ Nonscan behavior:  #L0=1  #LE=8  #TE=1
+ Nonscan rules checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin DRC dependent learning...
+ Fast-sequential depth results: control=8(9100), observe=0(0), detect=0(0), CPU time=0.00 sec
+ DRC dependent learning completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin set operation for load unload constant latches...
+ Set operation for load unload constant latches completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ DRC Summary Report
+ ------------------------------------------------------------------------------
+ Warning: Rule V11 (repeated entry) was violated 1 times.
+ Warning: Rule S19 (nonscan cell disturb) was violated 10 times.
+ Warning: Rule C6 (TE port captured data affected by new capture) was violated 1 times.
+ There were 12 violations that occurred during DRC process.
+ Design rules checking was successful, total CPU time=0.01 sec.
+ ------------------------------------------------------------------------------
+ End write image: #bytes=435551, CPU time=0.08 sec.
+ Warning: Image created with design viewing enabled. (M367)
+ 12358 faults were added to fault list.
+   Uncollapsed Transition Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       1344
+   detected_by_implication        DI      (1344)
+ Possibly detected                PT          0
+ Undetectable                     UD       7064
+   undetectable-unused            UU       (164)
+   undetectable-unobservable      UO         (4)
+   undetectable-tied              UT      (3646)
+   undetectable-blocked           UB      (3250)
+ ATPG untestable                  AU          0
+ Not detected                     ND       3950
+   not-controlled                 NC      (3950)
+ -----------------------------------------------
+ total faults                             12358
+ test coverage                            25.39%
+ fault coverage                           10.88%
+ ATPG effectiveness                       68.04%
+ -----------------------------------------------
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           0
+ -----------------------------------------------
+ Warning: Unconstrained primary input TEST_SE used as SCAN ENABLE may change during at-speed cycles. (M487)
+ Warning: Merging and pattern limits enabled without basic-scan minimum detections per pattern. (M495)
+ Warning: Normal scan DFT does not require the PSD flow, disabling the generation of the parallel strobe data file... (M413)
+ Starting parallel ATPG with 4 processes. (M733)
+ ----------------------------------------------------------------
+ #patterns       #faults         test      process  
+ stored       detect/active    coverage    CPU time   Mem (MB)
+ ---------  -----------------  --------   ----------  -----------
+        31      3407      543    89.74%         0.03        74.14
+        46        36      507    90.40%         0.03       112.00
+        49        73      434    91.67%         0.03       112.00
+        60        87      347    93.24%         0.04       115.51
+        61        80      267    94.72%         0.04       115.51
+   Uncollapsed Transition Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       4790
+   detected_by_simulation         DS      (3446)
+   detected_by_implication        DI      (1344)
+ Possibly detected                PT          0
+ Undetectable                     UD       7301
+   undetectable-unused            UU       (164)
+   undetectable-unobservable      UO         (4)
+   undetectable-tied              UT      (3646)
+   undetectable-blocked           UB      (3250)
+   undetectable-redundant         UR       (237)
+ ATPG untestable                  AU        204
+   atpg_untestable-not_detected   AN       (204)
+ Not detected                     ND         63
+   not-observed                   NO        (63)
+ -----------------------------------------------
+ total faults                             12358
+ test coverage                            94.72%
+ fault coverage                           38.76%
+ ATPG effectiveness                       99.49%
+ -----------------------------------------------
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                          61
+     #basic_scan patterns                     1
+     #fast_sequential patterns               60
+ -----------------------------------------------
+ Memory usage summary: total=125.70MB
+ End parallel ATPG: Elapsed time=0.04 sec, Memory=125.70MB.
+ Write faults completed: 12358 faults were written into file "FAULTS/Risc_16_bit_SA_Internal_scan.faults.gz".
+ Write faults completed: 267 faults were written into file "FAULTS/Risc_16_bit_SA_Internal_scan.AU_PT_ND.faults.gz".
+ End writing file 'Risc_16_bit_SA_Internal_scan.bin.gz' with 61 patterns, File_size = 7834, CPU_time = 0.0 sec.
+ Patterns written reference 247 V statements, generating 495 test cycles
+ End writing file 'Risc_16_bit_SA_Internal_scan_500.stil.gz' with 61 patterns, File_size = 27810, CPU_time = 0.0 sec.
+ Executing 'stil2verilog'...
+ #faults  testcov  instance name (type)
+ -------  -------  -----------------------
+   12358   94.72%  /  (top_module)
+   11728   98.50%     /DU  (Datapath_Unit_test_1)
+    4158   98.90%        /DU/reg_file  (GPRs_test_1)
+    3168   45.83%        /DU/alu_unit  (ALU)
+    3400  100.00%        /DU/dm  (Data_Memory_test_1)
+     250    0.00%     /occ_snps_pll_controller  (Risc_16_bit_DFT_clk_mux_0)
+     248    0.00%        /occ_snps_pll_controller/U_clk_control_i_0  (Risc_16_bit_DFT_clk_control_0_0)
+ End writing Verilog netlist, CPU_time = 0.01 sec, File_size = 170958
+TEST-T> exit

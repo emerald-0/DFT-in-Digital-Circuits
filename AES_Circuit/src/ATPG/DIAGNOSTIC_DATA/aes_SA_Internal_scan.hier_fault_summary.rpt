@@ -1,0 +1,12 @@
+ #faults          #DT(#DS/#DI)          #PT(#AP/#NP)  #UD(#UU/#UO/#UT/#UB/#UR)     #AU          #ND(#NC/#NO)  testcov  instance name (type)
+ ------- --------------------- --------------------- ------------------------- ------- ---------------------  -------  -----------------------
+  148910  148267(123577/24690)                0(0/0)        357(324/0/4/3/26)      19           267(247/20)   99.81%  /  (top_module)
+  135474  135454(115100/20354)                0(0/0)           20(4/0/0/0/16)       0                0(0/0)  100.00%     /core  (aes_core_test_1)
+   11472     11472(10344/1128)                0(0/0)             0(0/0/0/0/0)       0                0(0/0)  100.00%        /core/enc_block  (aes_encipher_block_test_1)
+   28802     28802(27674/1128)                0(0/0)             0(0/0/0/0/0)       0                0(0/0)  100.00%        /core/dec_block  (aes_decipher_block_test_1)
+   12082        12082(12082/0)                0(0/0)             0(0/0/0/0/0)       0                0(0/0)  100.00%           /core/dec_block/inv_sbox_inst  (aes_inv_sbox)
+   80004    79984(61922/18062)                0(0/0)           20(4/0/0/0/16)       0                0(0/0)  100.00%        /core/keymem  (aes_key_mem_test_1)
+   13264        13264(13264/0)                0(0/0)             0(0/0/0/0/0)       0                0(0/0)  100.00%        /core/sbox_inst  (aes_sbox)
+     354              18(4/14)                0(0/0)           58(50/0/4/3/1)      18           260(240/20)    6.08%     /occ_snps_pll_controller  (aes_DFT_clk_mux_0)
+     300                0(0/0)                0(0/0)           50(50/0/0/0/0)       3           247(227/20)    0.00%        /occ_snps_pll_controller/U_clk_control_i_0  (aes_DFT_clk_control_0_0)
+     102                0(0/0)                0(0/0)             8(8/0/0/0/0)       0              94(87/7)    0.00%           /occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i  (aes_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0)

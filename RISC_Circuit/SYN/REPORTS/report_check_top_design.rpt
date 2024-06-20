@@ -1,0 +1,152 @@
+ 
+****************************************
+check_design summary:
+Version:     S-2021.06-SP5-3
+Date:        Mon May 20 15:23:35 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     78
+    Unconnected ports (LINT-28)                                    40
+    Shorted outputs (LINT-31)                                      18
+    Constant outputs (LINT-52)                                     20
+
+Cells                                                              27
+    Cells do not drive (LINT-1)                                     1
+    Connected to power or ground (LINT-32)                         23
+    Nets connected to multiple pins on same cell (LINT-33)          3
+--------------------------------------------------------------------------------
+
+Warning: In design 'Datapath_Unit_test_1', cell 'im' does not drive any nets. (LINT-1)
+Warning: In design 'Risc_16_bit', port 'pll_bypass_2' is not connected to any nets. (LINT-28)
+Warning: In design 'Datapath_Unit_test_1', port 'beq' is not connected to any nets. (LINT-28)
+Warning: In design 'Datapath_Unit_test_1', port 'reg_dst' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Instruction_Memory', port 'pc[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'Data_Memory_test_1', port 'mem_access_addr[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'ALU_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'ALU_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'ALU_DW01_add_0_DW01_add_2', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'ALU_DW01_add_0_DW01_add_2', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'Risc_16_bit_DW01_add_width3', port 'B[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'Risc_16_bit_DW01_add_width3', port 'B[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'Risc_16_bit_DW01_add_width3', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'Risc_16_bit_DW01_add_width3', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'Control_Unit', output port 'alu_op[1]' is connected directly to output port 'alu_src'. (LINT-31)
+Warning: In design 'Control_Unit', output port 'mem_read' is connected directly to output port 'mem_to_reg'. (LINT-31)
+Warning: In design 'Risc_16_bit_DFT_clk_chain_0', output port 'so' is connected directly to output port 'clk_ctrl_data[3]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[0]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[1]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[2]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[3]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[4]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[5]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[6]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[7]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[8]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[9]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[10]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[11]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[12]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[13]'. (LINT-31)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to output port 'instruction[14]'. (LINT-31)
+Warning: In design 'Risc_16_bit', a pin on submodule 'control' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opcode[3]' is connected to logic 0. 
+Warning: In design 'Risc_16_bit', a pin on submodule 'control' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opcode[2]' is connected to logic 0. 
+Warning: In design 'Risc_16_bit', a pin on submodule 'control' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opcode[1]' is connected to logic 0. 
+Warning: In design 'Risc_16_bit', a pin on submodule 'control' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'opcode[0]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'reg_file' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reg_write_dest[2]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'reg_file' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reg_write_dest[1]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'reg_file' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reg_write_dest[0]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'reg_file' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reg_read_addr_1[2]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'reg_file' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reg_read_addr_1[1]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'reg_file' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reg_read_addr_1[0]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'reg_file' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reg_read_addr_2[2]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'reg_file' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reg_read_addr_2[1]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'reg_file' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'reg_read_addr_2[0]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'ALU_Control_unit' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Function[3]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'ALU_Control_unit' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Function[2]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'ALU_Control_unit' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Function[1]' is connected to logic 0. 
+Warning: In design 'Datapath_Unit_test_1', a pin on submodule 'ALU_Control_unit' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'Function[0]' is connected to logic 0. 
+Warning: In design 'Risc_16_bit_DFT_clk_mux_0', a pin on submodule 'U3' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'DATA2_0' is connected to logic 0. 
+Warning: In design 'ALU', a pin on submodule 'sub_17' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'ALU', a pin on submodule 'add_16' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0', a pin on submodule 'add_124' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[2]' is connected to logic 0. 
+Warning: In design 'Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0', a pin on submodule 'add_124' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[1]' is connected to logic 0. 
+Warning: In design 'Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0', a pin on submodule 'add_124' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'Risc_16_bit', the same net is connected to more than one pin on submodule 'control'. (LINT-33)
+   Net 'n1' is connected to pins 'opcode[3]', 'opcode[2]'', 'opcode[1]', 'opcode[0]'.
+Warning: In design 'Datapath_Unit_test_1', the same net is connected to more than one pin on submodule 'reg_file'. (LINT-33)
+   Net 'n62' is connected to pins 'reg_write_dest[2]', 'reg_write_dest[1]'', 'reg_write_dest[0]'.
+Warning: In design 'Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0', the same net is connected to more than one pin on submodule 'add_124'. (LINT-33)
+   Net 'n2' is connected to pins 'B[2]', 'B[1]'', 'CI'.
+Warning: In design 'Datapath_Unit_test_1', output port 'opcode[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Datapath_Unit_test_1', output port 'opcode[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Datapath_Unit_test_1', output port 'opcode[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Datapath_Unit_test_1', output port 'opcode[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[15]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[14]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[13]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[12]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[11]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[10]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[9]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[8]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'Instruction_Memory', output port 'instruction[0]' is connected directly to 'logic 0'. (LINT-52)
+1

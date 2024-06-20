@@ -1,0 +1,6 @@
+Command exited with non-zero status 3
+{"comelab":{"timestamp_begin":1708752929.855550209, "rt":0.00, "ut":0.00, "st":0.00}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1708752929.662237455}
+{"VCS_COMP_START_TIME": 1708752929.662237455}
+{"VCS_COMP_END_TIME": 1708752929.880851203}
+{"VCS_USER_OPTIONS": "-Mupdate -R rsic.v -o i2c -full64 -debug_all"}

@@ -1,0 +1,473 @@
+
+                             Synopsys TestMAX (TM) 
+                                  TetraMAX (R)
+
+               Version U-2022.12-SP7 for linux64 - Oct 10, 2023  
+
+                    Copyright (c) 1996 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+ Tcl mode is on by default. Use -notcl to run in native mode.
+ Executing startup file "/home/vlsilab/Documents/InstalledTools/TetraMax/txs/U-2022.12-SP7/admin/setup/tmaxtcl.rc".
+BUILD-T> source t[K atpg.tcl
+Risc_16_bit_TF_Internal_scan
+ U-2022.12-SP7_191200
+ Warning: All netlist and library module data are now deleted. (M41)
+ Begin reading netlist ( /home/vlsilab/Downloads/SAED90nm_EDK_10072017/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/verilog/saed90nm.v )...
+ End parsing Verilog file /home/vlsilab/Downloads/SAED90nm_EDK_10072017/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/verilog/saed90nm.v with 0 errors.
+ End reading netlist: #modules=366, top=saed90_xbuf, #lines=34080, CPU_time=0.05 sec, Memory=2MB
+ Begin reading netlist ( /home/vlsilab/sagar_harsh_soham/RISC/SYN/OUTPUT_DATA/Risc_16_bit_netlist_scan.v )...
+ End parsing Verilog file /home/vlsilab/sagar_harsh_soham/RISC/SYN/OUTPUT_DATA/Risc_16_bit_netlist_scan.v with 0 errors.
+ End reading netlist: #modules=20, top=Risc_16_bit, #lines=2805, CPU_time=0.01 sec, Memory=1MB
+ ------------------------------------------------------------------------------
+ Begin build model for topcut = Risc_16_bit ...
+ ------------------------------------------------------------------------------
+ Warning: There were 23 faultable pins lost due to tied gate optimizations. (M126)
+ There were 2145 primitives and 23 faultable pins removed during model optimizations
+ Warning: Rule B7 (undriven module output pin) was violated 3 times.
+ Warning: Rule B8 (unconnected module input pin) was violated 37 times.
+ Warning: Rule B9 (undriven module internal net) was violated 17 times.
+ Warning: Rule B10 (unconnected module internal net) was violated 53 times.
+ Warning: Rule N20 (underspecified UDP) was violated 1 times.
+ End build model: #primitives=9062, CPU_time=0.01 sec, Memory=3MB
+ ------------------------------------------------------------------------------
+ Begin learning analyses...
+ End learning analyses, total learning CPU time=0.02 sec.
+ ------------------------------------------------------------------------------
+ End write image: #bytes=394710, CPU time=0.07 sec.
+ Warning: Image created with design viewing enabled. (M367)
+ ------------------------------------------------------------------------------
+ Begin scan design rules checking...
+ ------------------------------------------------------------------------------
+ Begin reading test protocol file /home/vlsilab/sagar_harsh_soham/RISC/SYN/SPF/Risc_16_bitnetlist_Internal_scan.spf...
+ Warning: Rule V11 (repeated entry) was violated 1 times.
+ End parsing STIL file /home/vlsilab/sagar_harsh_soham/RISC/SYN/SPF/Risc_16_bitnetlist_Internal_scan.spf with 0 errors.
+ Test protocol file reading completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin simulating test protocol procedures...
+ Nonscan cell load value results    : #load0 = 1, #load1 = 0
+ Test protocol simulation completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin scan chain operation checking...
+ Chain 1 successfully traced with 91 scan_cells.
+ Chain 2 successfully traced with 4 scan_cells.
+ Chain 3 successfully traced with 91 scan_cells.
+ Chain 4 successfully traced with 90 scan_cells.
+ Warning: Rule S19 (nonscan cell disturb) was violated 10 times.
+ Scan chain operation checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin clock rules checking...
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[0] (8772). (C39-1)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[15] (8773). (C39-2)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[9] (8774). (C39-3)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[8] (8775). (C39-4)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[7] (8776). (C39-5)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[6] (8777). (C39-6)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[5] (8778). (C39-7)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[4] (8779). (C39-8)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[3] (8780). (C39-9)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[2] (8781). (C39-10)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[1] (8782). (C39-11)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[14] (8783). (C39-12)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[13] (8784). (C39-13)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[12] (8785). (C39-14)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[11] (8786). (C39-15)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/\pc_current_reg[10] (8787). (C39-16)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][15] (8788). (C39-17)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][14] (8789). (C39-18)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][13] (8790). (C39-19)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][12] (8791). (C39-20)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][11] (8792). (C39-21)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][10] (8793). (C39-22)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][9] (8794). (C39-23)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][8] (8795). (C39-24)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][7] (8796). (C39-25)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][6] (8797). (C39-26)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][5] (8798). (C39-27)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][4] (8799). (C39-28)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][3] (8800). (C39-29)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][2] (8801). (C39-30)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][1] (8802). (C39-31)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[7][0] (8803). (C39-32)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][15] (8804). (C39-33)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][14] (8805). (C39-34)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][13] (8806). (C39-35)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][12] (8807). (C39-36)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][11] (8808). (C39-37)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][10] (8809). (C39-38)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][9] (8810). (C39-39)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][8] (8811). (C39-40)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][7] (8812). (C39-41)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][6] (8813). (C39-42)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][5] (8814). (C39-43)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][4] (8815). (C39-44)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][3] (8816). (C39-45)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][2] (8817). (C39-46)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][1] (8818). (C39-47)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[6][0] (8819). (C39-48)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][15] (8820). (C39-49)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][14] (8821). (C39-50)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][13] (8822). (C39-51)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][12] (8823). (C39-52)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][11] (8824). (C39-53)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][10] (8825). (C39-54)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][9] (8826). (C39-55)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][8] (8827). (C39-56)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][7] (8828). (C39-57)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][6] (8829). (C39-58)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][5] (8830). (C39-59)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][4] (8831). (C39-60)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][3] (8832). (C39-61)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][2] (8833). (C39-62)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][1] (8834). (C39-63)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[5][0] (8835). (C39-64)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][15] (8836). (C39-65)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][14] (8837). (C39-66)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][13] (8838). (C39-67)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][12] (8839). (C39-68)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][11] (8840). (C39-69)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][10] (8841). (C39-70)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][9] (8842). (C39-71)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][8] (8843). (C39-72)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][7] (8844). (C39-73)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][6] (8845). (C39-74)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][5] (8846). (C39-75)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][4] (8847). (C39-76)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][3] (8848). (C39-77)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][2] (8849). (C39-78)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][1] (8850). (C39-79)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[4][0] (8851). (C39-80)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][15] (8852). (C39-81)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][14] (8853). (C39-82)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][13] (8854). (C39-83)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][12] (8855). (C39-84)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][11] (8856). (C39-85)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][10] (8857). (C39-86)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][9] (8858). (C39-87)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][8] (8859). (C39-88)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][7] (8860). (C39-89)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][6] (8861). (C39-90)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][5] (8862). (C39-91)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][4] (8863). (C39-92)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][3] (8864). (C39-93)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][2] (8865). (C39-94)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][1] (8866). (C39-95)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[3][0] (8867). (C39-96)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][15] (8868). (C39-97)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][14] (8869). (C39-98)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][13] (8870). (C39-99)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][12] (8871). (C39-100)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][11] (8872). (C39-101)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][10] (8873). (C39-102)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][9] (8874). (C39-103)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][8] (8875). (C39-104)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][7] (8876). (C39-105)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][6] (8877). (C39-106)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][5] (8878). (C39-107)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][4] (8879). (C39-108)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][3] (8880). (C39-109)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][2] (8881). (C39-110)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][1] (8882). (C39-111)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[2][0] (8883). (C39-112)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][15] (8884). (C39-113)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][14] (8885). (C39-114)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][13] (8886). (C39-115)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][12] (8887). (C39-116)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][11] (8888). (C39-117)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][10] (8889). (C39-118)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][9] (8890). (C39-119)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][8] (8891). (C39-120)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][7] (8892). (C39-121)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][6] (8893). (C39-122)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][5] (8894). (C39-123)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][4] (8895). (C39-124)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][3] (8896). (C39-125)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][2] (8897). (C39-126)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][1] (8898). (C39-127)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[1][0] (8899). (C39-128)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][15] (8900). (C39-129)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][14] (8901). (C39-130)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][13] (8902). (C39-131)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][12] (8903). (C39-132)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][11] (8904). (C39-133)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][10] (8905). (C39-134)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][9] (8906). (C39-135)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][8] (8907). (C39-136)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][7] (8908). (C39-137)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][6] (8909). (C39-138)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][5] (8910). (C39-139)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][4] (8911). (C39-140)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][3] (8912). (C39-141)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][2] (8913). (C39-142)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][1] (8914). (C39-143)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/reg_file/\reg_array_reg[0][0] (8915). (C39-144)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][15] (8916). (C39-145)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][14] (8917). (C39-146)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][13] (8918). (C39-147)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][12] (8919). (C39-148)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][11] (8920). (C39-149)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][10] (8921). (C39-150)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][9] (8922). (C39-151)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][8] (8923). (C39-152)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][7] (8924). (C39-153)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][6] (8925). (C39-154)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][5] (8926). (C39-155)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][4] (8927). (C39-156)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][3] (8928). (C39-157)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][2] (8929). (C39-158)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][1] (8930). (C39-159)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[7][0] (8931). (C39-160)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][15] (8932). (C39-161)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][14] (8933). (C39-162)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][13] (8934). (C39-163)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][12] (8935). (C39-164)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][11] (8936). (C39-165)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][10] (8937). (C39-166)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][9] (8938). (C39-167)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][8] (8939). (C39-168)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][7] (8940). (C39-169)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][6] (8941). (C39-170)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][5] (8942). (C39-171)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][4] (8943). (C39-172)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][3] (8944). (C39-173)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][2] (8945). (C39-174)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][1] (8946). (C39-175)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[6][0] (8947). (C39-176)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][15] (8948). (C39-177)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][14] (8949). (C39-178)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][13] (8950). (C39-179)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][12] (8951). (C39-180)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][11] (8952). (C39-181)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][10] (8953). (C39-182)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][9] (8954). (C39-183)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][8] (8955). (C39-184)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][7] (8956). (C39-185)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][6] (8957). (C39-186)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][5] (8958). (C39-187)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][4] (8959). (C39-188)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][3] (8960). (C39-189)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][2] (8961). (C39-190)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][1] (8962). (C39-191)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[5][0] (8963). (C39-192)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][15] (8964). (C39-193)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][14] (8965). (C39-194)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][13] (8966). (C39-195)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][12] (8967). (C39-196)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][11] (8968). (C39-197)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][10] (8969). (C39-198)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][9] (8970). (C39-199)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][8] (8971). (C39-200)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][7] (8972). (C39-201)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][6] (8973). (C39-202)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][5] (8974). (C39-203)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][4] (8975). (C39-204)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][3] (8976). (C39-205)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][2] (8977). (C39-206)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][1] (8978). (C39-207)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[4][0] (8979). (C39-208)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][15] (8980). (C39-209)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][14] (8981). (C39-210)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][13] (8982). (C39-211)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][12] (8983). (C39-212)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][11] (8984). (C39-213)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][10] (8985). (C39-214)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][9] (8986). (C39-215)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][8] (8987). (C39-216)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][7] (8988). (C39-217)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][6] (8989). (C39-218)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][5] (8990). (C39-219)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][4] (8991). (C39-220)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][3] (8992). (C39-221)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][2] (8993). (C39-222)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][1] (8994). (C39-223)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[3][0] (8995). (C39-224)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][15] (8996). (C39-225)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][14] (8997). (C39-226)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][13] (8998). (C39-227)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][12] (8999). (C39-228)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][11] (9000). (C39-229)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][10] (9001). (C39-230)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][9] (9002). (C39-231)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][8] (9003). (C39-232)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][7] (9004). (C39-233)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][6] (9005). (C39-234)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][5] (9006). (C39-235)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][4] (9007). (C39-236)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][3] (9008). (C39-237)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][2] (9009). (C39-238)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][1] (9010). (C39-239)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[2][0] (9011). (C39-240)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][15] (9012). (C39-241)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][14] (9013). (C39-242)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][13] (9014). (C39-243)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][12] (9015). (C39-244)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][11] (9016). (C39-245)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][10] (9017). (C39-246)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][9] (9018). (C39-247)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][8] (9019). (C39-248)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][7] (9020). (C39-249)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][6] (9021). (C39-250)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][5] (9022). (C39-251)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][4] (9023). (C39-252)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][3] (9024). (C39-253)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][2] (9025). (C39-254)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][1] (9026). (C39-255)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[1][0] (9027). (C39-256)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][15] (9028). (C39-257)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][14] (9029). (C39-258)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][13] (9030). (C39-259)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][12] (9031). (C39-260)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][11] (9032). (C39-261)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][10] (9033). (C39-262)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][9] (9034). (C39-263)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][8] (9035). (C39-264)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][7] (9036). (C39-265)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][6] (9037). (C39-266)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][5] (9038). (C39-267)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][4] (9039). (C39-268)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][3] (9040). (C39-269)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][2] (9041). (C39-270)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][1] (9042). (C39-271)
+ Warning: Nonlogical clock scan_clk connects to scancell DU/dm/\memory_reg[0][0] (9043). (C39-272)
+ Warning: Nonlogical clock scan_clk connects to scancell snps_clk_chain_0/\U_shftreg_0/ff_3/q_reg (9054). (C39-273)
+ Warning: Nonlogical clock scan_clk connects to scancell snps_clk_chain_0/\U_shftreg_0/ff_2/q_reg (9055). (C39-274)
+ Warning: Nonlogical clock scan_clk connects to scancell snps_clk_chain_0/\U_shftreg_0/ff_1/q_reg (9056). (C39-275)
+ Warning: Nonlogical clock scan_clk connects to scancell snps_clk_chain_0/\U_shftreg_0/ff_0/q_reg (9057). (C39-276)
+ Warning: Rule C6 (TE port captured data affected by new capture) was violated 1 times.
+ Warning: Rule C39 (nonlogical clock connects to scancell) was violated 276 times.
+ Clock rules checking completed, CPU time=0.00 sec.
+ Performing clock grouping analysis for 2 clocks.
+ Clock grouping results: #pairs=0, #groups=0, #serial_pairs=0, #disturbed_pairs=0, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin tracing connection cones...
+ Tracing connection cones completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin nonscan rules checking...
+ Nonscan cell summary: #DFF=10  #DLAT=0  #RAM_outs=0  tla_usage_type=none
+ Nonscan behavior:  #L0=1  #LE=8  #TE=1
+ Nonscan rules checking completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin DRC dependent learning...
+ Fast-sequential depth results: control=8(9049), observe=0(0), detect=0(0), CPU time=0.00 sec
+ DRC dependent learning completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ Begin set operation for load unload constant latches...
+ Set operation for load unload constant latches completed, CPU time=0.00 sec.
+ ------------------------------------------------------------------------------
+ DRC Summary Report
+ ------------------------------------------------------------------------------
+ Warning: Rule V11 (repeated entry) was violated 1 times.
+ Warning: Rule S19 (nonscan cell disturb) was violated 10 times.
+ Warning: Rule C6 (TE port captured data affected by new capture) was violated 1 times.
+ Warning: Rule C39 (nonlogical clock connects to scancell) was violated 276 times.
+ There were 288 violations that occurred during DRC process.
+ Design rules checking was successful, total CPU time=0.01 sec.
+ ------------------------------------------------------------------------------
+ End write image: #bytes=417911, CPU time=0.07 sec.
+ Warning: Image created with design viewing enabled. (M367)
+ 13376 faults were added to fault list.
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       1981
+   detected_by_implication        DI      (1981)
+ Possibly detected                PT          0
+ Undetectable                     UD       5691
+   undetectable-unused            UU       (164)
+   undetectable-unobservable      UO         (4)
+   undetectable-tied              UT      (3064)
+   undetectable-blocked           UB      (2341)
+   undetectable-redundant         UR       (118)
+ ATPG untestable                  AU          0
+ Not detected                     ND       5704
+   not-controlled                 NC      (5704)
+ -----------------------------------------------
+ total faults                             13376
+ test coverage                            25.78%
+ fault coverage                           14.81%
+ ATPG effectiveness                       57.36%
+ -----------------------------------------------
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           0
+ -----------------------------------------------
+ Warning: Merging and pattern limits enabled without basic-scan minimum detections per pattern. (M495)
+ Warning: Normal scan DFT does not require the PSD flow, disabling the generation of the parallel strobe data file... (M413)
+ Starting parallel ATPG with 4 processes. (M733)
+ ----------------------------------------------------------------
+ #patterns       #faults         test      process  
+ stored       detect/active    coverage    CPU time   Mem (MB)
+ ---------  -----------------  --------   ----------  -----------
+        13      2706     2998    59.99%         0.06        73.90
+        19       554     2444    66.09%         0.06       111.75
+        26      1509      935    86.64%         0.07       115.12
+        31       649      286    95.81%         0.07       118.22
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       6533
+   detected_by_simulation         DS      (4552)
+   detected_by_implication        DI      (1981)
+ Possibly detected                PT          0
+ Undetectable                     UD       6557
+   undetectable-unused            UU       (164)
+   undetectable-unobservable      UO         (4)
+   undetectable-tied              UT      (3064)
+   undetectable-blocked           UB      (2341)
+   undetectable-redundant         UR       (984)
+ ATPG untestable                  AU          0
+ Not detected                     ND        286
+   not-controlled                 NC       (286)
+ -----------------------------------------------
+ total faults                             13376
+ test coverage                            95.81%
+ fault coverage                           48.84%
+ ATPG effectiveness                       97.86%
+ -----------------------------------------------
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                          31
+     #basic_scan patterns                    31
+ -----------------------------------------------
+ Memory usage summary: total=124.88MB
+ End parallel ATPG: Elapsed time=0.07 sec, Memory=124.88MB.
+ Write faults completed: 13376 faults were written into file "FAULTS/Risc_16_bit_TF_Internal_scan.faults.gz".
+ Write faults completed: 286 faults were written into file "FAULTS/Risc_16_bit_TF_Internal_scan.AU_PT_ND.faults.gz".
+ End writing file 'Risc_16_bit_TF_Internal_scan.bin.gz' with 31 patterns, File_size = 2856, CPU_time = 0.0 sec.
+ Patterns written reference 97 V statements, generating 2977 test cycles
+ End writing file 'Risc_16_bit_TF_Internal_scan_500.stil.gz' with 31 patterns, File_size = 7673, CPU_time = 0.0 sec.
+ Executing 'stil2verilog'...
+ #faults  testcov  instance name (type)
+ -------  -------  -----------------------
+   13376   95.81%  /  (top_module)
+   12816  100.00%     /DU  (Datapath_Unit_test_1)
+    4670  100.00%        /DU/reg_file  (GPRs_test_1)
+    3168  100.00%        /DU/alu_unit  (ALU)
+    3912  100.00%        /DU/dm  (Data_Memory_test_1)
+     354    6.08%     /occ_snps_pll_controller  (Risc_16_bit_DFT_clk_mux_0)
+     300    0.00%        /occ_snps_pll_controller/U_clk_control_i_0  (Risc_16_bit_DFT_clk_control_0_0)
+ End writing Verilog netlist, CPU_time = 0.01 sec, File_size = 158160
+TEST-T> repor5t[K[Kt_faults -class  AU > AU.rpt
+TEST-T> report_faults  -class ND . [K > ND.rpt
+TEST-T> gui_start
+ Starting Gui session... 
+ Gui session ended. 
+
+TEST-T> TEST-T> 
+TEST-T> exit

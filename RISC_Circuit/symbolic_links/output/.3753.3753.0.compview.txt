@@ -1,0 +1,7 @@
+{"vcs1-fulldr":{"timestamp_begin":1713082422.876245565, "rt":5.50, "ut":1.59, "st":0.13}}
+{"link":{"timestamp_begin":1713082432.655382829, "rt":5.02, "ut":0.11, "st":0.02}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1713082421.780639645}
+{"VCS_COMP_START_TIME": 1713082421.780639645}
+{"VCS_COMP_END_TIME": 1713082438.792099842}
+{"VCS_USER_OPTIONS": "-kdb -reportstats +vcs+lic+wait -full64 -top Risc_16_bit_test -lca -Mdir=output -ntb_opts uvm -sverilog +libext+.v+.sv -error=noMPD -debug_access+f -timescale=1ns/1fs +plusarg_save -partcomp -fastpartcomp=j4 -j2 +define+SVT_JTAG_MAX_INSTRUCTION_WIDTH=70 +define+SVT_JTAG_MAX_DATA_WIDTH=16 +define+GATE_SIM -debug_access+all -debug_access+dmptf -debug_region=cell+lib +nocelldefinepli+0 -diag timescale +tmax_parallel=7 +define_tmax_usf_debug_strobe_mode=1 +define+VIRAGE_FAST_VERILOG +define+_fv+VIRL_functiononly +tetramax +define+tmax_msg=4 -f ./risc.f"}
+{"fulldr_vcs1": {"peak_mem": 537688}}

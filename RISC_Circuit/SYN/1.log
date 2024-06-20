@@ -1,0 +1,636 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version S-2021.06-SP5-3 for linux64 - Jun 16, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/vlsilab/.synopsys_dc_gui/preferences.tcl
+Warning: Cannot use command line editor for terminal type 'xterm-256color'.  (UI-74)
+dc_shell> Loading db file '/home/vlsilab/Downloads/SAED90nm_EDK_10072017/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db'
+Loading db file '/home/vlsilab/Documents/InstalledTools/DC/S-2021.06-SP5-3/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/vlsilab/Documents/InstalledTools/DC/S-2021.06-SP5-3/libraries/syn/gtech.db'
+Loading db file '/home/vlsilab/Documents/InstalledTools/DC/S-2021.06-SP5-3/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/risc.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/risc.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/AluControl.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/alu.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v:22: The statements in initial blocks are ignored. (VER-281)
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/prog.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v:23: The statements in initial blocks are ignored. (VER-281)
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/prog.v:13: The statements in initial blocks are ignored. (VER-281)
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v:73: the undeclared symbol 'bne_control' assumed to have the default net type, which is 'wire'. (VER-936)
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Control_Unit.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v:30: The statements in initial blocks are ignored. (VER-281)
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/AluControl.v:17: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+
+Statistics for case statements in always block at line 8 in file
+	'/home/vlsilab/sagar_harsh_soham/RISC/VCS/AluControl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            9             |    auto/auto     |
+===============================================
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/alu.v:15: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 13 in file
+	'/home/vlsilab/sagar_harsh_soham/RISC/VCS/alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            15            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine Data_Memory line 30 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     memory_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|  Data_Memory/34  |   8    |   16    |      3       |
+======================================================
+
+Inferred memory devices in process
+	in routine GPRs line 27 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    reg_array_reg    | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|     GPRs/34      |   8    |   16    |      3       |
+|     GPRs/35      |   8    |   16    |      3       |
+======================================================
+Statistics for MUX_OPs
+===========================================================
+|   block name/line     | Inputs | Outputs | # sel inputs |
+===========================================================
+| Instruction_Memory/17 |   16   |    1    |      4       |
+===========================================================
+
+Inferred memory devices in process
+	in routine Datapath_Unit line 33 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   pc_current_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/RISC/VCS/alu_control.db:alu_control'
+Loaded 8 designs.
+Current design is 'alu_control'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/alu.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/alu.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/alu.v:15: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 13 in file
+	'/home/vlsilab/sagar_harsh_soham/RISC/VCS/alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            15            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/RISC/VCS/ALU.db:ALU'
+Warning: Overwriting design file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/ALU.db'. (DDB-24)
+Loaded 1 design.
+Current design is 'ALU'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v:22: The statements in initial blocks are ignored. (VER-281)
+
+Inferred memory devices in process
+	in routine Data_Memory line 30 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     memory_reg      | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|  Data_Memory/34  |   8    |   16    |      3       |
+======================================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Data_Memory.db:Data_Memory'
+Warning: Overwriting design file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Data_Memory.db'. (DDB-24)
+Loaded 1 design.
+Current design is 'Data_Memory'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v:23: The statements in initial blocks are ignored. (VER-281)
+
+Inferred memory devices in process
+	in routine GPRs line 27 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    reg_array_reg    | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|     GPRs/34      |   8    |   16    |      3       |
+|     GPRs/35      |   8    |   16    |      3       |
+======================================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/RISC/VCS/GPRs.db:GPRs'
+Warning: Overwriting design file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/GPRs.db'. (DDB-24)
+Loaded 1 design.
+Current design is 'GPRs'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/prog.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/prog.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/prog.v:13: The statements in initial blocks are ignored. (VER-281)
+Statistics for MUX_OPs
+===========================================================
+|   block name/line     | Inputs | Outputs | # sel inputs |
+===========================================================
+| Instruction_Memory/17 |   16   |    1    |      4       |
+===========================================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Instruction_Memory.db:Instruction_Memory'
+Warning: Overwriting design file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Instruction_Memory.db'. (DDB-24)
+Loaded 1 design.
+Current design is 'Instruction_Memory'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+No designs were read
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v:73: the undeclared symbol 'bne_control' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v:30: The statements in initial blocks are ignored. (VER-281)
+
+Inferred memory devices in process
+	in routine Datapath_Unit line 33 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   pc_current_reg    | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.db:Datapath_Unit'
+Warning: Overwriting design file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.db'. (DDB-24)
+Loaded 1 design.
+Current design is 'Datapath_Unit'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Control_Unit.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Control_Unit.v
+
+Statistics for case statements in always block at line 13 in file
+	'/home/vlsilab/sagar_harsh_soham/RISC/VCS/Control_Unit.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            15            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Control_Unit.db:Control_Unit'
+Warning: Overwriting design file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/Control_Unit.db'. (DDB-24)
+Loaded 1 design.
+Current design is 'Control_Unit'.
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/AluControl.v'
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/AluControl.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/AluControl.v:17: Statement unreachable (Branch condition impossible to meet).  (VER-61)
+
+Statistics for case statements in always block at line 8 in file
+	'/home/vlsilab/sagar_harsh_soham/RISC/VCS/AluControl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            9             |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Current design is now '/home/vlsilab/sagar_harsh_soham/RISC/VCS/alu_control.db:alu_control'
+Warning: Overwriting design file '/home/vlsilab/sagar_harsh_soham/RISC/VCS/alu_control.db'. (DDB-24)
+Loaded 1 design.
+Current design is 'alu_control'.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/risc.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/AluControl.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/alu.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v:22: The statements in initial blocks are ignored. (VER-281)
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/prog.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v:23: The statements in initial blocks are ignored. (VER-281)
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/prog.v:13: The statements in initial blocks are ignored. (VER-281)
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v:73: the undeclared symbol 'bne_control' assumed to have the default net type, which is 'wire'. (VER-936)
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Control_Unit.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v:30: The statements in initial blocks are ignored. (VER-281)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/alu.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/alu.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/data.v:22: The statements in initial blocks are ignored. (VER-281)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/register.v:23: The statements in initial blocks are ignored. (VER-281)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/prog.v
+Opening include file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/prog.v:13: The statements in initial blocks are ignored. (VER-281)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Parameter.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v:73: the undeclared symbol 'bne_control' assumed to have the default net type, which is 'wire'. (VER-936)
+Warning:  /home/vlsilab/sagar_harsh_soham/RISC/VCS/Datapath_Unit.v:30: The statements in initial blocks are ignored. (VER-281)
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/Control_Unit.v
+Presto compilation completed successfully.
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/VCS/AluControl.v
+Presto compilation completed successfully.
+Current design is 'Risc_16_bit'.
+Creating port 'scan_clk' in design 'Risc_16_bit'.
+Creating port 'SCAN_MODE' in design 'Risc_16_bit'.
+Creating port 'pll_bypass_2' in design 'Risc_16_bit'.
+Warning: Can't find object 'TEST_S04' in design 'Risc_16_bit'. (UID-95)
+Information: Choosing a test methodology will restrict the optimization of sequential cells. (UIO-12)
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.5 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.5 |     *     |
+============================================================================
+
+============================================================================
+| Flow Information                                                         |
+----------------------------------------------------------------------------
+| Flow         | Design Compiler                                           |
+============================================================================
+| Design Information                                      | Value          |
+============================================================================
+| Number of Scenarios                                     | 0              |
+| Leaf Cell Count                                         | 621            |
+| Number of User Hierarchies                              | 7              |
+| Sequential Cell Count                                   | 272            |
+| Macro Count                                             | 0              |
+| Number of Power Domains                                 | 0              |
+| Design with UPF Data                                    | false          |
+============================================================================
+
+Information: There are 45 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Control_Unit'
+  Processing 'Data_Memory'
+  Processing 'ALU'
+  Processing 'alu_control'
+  Processing 'GPRs'
+  Processing 'Instruction_Memory'
+  Processing 'Datapath_Unit'
+  Processing 'Risc_16_bit'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'Datapath_Unit_DW01_add_0'
+  Processing 'Datapath_Unit_DW01_add_1'
+  Mapping 'ALU_DW_cmp_0'
+  Mapping 'DW_rightsh'
+Information: Added key list 'DesignWare' to design 'ALU'. (DDB-72)
+  Mapping 'DW_leftsh'
+  Processing 'ALU_DW01_sub_0'
+  Processing 'ALU_DW01_add_0_DW01_add_2'
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width16' (rpl)
+  Processing 'DW01_add_width16'
+  Processing 'Datapath_Unit_DW01_add_2_DW01_add_3'
+  Mapping 'Datapath_Unit_DW_mult_uns_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01   22749.7      0.00       0.0       5.3                          
+    0:00:01   22749.7      0.00       0.0       5.3                          
+    0:00:01   22749.7      0.00       0.0       5.3                          
+    0:00:01   22749.7      0.00       0.0       5.3                          
+    0:00:01   22749.7      0.00       0.0       5.3                          
+    0:00:01   20457.7      0.00       0.0       0.0                          
+    0:00:01   20445.7      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20438.3      0.00       0.0       0.0                          
+    0:00:01   20310.2      0.00       0.0       0.0                          
+    0:00:01   20282.6      0.00       0.0       0.0                          
+    0:00:01   20254.9      0.00       0.0       0.0                          
+    0:00:01   20238.3      0.00       0.0       0.0                          
+    0:00:01   20238.3      0.00       0.0       0.0                          
+    0:00:01   20238.3      0.00       0.0       0.0                          
+    0:00:01   20238.3      0.00       0.0       0.0                          
+    0:00:01   20238.3      0.00       0.0       0.0                          
+    0:00:01   20238.3      0.00       0.0       0.0                          
+    0:00:01   20238.3      0.00       0.0       0.0                          
+    0:00:01   20238.3      0.00       0.0       0.0                          
+    0:00:01   20238.3      0.00       0.0       0.0                          
+    0:00:01   20238.3      0.00       0.0       0.0                          
+Loading db file '/home/vlsilab/Downloads/SAED90nm_EDK_10072017/SAED90nm_EDK_10072017/SAED90_EDK/SAED_EDK90nm/Digital_Standard_cell_Library/synopsys/models/saed90nm_typ.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Writing ddc file 'OUTPUT_DATA/Risc_16_bit_netlist_pre_scan.ddc'.
+Writing verilog file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/OUTPUT_DATA/Risc_16_bit_netlist_pre_scan.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/OUTPUT_DATA/Risc_16_bit_netlist_pre_scan.sdf'. (WT-3)
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft configuration specification.
+Accepted clock controller specification.
+Accepted scan configuration for modes: all_dft
+Warning: duplicate option '-type' overrides previous value. (CMD-018)
+Warning: duplicate option '-view' overrides previous value. (CMD-018)
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted dft signal specification for modes: all_dft
+Accepted scan configuration for modes: all_dft
+Accepted scan configuration for modes: all_dft
+In mode: all_dft...
+
+Information: Starting test protocol creation. (TEST-219)
+  ...reading user specified clock signals...
+Information: Identified system/test clock port clk (45.0,95.0). (TEST-265)
+Information: Identified system/test clock port scan_clk (45.0,95.0). (TEST-265)
+  ...reading user specified asynchronous signals...
+dft_drc start. Date and time: Mon May 20 14:54:48 2024
+dft_drc end. Date and time: Mon May 20 14:54:49 2024
+insert_dft start. Date and time: Mon May 20 14:54:49 2024
+  Information: Using test design rule information from previous dft_drc run.
+  Checking compatibility of PLL clock controller 'snps_clk_mux'
+  Architecting Scan Chains
+* "/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v" file correctly generated *
+Writing test model file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.ctl'...
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v
+
+Inferred memory devices in process
+	in routine Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0 line 107 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    count_int_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0 line 116 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  tercnt_n_reg_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Risc_16_bit_DFT_clk_control_0_0 line 170 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| fast_clk_enable_l_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine Risc_16_bit_DFT_clk_control_0_0 line 176 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v'.
+=================================================================================
+|     Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================
+| slow_clk_enable_l_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=================================================================================
+
+Inferred memory devices in process
+	in routine Risc_16_bit_DFT_clk_control_0_0 line 182 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| load_n_meta_0_l_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Risc_16_bit_DFT_clk_control_0_0 line 188 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| load_n_meta_1_l_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Risc_16_bit_DFT_clk_control_0_0 line 194 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| load_n_meta_2_l_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Risc_16_bit_DFT_clk_control_0_0 line 222 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| pipeline_or_tree_l_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+==================================================================================
+Presto compilation completed successfully.
+Removing netlist file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.v'...
+Removing test model file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_mux_0.ctl'...
+  Allocating blocks in 'occ_snps_pll_controller_dummy'
+  Building model 'DW01_NAND2'
+  Building model 'DW01_NOT'
+  Allocating blocks in 'occ_snps_pll_controller_dummy/U_clk_control_i_0/U_cycle_ctr_i'
+  Building model 'DW01_add_width3' (rpl)
+* "/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_chain_0.v" file correctly generated *
+Writing test model file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_chain_0.ctl'...
+Loading verilog file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_chain_0.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_chain_0.v
+
+Inferred memory devices in process
+	in routine Risc_16_bit_shftreg_ff_0_0 line 40 in file
+		'/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_chain_0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        q_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Removing netlist file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_chain_0.v'...
+Removing test model file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/Risc_16_bit_DFT_clk_chain_0.ctl'...
+  Allocating blocks in 'snps_clk_chain_0_dummy/U_shftreg_0/mux_0'
+  Allocating blocks in 'snps_clk_chain_0_dummy/U_shftreg_0/mux_1'
+  Allocating blocks in 'snps_clk_chain_0_dummy/U_shftreg_0/mux_2'
+  Allocating blocks in 'snps_clk_chain_0_dummy/U_shftreg_0/mux_3'
+  Routing Scan Chains
+  Routing Global Signals
+Warning: Disconnecting pin 'snps_clk_chain_0/se' to route scan enable. (TEST-394)
+  Mapping New Logic
+Resetting current test mode
+  Processing 'Risc_16_bit_DW01_add_width3'
+  Processing 'Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0'
+  Processing 'Risc_16_bit_DFT_decode_width4_0_0'
+  Processing 'Risc_16_bit_DFT_or_gate_width4_0_0'
+  Processing 'Risc_16_bit_DFT_clk_control_0_0'
+  Processing 'Risc_16_bit_DFT_gf_mux_0_0'
+  Processing 'Risc_16_bit_mselector_n2_m1'
+  Processing 'Risc_16_bit_mselector_n2_m1_0'
+  Processing 'Risc_16_bit_DFT_clk_mux_0'
+  Processing 'Risc_16_bit_DFT_clk_chain_0'
+Information: Changed wire load model for 'Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0' from 'ForQA' to '8000'. (OPT-170)
+Information: Changed wire load model for 'Risc_16_bit_DFT_clk_control_0_0' from 'ForQA' to '8000'. (OPT-170)
+Information: Changed wire load model for 'Risc_16_bit_DFT_clk_mux_0' from 'ForQA' to '8000'. (OPT-170)
+Information: Changed wire load model for 'Data_Memory_test_1' from '(none)' to '8000'. (OPT-170)
+Information: Changed wire load model for 'GPRs_test_1' from '(none)' to '8000'. (OPT-170)
+Information: Changed wire load model for 'Datapath_Unit_test_1' from '(none)' to '35000'. (OPT-170)
+Information: Updating design information... (UID-85)
+Information: There are 276 clock pins driven by multiple clocks, and some of them are driven by up-to 2 clocks. (TIM-099)
+
+insert_dft end. Date and time: Mon May 20 14:54:50 2024
+Writing verilog file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/OUTPUT_DATA/Risc_16_bit_netlist_scan.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+Warning: Verilog writer has added 4 nets to module Risc_16_bit_DFT_clk_control_0_0 using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+Writing test model file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/CTL/Risc_16_bit_netlist_scan_post_dft_test_model.ctl'...
+Writing test model file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/OUTPUT_DATA/Risc_16_bit_scan_post_dft_test_model.ctlddc'...
+Writing ddc file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/OUTPUT_DATA/Risc_16_bit_scan_post_dft_test_model.ctlddc'.
+Accepted dft drc configuration specification.
+Writing test protocol file '/home/vlsilab/sagar_harsh_soham/RISC/SYN/SPF/Risc_16_bitnetlist_Internal_scan.spf' for mode 'Internal_scan'...
+dc_shell> Current design is 'Risc_16_bit'.
+dc_shell> 4.1
+Current design is 'Risc_16_bit'.
+dc_shell> 

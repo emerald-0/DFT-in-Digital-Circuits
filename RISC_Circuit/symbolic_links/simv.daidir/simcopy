@@ -1,0 +1,169 @@
+#!/bin/csh -f
+set SIMCOPY_CALL_FROM_BIN_VCS = "";
+
+if ( ( "x${SIMCOPY_CALL_FROM_BIN_VCS}" != "x" ) && ( -f "output/.simcopy_executed" ) ) then
+	exit;
+endif
+if ( -d output ) then 
+	touch output/.simcopy_executed
+endif
+
+set EXECNAME=`basename $0`
+set CURDIR=`pwd`
+set INLINE_SIMV=""
+set MOVE_SIMV=""
+if ( "$1" == "-h" )  then 
+    echo "Usage : "
+    echo "        $EXECNAME [-move] <target-dir>"
+    echo "        $EXECNAME -inline"
+    exit;
+else if ( "$1" == "-inline" )  then 
+    if ( $# != 1) then
+        echo "Usage : "
+        echo "        $EXECNAME [-move] <target-dir>"
+        echo "        $EXECNAME -inline"
+        exit;
+    endif
+    set INLINE_SIMV="TRUE"
+else if ( "$1" == "-move" ) then
+    if ( $# != 2) then
+        echo "Usage : "
+        echo "        $EXECNAME [-move] <target-dir>"
+        echo "        $EXECNAME -inline"
+        exit;
+    endif
+    set MOVE_SIMV="TRUE"
+    set TARGETDIR=$2
+else
+    if ( $# > 1) then
+        echo "Usage : "
+        echo "        $EXECNAME [-move] <target-dir>"
+        echo "        $EXECNAME -inline"
+        exit;
+    endif
+    if ( $# == 0 ) then
+        set TARGETDIR=${CURDIR}
+    else
+        set TARGETDIR=$1
+    endif
+endif
+
+set CP="cp -rp"
+if ( "${MOVE_SIMV}" == "TRUE"  || "${INLINE_SIMV}" == "TRUE") then
+    set CP="mv"
+endif
+if ( "$INLINE_SIMV" != "TRUE" ) then
+    if ( ! -d ${TARGETDIR} ) then
+        echo "Error: target directory '${TARGETDIR}' does not exist"
+        exit -1
+    endif
+    cd ${TARGETDIR}
+    set TARGETDIR=`pwd`
+    cd ${CURDIR}
+endif
+set DAIDIR=`echo $0 | sed 's/'$EXECNAME'$//'`
+if ( "x$DAIDIR" == "x")  then
+        set DAIDIR="."
+endif
+cd ${DAIDIR}
+set DAIDIR=`pwd`
+cd ${CURDIR}
+set SIMV=`basename ${DAIDIR} | sed 's/.daidir$//'`
+set EXECPATH="${DAIDIR}/.."
+set PCRELOCTABLE="${DAIDIR}/.pcreloctable"
+if ( ! -f ${PCRELOCTABLE} ) then
+        echo "Error : no partition relocation table find, simulator is not relocatable"
+        exit -1;
+endif
+cd ${EXECPATH}
+set EXECPATH=`pwd`
+cd ${CURDIR}
+if ( "${INLINE_SIMV}" != "TRUE" ) then
+    if ( "x${EXECPATH}" == "x${TARGETDIR}" ) then
+        echo "simulator is right in the target directory now."
+        exit -1
+    endif
+    echo "Relocating simulator '${SIMV}' from ${EXECPATH} to ${TARGETDIR} ..."
+
+    echo ${CP} ${EXECPATH}/${SIMV} ${TARGETDIR}
+    ${CP} ${EXECPATH}/${SIMV} ${TARGETDIR}
+    echo ${CP} ${EXECPATH}/${SIMV}.daidir  ${TARGETDIR}
+    ${CP} ${EXECPATH}/${SIMV}.daidir  ${TARGETDIR}
+    echo "${EXECPATH}/${SIMV}.daidir" > ${TARGETDIR}/${SIMV}.daidir/.simcopy.history
+else
+    set TARGETDIR="${EXECPATH}"
+    echo "${EXECPATH}/${SIMV}.daidir" > ${TARGETDIR}/${SIMV}.daidir/.simcopy.history
+endif
+if ! ( -f ${TARGETDIR}/${SIMV}.daidir/simcopy ) then
+    echo " Error: simv.daidir not copied"
+    exit -1
+endif
+if ! ( -f ${TARGETDIR}/${SIMV} ) then
+    echo " Error: simv not copied"
+    exit -2
+endif
+set PARTITIONLIB="${TARGETDIR}/${SIMV}.daidir/partitionlib"
+foreach partdir ( `\ls -A ${PARTITIONLIB} ` )
+    set origdir = ${PARTITIONLIB}/$partdir
+    while ( -l $origdir )
+        set origdir=`\readlink $origdir`
+    end
+    if ( -l ${PARTITIONLIB}/$partdir )  then
+        \rm -rf ${PARTITIONLIB}/$partdir
+        echo ${CP} $origdir ${PARTITIONLIB}/$partdir
+        ${CP} $origdir ${PARTITIONLIB}/$partdir
+    endif
+end
+if ( -f ${TARGETDIR}/${SIMV}.daidir/.pcreloctable ) then
+    foreach link ( `find ${EXECPATH}/${SIMV}.daidir -maxdepth 1 -type l` )
+        set complete_path = `readlink $link` 
+        set to_replace = `echo $complete_path | sed "s/\(.*\)\/.*\/.*/\1/g"` 
+        set new_path = `echo $complete_path | sed 's@$to_replace@./partitionlib@g' | sed 's@//@/@g'` 
+        cd ${TARGETDIR}/${SIMV}.daidir
+        if ( -f $new_path ) then
+            rm -f `basename $link`
+            ln -s $new_path `basename $link` 
+        endif 
+        cd -
+    end 
+endif 
+\touch ${TARGETDIR}/${SIMV}.daidir/.simv_inline
+\touch ${TARGETDIR}/${SIMV}.daidir/vcselab_misc_vcselabref.db
+\touch ${TARGETDIR}/${SIMV}
+if ( -f ${TARGETDIR}/${SIMV}.daidir/.partcomp_dir) then
+    set PARTCOMP_DIR=`cat ${TARGETDIR}/${SIMV}.daidir/.partcomp_dir | tail -1 | awk '{print $1}'`
+    find  ${PARTCOMP_DIR} -maxdepth 1 -type f -exec ${CP} '{}' ${PARTITIONLIB} \; >& /dev/null 
+    ${CP} ${PARTCOMP_DIR}/changedPath* ${PARTITIONLIB} >& /dev/null; 
+    foreach changePathDir ( `\ls -d ${PARTITIONLIB}/changedPath*` )
+        /bin/sh ${VCS_HOME}/bin/hsim_change_path_creator 2 $changePathDir  >& /dev/null; 
+    end
+    set VH_COPIED=1 
+    if (! -e ${PARTITIONLIB}/vh ) then 
+        if ( -e ${PARTCOMP_DIR}/vh) then 
+           mkdir -p ${PARTITIONLIB}/vh 
+           set VH_COPIED=0 
+        endif 
+    endif 
+  if (-e ${PARTCOMP_DIR}/vh/) then
+    foreach f (`find ${PARTCOMP_DIR}/vh/ -maxdepth 1 -name '*.sig' -type f -exec basename -a {} + |  awk -F '.' '{print $1}'`)
+        ls ${TARGETDIR}/${SIMV}.daidir/partitionlib/vh/$f* | xargs -r /bin/rm
+      end
+   endif
+    find ${PARTCOMP_DIR}/vh  -maxdepth 1 -type f -exec ${CP} '{}' ${PARTITIONLIB}/vh/. \; >& /dev/null 
+    ${CP} ${PARTCOMP_DIR}/.partitionlib_timestamp* ${PARTITIONLIB} >& /dev/null; 
+endif 
+if ( "${INLINE_SIMV}" == "TRUE" ) then
+    if ( -f ${TARGETDIR}/${SIMV}.daidir/.pcreloctable ) then
+        if ( "x$PARTCOMP_DIR" != "x" ) then
+            \rm -rf ${PARTCOMP_DIR}
+            \ln -s ${TARGETDIR}/${SIMV}.daidir/partitionlib ${PARTCOMP_DIR}
+        endif 
+    endif 
+endif 
+if ( -d ${TARGETDIR}/${SIMV}.daidir/kdb.elab++ ) then
+    \tar hcf ${TARGETDIR}/${SIMV}.daidir/kdb.tar --exclude='.nfs*' -C ${TARGETDIR}/${SIMV}.daidir/ kdb.elab++
+    \tar xf ${TARGETDIR}/${SIMV}.daidir/kdb.tar -C ${TARGETDIR}/${SIMV}.daidir
+    \rm -f ${TARGETDIR}/${SIMV}.daidir/kdb.tar
+endif 
+find ${TARGETDIR} -xtype l | xargs /bin/rm -rf 
+find ${TARGETDIR}/${SIMV}.daidir -xtype l | xargs /bin/rm -rf 

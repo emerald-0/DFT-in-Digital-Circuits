@@ -1,0 +1,12 @@
+ #faults  testcov  instance name (type)
+ -------  -------  -----------------------
+   13376   95.81%  /  (top_module)
+   12816  100.00%     /DU  (Datapath_Unit_test_1)
+    4670  100.00%        /DU/reg_file  (GPRs_test_1)
+    3168  100.00%        /DU/alu_unit  (ALU)
+     224    0.00%           /DU/alu_unit/sub_17  (ALU_DW01_sub_0)
+     160  100.00%           /DU/alu_unit/add_16  (ALU_DW01_add_0_DW01_add_2)
+    3912  100.00%        /DU/dm  (Data_Memory_test_1)
+     354    6.08%     /occ_snps_pll_controller  (Risc_16_bit_DFT_clk_mux_0)
+     300    0.00%        /occ_snps_pll_controller/U_clk_control_i_0  (Risc_16_bit_DFT_clk_control_0_0)
+     102    0.00%           /occ_snps_pll_controller/U_clk_control_i_0/U_cycle_ctr_i  (Risc_16_bit_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0)

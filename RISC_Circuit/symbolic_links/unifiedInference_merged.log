@@ -1,0 +1,10 @@
+==================================================
+Unified Inference Statistics
+Number of always_ff:                   0
+Number of always_latch:                0
+Number of always @*:                   0
+Number of always_comb :                0
+Number of always :                     0
+Number of flip-flop candidates:        0
+Number of synchronous flops inferred:  0
+Number of Asynchronous flops inferred: 0

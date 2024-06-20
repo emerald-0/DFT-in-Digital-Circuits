@@ -1,0 +1,6 @@
+Command exited with non-zero status 255
+{"vcs1":{"timestamp_begin":1709794022.911773141, "rt":0.24, "ut":0.01, "st":0.01}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1709794022.504639859}
+{"VCS_COMP_START_TIME": 1709794022.504639859}
+{"VCS_COMP_END_TIME": 1709794023.184859672}
+{"VCS_USER_OPTIONS": "-f I_C-m.f -debug_pp -debug_access+r -full64 -picarchive +v2k +notimingchecks -timescale=1ns/1fs -l compile.log"}

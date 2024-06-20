@@ -1,0 +1,8 @@
+Host name: localhost.localdomain
+Command line:
+/home/vlsilab/Documents/InstalledTools/VCS2022/vcs/T-2022.06-SP2-6/linux64/bin/cgmop1 -reportstats -tls_initexe -pic -gen_obj rmapats.m rmapats_mop.o 
+PSR=0
+========== Data begin ==========
+1713941035.63 16648 3764 2080 1684
+1713941035.65 20364 7788 2080 5708 0 0.0
+peakvm 22460

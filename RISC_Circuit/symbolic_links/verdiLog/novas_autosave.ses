@@ -1,0 +1,95 @@
+@verdi rc file Version 1.0
+[General]
+saveDB = TRUE
+relativePath = FALSE
+saveSingleView = FALSE
+saveNWaveWinId = 
+VerdiVersion = Verdi_T-2022.06-SP2-8
+[KeyNote]
+Line1 = Automatic Backup 0
+Line2 = Save Open Database Information: Yes
+Line3 = Path Option: Absolute Paths
+Line4 = Windows Option: All Windows
+[OneSearch]
+isExisted = TRUE
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+Console = FALSE
+powerDumped = 0
+[fusa]
+fdb_server = 
+fdb_proj = 
+fdb_campaign = 
+fdb_tool = 
+[hb]
+postSimFile = /home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/wavefrom.fsdb
+syncTime = 0
+viewport = 0 0 1920 995 0 0 89 1918
+activeNode = "Risc_16_bit_test.dut"
+activeScope = "Risc_16_bit_test.dut"
+activeFile = "Risc_16_bit_netlist_scan.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 2843
+baMode = False
+srcLineNum = True
+AutoWrap = True
+IdentifyFalseLogic = False
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+powerAwareAnnot = True
+safetyAwareAnnot = True
+amsAnnot = True
+DnDtraceCrossHierOnly = True
+leadingZero = False
+signalPane = False
+SourceVerticalScrollLines = 5
+Scope1 = "Risc_16_bit_test.dut"
+Scope2 = "Risc_16_bit_test"
+multipleSelection = 1 2860 6 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.design]
+importCmd = "-dbdir" "/home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/simv.daidir" 
+invokeDir = /home/vlsilab/sagar_harsh_soham/RISC/symbolic_links
+[hb.sourceTab.1]
+scope = Risc_16_bit_test.dut
+File = /home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/Risc_16_bit_netlist_scan.v
+Line = 2844
+[nMemoryManager]
+WaveformFile = /home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/wavefrom.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 25 1920 892 100 63
+primaryWindow = TRUE
+SessionFile = /home/vlsilab/sagar_harsh_soham/RISC/symbolic_links/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSyncCursorMarker = FALSE
+waveformSyncHorizontalRange = FALSE
+waveformSyncVerticalscroll = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE
+fsaRegMask = TRUE
+fsaCoreMask = TRUE
+fsaSfsmMask = TRUE
+fsaEcrMask = TRUE
+tPropMask = TRUE

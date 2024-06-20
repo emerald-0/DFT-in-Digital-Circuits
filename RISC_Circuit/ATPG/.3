@@ -1,0 +1,91 @@
+ Slave ID = 3, PID = 36043
+ 
+ ***********************************************************
+ *  NOTICE:  The following DRC violations were previously  *
+ *  encountered. The presence of these violations is an    *
+ *  indicator that it is possible that the ATPG patterns   *
+ *  created during this process may fail in simulation.    *
+ *                                                         *
+ *  Rules:  N20                                            *
+ ***********************************************************
+ ATPG performed for stuck fault model using internal pattern source.
+ ----------------------------------------------------------
+ #patterns     #faults     #ATPG faults  test      process
+ stored     detect/active  red/au/abort  coverage  CPU time
+ ---------  -------------  ------------  --------  --------
+ Begin deterministic ATPG: #uncollapsed_faults=5704, abort_limit=1000...
+ Patn  0: #merges=0/198(0%)  #failed_merges=0/12  #faults=1251  #det=492  CPU=0.00 sec  clocks= scan_clk
+ Patn  1: #merges=0/33(0%)  #failed_merges=0/0  #faults=850  #det=53  CPU=0.01 sec  clocks= scan_clk
+ Patn  2: #merges=0/9(0%)  #failed_merges=0/0  #faults=787  #det=14  CPU=0.01 sec  clocks= scan_clk
+ Patn  3: #merges=0/8(0%)  #failed_merges=0/0  #faults=664  #det=9  CPU=0.01 sec  clocks= scan_clk
+ Patn  4: #merges=0/13(0%)  #failed_merges=0/0  #faults=625  #det=3  CPU=0.02 sec  clocks= scan_clk
+ Patn  5: #merges=2/1(0%)  #failed_merges=1/0  #faults=4  #det=5  CPU=0.03 sec  clocks= scan_clk
+ Patn  6: #merges=0/0(0%)  #failed_merges=0/0  #faults=1  #det=1  CPU=0.04 sec  clocks= scan_clk
+ Patn  7: #merges=0/1(0%)  #failed_merges=0/0  #faults=2  #det=2  CPU=0.05 sec  clocks= scan_clk
+ Fault simulation: 1 pattern was dropped due to no added detection.
+ 7              46      0     145/104/0    95.81%      0.06
+ Local redundancy analysis results: #redundant_faults=0, CPU_time=0.00 sec
+ 
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       6533
+   detected_by_simulation         DS      (4552)
+   detected_by_implication        DI      (1981)
+ Possibly detected                PT          0
+ Undetectable                     UD       6557
+   undetectable-unused            UU       (164)
+   undetectable-unobservable      UO         (4)
+   undetectable-tied              UT      (3064)
+   undetectable-blocked           UB      (2341)
+   undetectable-redundant         UR       (984)
+ ATPG untestable                  AU        286
+   atpg_untestable-not_detected   AN       (286)
+ Not detected                     ND          0
+ -----------------------------------------------
+ total faults                             13376
+ test coverage                            95.81%
+ fault coverage                           48.84%
+ ATPG effectiveness                      100.00%
+ -----------------------------------------------
+            Pattern Summary Report
+ -----------------------------------------------
+ #internal patterns                           7
+     #basic_scan patterns                     7
+ -----------------------------------------------
+            CPU Usage Summary Report
+ -----------------------------------------------
+ Test generation CPU time                  0.03
+ PPSFP goodsim CPU time                    0.00
+ PPSFP faultsim CPU time                   0.00
+ Merge goodsim CPU time                    0.00
+ Merge faultsim CPU time                   0.00
+ Multifault analysis CPU time              0.01
+ Testable analysis CPU time                0.00
+ Total CPU time                            0.06
+ -----------------------------------------------
+     Uncollapsed Stuck Fault Summary Report
+ -----------------------------------------------
+ fault class                     code   #faults
+ ------------------------------  ----  ---------
+ Detected                         DT       6533
+   detected_by_simulation         DS      (4552)
+   detected_by_implication        DI      (1981)
+ Possibly detected                PT          0
+ Undetectable                     UD       6557
+   undetectable-unused            UU       (164)
+   undetectable-unobservable      UO         (4)
+   undetectable-tied              UT      (3064)
+   undetectable-blocked           UB      (2341)
+   undetectable-redundant         UR       (984)
+ ATPG untestable                  AU        286
+   atpg_untestable-not_detected   AN       (286)
+ Not detected                     ND          0
+ -----------------------------------------------
+ total faults                             13376
+ test coverage                            95.81%
+ fault coverage                           48.84%
+ ATPG effectiveness                      100.00%
+ -----------------------------------------------
+ Memory usage summary: total=39.62MB

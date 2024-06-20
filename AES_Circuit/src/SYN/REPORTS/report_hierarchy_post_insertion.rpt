@@ -1,0 +1,218 @@
+ 
+****************************************
+Report : hierarchy
+Design : aes
+Version: S-2021.06-SP5-3
+Date   : Fri May 17 13:08:01 2024
+****************************************
+
+Attributes:
+    r - licensed design
+
+aes                r
+    AND2X1                                                                       saed90nm_typ
+    AND3X1                                                                       saed90nm_typ
+    AND4X1                                                                       saed90nm_typ
+    AO22X1                                                                       saed90nm_typ
+    AO221X1                                                                      saed90nm_typ
+    AO222X1                                                                      saed90nm_typ
+    AOI21X1                                                                      saed90nm_typ
+    AOI222X1                                                                     saed90nm_typ
+    INVX0                                                                        saed90nm_typ
+    NAND2X1                                                                      saed90nm_typ
+    NAND3X0                                                                      saed90nm_typ
+    NAND4X0                                                                      saed90nm_typ
+    NBUFFX2                                                                      saed90nm_typ
+    NOR2X0                                                                       saed90nm_typ
+    NOR3X0                                                                       saed90nm_typ
+    NOR4X0                                                                       saed90nm_typ
+    OA21X1                                                                       saed90nm_typ
+    OR2X1                                                                        saed90nm_typ
+    OR3X1                                                                        saed90nm_typ
+    SDFFARX1                                                                     saed90nm_typ
+    aes_DFT_clk_chain_0
+        AO22X1                                                                   saed90nm_typ
+        DFFNX1                                                                   saed90nm_typ
+        INVX1                                                                    saed90nm_typ
+    aes_DFT_clk_mux_0
+        INVX1                                                                    saed90nm_typ
+        aes_DFT_clk_control_0_0
+            AND2X1                                                               saed90nm_typ
+            AND3X1                                                               saed90nm_typ
+            DFFARX1                                                              saed90nm_typ
+            DFFNARX1                                                             saed90nm_typ
+            INVX1                                                                saed90nm_typ
+            NOR2X2                                                               saed90nm_typ
+            aes_DFT_cntr_scnto_width3_count_to5_rst_mode0_dcod_mode0_0_0
+                AND2X1                                                           saed90nm_typ
+                AND3X1                                                           saed90nm_typ
+                DFFARX1                                                          saed90nm_typ
+                INVX1                                                            saed90nm_typ
+                aes_DW01_add_width3
+                    NAND2X2                                                      saed90nm_typ
+                    NAND3X0                                                      saed90nm_typ
+                    XNOR2X1                                                      saed90nm_typ
+                    XOR2X1                                                       saed90nm_typ
+            aes_DFT_decode_width4_0_0
+                AND3X1                                                           saed90nm_typ
+                INVX1                                                            saed90nm_typ
+                NOR3X0                                                           saed90nm_typ
+            aes_DFT_or_gate_width4_0_0
+                OR4X1                                                            saed90nm_typ
+        aes_DFT_gf_mux_0_0
+            AND2X1                                                               saed90nm_typ
+            INVX1                                                                saed90nm_typ
+            OA21X2                                                               saed90nm_typ
+            OAI21X1                                                              saed90nm_typ
+        aes_mselector_n2_m1
+            AO22X1                                                               saed90nm_typ
+        aes_mselector_n2_m1_0
+            AO22X1                                                               saed90nm_typ
+    aes_core_test_1
+        AND2X1                                                                   saed90nm_typ
+        AND3X1                                                                   saed90nm_typ
+        AO21X1                                                                   saed90nm_typ
+        AO22X1                                                                   saed90nm_typ
+        INVX0                                                                    saed90nm_typ
+        NAND2X0                                                                  saed90nm_typ
+        NAND2X1                                                                  saed90nm_typ
+        NAND3X0                                                                  saed90nm_typ
+        NBUFFX2                                                                  saed90nm_typ
+        NOR2X0                                                                   saed90nm_typ
+        OA21X1                                                                   saed90nm_typ
+        SDFFARX1                                                                 saed90nm_typ
+        SDFFASX1                                                                 saed90nm_typ
+        aes_decipher_block_test_1                                                          r
+            AND2X1                                                               saed90nm_typ
+            AND3X1                                                               saed90nm_typ
+            AO21X1                                                               saed90nm_typ
+            AO22X1                                                               saed90nm_typ
+            AO221X1                                                              saed90nm_typ
+            AO222X1                                                              saed90nm_typ
+            AOI22X1                                                              saed90nm_typ
+            INVX0                                                                saed90nm_typ
+            NAND2X0                                                              saed90nm_typ
+            NAND2X1                                                              saed90nm_typ
+            NAND3X0                                                              saed90nm_typ
+            NBUFFX2                                                              saed90nm_typ
+            NOR2X0                                                               saed90nm_typ
+            NOR4X0                                                               saed90nm_typ
+            OA21X1                                                               saed90nm_typ
+            OA22X1                                                               saed90nm_typ
+            OAI222X1                                                             saed90nm_typ
+            OR2X1                                                                saed90nm_typ
+            SDFFARX1                                                             saed90nm_typ
+            SDFFASX1                                                             saed90nm_typ
+            XNOR2X1                                                              saed90nm_typ
+            XNOR3X1                                                              saed90nm_typ
+            XOR2X1                                                               saed90nm_typ
+            XOR2X2                                                               saed90nm_typ
+            XOR3X1                                                               saed90nm_typ
+            aes_inv_sbox
+                AND2X1                                                           saed90nm_typ
+                AND3X1                                                           saed90nm_typ
+                AND4X1                                                           saed90nm_typ
+                AO21X1                                                           saed90nm_typ
+                AO22X1                                                           saed90nm_typ
+                AO221X1                                                          saed90nm_typ
+                AO222X1                                                          saed90nm_typ
+                AOI222X1                                                         saed90nm_typ
+                INVX0                                                            saed90nm_typ
+                NAND2X0                                                          saed90nm_typ
+                NAND2X1                                                          saed90nm_typ
+                NAND3X0                                                          saed90nm_typ
+                NAND4X0                                                          saed90nm_typ
+                NBUFFX2                                                          saed90nm_typ
+                NBUFFX4                                                          saed90nm_typ
+                NOR2X0                                                           saed90nm_typ
+                NOR4X0                                                           saed90nm_typ
+                OA21X1                                                           saed90nm_typ
+                OA22X1                                                           saed90nm_typ
+                OA221X1                                                          saed90nm_typ
+                OA222X1                                                          saed90nm_typ
+                OAI21X1                                                          saed90nm_typ
+                OAI22X1                                                          saed90nm_typ
+                OAI221X1                                                         saed90nm_typ
+                OR2X1                                                            saed90nm_typ
+        aes_encipher_block_test_1                                                          r
+            AND2X1                                                               saed90nm_typ
+            AND3X1                                                               saed90nm_typ
+            AO21X1                                                               saed90nm_typ
+            AO22X1                                                               saed90nm_typ
+            AO221X1                                                              saed90nm_typ
+            AO222X1                                                              saed90nm_typ
+            AOI21X1                                                              saed90nm_typ
+            INVX0                                                                saed90nm_typ
+            NAND2X0                                                              saed90nm_typ
+            NAND2X1                                                              saed90nm_typ
+            NAND3X0                                                              saed90nm_typ
+            NAND4X0                                                              saed90nm_typ
+            NBUFFX2                                                              saed90nm_typ
+            NOR2X0                                                               saed90nm_typ
+            OA21X1                                                               saed90nm_typ
+            OAI21X1                                                              saed90nm_typ
+            OAI22X1                                                              saed90nm_typ
+            OAI222X1                                                             saed90nm_typ
+            SDFFARX1                                                             saed90nm_typ
+            SDFFASX1                                                             saed90nm_typ
+            XNOR2X1                                                              saed90nm_typ
+            XNOR3X1                                                              saed90nm_typ
+            XOR2X1                                                               saed90nm_typ
+            XOR3X1                                                               saed90nm_typ
+        aes_key_mem_test_1                                                                 r
+            AND2X1                                                               saed90nm_typ
+            AND2X2                                                               saed90nm_typ
+            AND3X1                                                               saed90nm_typ
+            AND4X1                                                               saed90nm_typ
+            AO21X1                                                               saed90nm_typ
+            AO22X1                                                               saed90nm_typ
+            AO221X1                                                              saed90nm_typ
+            AO222X1                                                              saed90nm_typ
+            AOI21X1                                                              saed90nm_typ
+            AOI221X1                                                             saed90nm_typ
+            AOI222X1                                                             saed90nm_typ
+            DELLN1X2                                                             saed90nm_typ
+            INVX0                                                                saed90nm_typ
+            NAND2X0                                                              saed90nm_typ
+            NAND2X1                                                              saed90nm_typ
+            NAND3X0                                                              saed90nm_typ
+            NBUFFX2                                                              saed90nm_typ
+            NBUFFX4                                                              saed90nm_typ
+            NOR2X0                                                               saed90nm_typ
+            NOR3X0                                                               saed90nm_typ
+            OR2X1                                                                saed90nm_typ
+            OR4X1                                                                saed90nm_typ
+            SDFFARX1                                                             saed90nm_typ
+            XNOR2X1                                                              saed90nm_typ
+            XNOR3X1                                                              saed90nm_typ
+            XOR2X1                                                               saed90nm_typ
+            XOR3X1                                                               saed90nm_typ
+        aes_sbox
+            AND2X1                                                               saed90nm_typ
+            AND3X1                                                               saed90nm_typ
+            AO21X1                                                               saed90nm_typ
+            AO22X1                                                               saed90nm_typ
+            AO221X1                                                              saed90nm_typ
+            AO222X1                                                              saed90nm_typ
+            AOI21X1                                                              saed90nm_typ
+            AOI22X1                                                              saed90nm_typ
+            AOI221X1                                                             saed90nm_typ
+            AOI222X1                                                             saed90nm_typ
+            INVX0                                                                saed90nm_typ
+            NAND2X0                                                              saed90nm_typ
+            NAND2X1                                                              saed90nm_typ
+            NAND3X0                                                              saed90nm_typ
+            NAND4X0                                                              saed90nm_typ
+            NBUFFX2                                                              saed90nm_typ
+            NOR2X0                                                               saed90nm_typ
+            NOR3X0                                                               saed90nm_typ
+            NOR4X0                                                               saed90nm_typ
+            OA21X1                                                               saed90nm_typ
+            OA22X1                                                               saed90nm_typ
+            OA221X1                                                              saed90nm_typ
+            OA222X1                                                              saed90nm_typ
+            OAI221X1                                                             saed90nm_typ
+            OAI222X1                                                             saed90nm_typ
+            OR2X1                                                                saed90nm_typ
+            XNOR2X1                                                              saed90nm_typ
+1
